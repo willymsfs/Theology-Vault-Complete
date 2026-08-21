@@ -1,0 +1,1242 @@
+<title>Documents</title>
+<style>
+  :root {
+    --ink: #ede3cf; --ink-soft: #cdbfa4; --paper: #211c16; --paper-raised: #2a241c;
+    --line: rgba(237,227,207,0.16); --wine: #c17a4d; --wine-soft: #c17a4d1c;
+    --gold: #d6ad5c; --gold-soft: #d6ad5c1a; --muted: #a3947a;
+    color-scheme: dark;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --ink: #2a2318; --ink-soft: #4d4330; --paper: #f4ecdb; --paper-raised: #ffffff;
+      --line: rgba(42,35,24,0.15); --wine: #9c4f27; --wine-soft: #9c4f2714;
+      --gold: #8a6414; --gold-soft: #8a641414; --muted: #7a6c52; color-scheme: light;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #ede3cf; --ink-soft: #cdbfa4; --paper: #211c16; --paper-raised: #2a241c;
+    --line: rgba(237,227,207,0.16); --wine: #c17a4d; --wine-soft: #c17a4d1c;
+    --gold: #d6ad5c; --gold-soft: #d6ad5c1a; --muted: #a3947a;
+  }
+  :root[data-theme="light"] {
+    --ink: #2a2318; --ink-soft: #4d4330; --paper: #f4ecdb; --paper-raised: #ffffff;
+    --line: rgba(42,35,24,0.15); --wine: #9c4f27; --wine-soft: #9c4f2714;
+    --gold: #8a6414; --gold-soft: #8a641414; --muted: #7a6c52;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 19px; line-height: 1.65; -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: var(--wine-soft); }
+  h1, h2, h3, h4 {
+    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "URW Palladio", serif;
+    text-wrap: balance; font-weight: 400; color: var(--gold); margin: 0;
+  }
+  p { margin: 0 0 1em; max-width: 44em; }
+  strong { color: var(--ink); font-weight: 700; }
+  em { color: var(--wine); font-style: italic; }
+  a { color: var(--wine); }
+  header.hero { padding: 52px 24px 30px; text-align: center; border-bottom: 1px solid var(--line); }
+  header.hero .eyebrow { font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--wine); margin-bottom: 10px; }
+  header.hero h1 { font-size: clamp(26px, 4.2vw, 38px); max-width: 22ch; margin: 0 auto 8px; font-style: italic; }
+  header.hero .sub { max-width: 46em; margin: 0 auto; color: var(--ink-soft); font-size: 15.5px; }
+  .searchbar {
+    position: sticky; top: 0; z-index: 10; background: var(--paper); border-bottom: 1px solid var(--line);
+    padding: 12px 24px;
+  }
+  .searchbar-inner { max-width: 760px; margin: 0 auto; display: flex; align-items: center; gap: 12px; }
+  .searchbar input {
+    flex: 1; padding: 9px 14px; font-size: 15px; font-family: inherit;
+    background: var(--paper-raised); border: 1px solid var(--line); border-radius: 20px;
+    color: var(--ink); outline: none;
+  }
+  .searchbar input:focus { border-color: var(--wine); }
+  .searchbar .count { font-size: 12.5px; color: var(--muted); white-space: nowrap; }
+  main { max-width: 760px; margin: 0 auto; padding: 20px 24px 50px; }
+  .entry {
+    padding: 22px 0; border-bottom: 1px solid var(--line);
+  }
+  .entry-title { font-size: 19px; margin-bottom: 8px; }
+  h3.sec { font-size: 15.5px; color: var(--gold); margin: 14px 0 6px; }
+  ul, ol { padding-left: 1.2em; margin: 0 0 0.9em; max-width: 44em; }
+  li { margin-bottom: 5px; }
+  .callout {
+    background: var(--paper-raised); border: 1px solid var(--line); border-left: 3px solid var(--gold);
+    border-radius: 3px; padding: 12px 16px; margin: 12px 0;
+  }
+  .callout p { margin: 0 0 5px; font-size: 14.5px; color: var(--ink-soft); }
+  .callout-label { font-size: 11px !important; letter-spacing: 0.05em; text-transform: uppercase; color: var(--gold) !important; margin-bottom: 5px !important; }
+  [hidden] { display: none !important; }
+  .empty-note { color: var(--muted); font-size: 14px; padding: 30px 0; text-align: center; }
+  footer.page { max-width: 760px; margin: 0 auto; padding: 30px 24px 60px; font-size: 13px; color: var(--muted); }
+</style>
+
+<header class="hero">
+  <p class="eyebrow">Theology Vault &middot; Reference</p>
+  <h1>Conciliar and Magisterial Documents</h1>
+  <p class="sub">Notes on councils, encyclicals, and Church documents referenced across the theology vault</p>
+</header>
+
+<div class="searchbar">
+  <div class="searchbar-inner">
+    <input id="filter" type="text" placeholder="Search 92 entries&hellip;" autocomplete="off" />
+    <span class="count" id="count">92 entries</span>
+  </div>
+</div>
+
+<main id="main">
+<article class="entry" id="1-clement" data-search="1 Clement 
+ written from rome to corinth to settle a revolt in which presbyters had been deposed. chapters 40-44 argue from order, drawing an analogy with the old testament cult of high priest, priests, levites, and laypeople — introducing the word laikos into christian literature — and from succession, stating that the apostles appointed bishops and deacons and provided that approved men should succeed to their ministry. the earliest post-apostolic text on ministry and the seed of the doctrine of apostolic succession. 
+ linked from:  laikos  ·  apostolic succession  ·  holy orders moc  ">
+<h3 class="entry-title">1 Clement</h3>
+
+<p>Written from Rome to Corinth to settle a revolt in which presbyters had been deposed. Chapters 40-44 argue from order, drawing an analogy with the Old Testament cult of high priest, priests, Levites, and laypeople — introducing the word laikos into Christian literature — and from succession, stating that the apostles appointed bishops and deacons and provided that approved men should succeed to their ministry. The earliest post-apostolic text on ministry and the seed of the doctrine of apostolic succession.</p>
+<p>Linked from: <em>Laikos</em> · <em>Apostolic Succession</em> · <em>Holy Orders MOC</em></p>
+</article>
+<article class="entry" id="ad-gentes" data-search="Ad Gentes 
+ 
+ a note of the same name exists in the  vatican ii course package :  ad gentes — vatican ii course treatment . 
+ 
+ trinitarian foundation: the church is &quot;by its very nature missionary,&quot; continuing the father&#x27;s sending of son and spirit. advances an incarnational, non-imposing model of inculturation. 
+ linked from:  vatican ii moc  
+ initiation and mission (ag 14) 
+ ag 14 treats the catechumenate as integral to missionary practice, describing it as a progressive formation of the whole christian life rather than a mere transmission of doctrine — a conciliar anticipation of the rcia&#x27;s restored structure. see  sacraments moc . ">
+<h3 class="entry-title">Ad Gentes</h3>
+
+<blockquote>
+<p>A note of the same name exists in the <strong>Vatican II course package</strong>: <em>Ad Gentes — Vatican II course treatment</em>.</p>
+</blockquote>
+<p>Trinitarian foundation: the Church is "by its very nature missionary," continuing the Father's sending of Son and Spirit. Advances an incarnational, non-imposing model of inculturation.</p>
+<p>Linked from: <em>Vatican II MOC</em></p>
+<h3>Initiation and Mission (AG 14)</h3>
+<p>AG 14 treats the catechumenate as integral to missionary practice, describing it as a progressive formation of the whole Christian life rather than a mere transmission of doctrine — a conciliar anticipation of the RCIA's restored structure. See <em>Sacraments MOC</em>.</p>
+</article>
+<article class="entry" id="aeterni-patris" data-search="Aeterni Patris (1879) 
+ leo xiii&#x27;s encyclical that triggered  neo-scholasticism  — the modern revival of the teaching of  aquinas  as the church&#x27;s standard framework, until vatican ii. 
+ linked from:  periods of theological development  ·  scholasticism  ">
+<h3 class="entry-title">Aeterni Patris (1879)</h3>
+
+<p>Leo XIII's encyclical that triggered <strong>Neo-Scholasticism</strong> — the modern revival of the teaching of <em>Aquinas</em> as the Church's standard framework, until Vatican II.</p>
+<p>Linked from: <em>Periods of Theological Development</em> · <em>Scholasticism</em></p>
+</article>
+<article class="entry" id="amoris-laetitia" data-search="Amoris Laetitia 
+ francis&#x27;s exhortation of 19 march 2016 following the synods of 2014 and 2015. most of the document is a practical treatment of love and family life, chapter 4&#x27;s meditation on 1 corinthians 13 being its best-known section. the controversy concerns chapter 8&#x27;s method of accompanying, discerning, and integrating: al 301 states that it can no longer simply be said that all in irregular situations are in a state of mortal sin, since subjective culpability may be diminished; and footnote 351 states that the church&#x27;s help &quot;in certain cases&quot; can include &quot;the help of the sacraments.&quot; four cardinals submitted five dubia in 2016 seeking clarification, to which no formal reply was given; francis subsequently approved the buenos aires bishops&#x27; guidelines, stating &quot;there are no other interpretations,&quot; and both were published in the acta apostolicae sedis as authentic magisterium. 
+ linked from:  footnote 351  ·  dubia  ·  buenos aires criteria  ·  matrimony moc  ">
+<h3 class="entry-title">Amoris Laetitia</h3>
+
+<p>Francis's exhortation of 19 March 2016 following the Synods of 2014 and 2015. Most of the document is a practical treatment of love and family life, chapter 4's meditation on 1 Corinthians 13 being its best-known section. The controversy concerns chapter 8's method of accompanying, discerning, and integrating: AL 301 states that it can no longer simply be said that all in irregular situations are in a state of mortal sin, since subjective culpability may be diminished; and footnote 351 states that the Church's help "in certain cases" can include "the help of the sacraments." Four cardinals submitted five dubia in 2016 seeking clarification, to which no formal reply was given; Francis subsequently approved the Buenos Aires bishops' guidelines, stating "there are no other interpretations," and both were published in the Acta Apostolicae Sedis as authentic magisterium.</p>
+<p>Linked from: <em>Footnote 351</em> · <em>Dubia</em> · <em>Buenos Aires Criteria</em> · <em>Matrimony MOC</em></p>
+</article>
+<article class="entry" id="apostolic-tradition" data-search="Apostolic Tradition 
+ traditionally attributed to hippolytus; authorship and dating genuinely contested. sections 15-21 preserve the fullest surviving account of the patristic catechumenate: scrutiny of occupation, three years of formation, election, exorcisms and the traditio/redditio symboli, then the vigil rite with renunciation, triple immersion with triple interrogation, presbyteral anointing, episcopal hand-laying and forehead anointing, and first eucharist with milk and honey. the 1972 rcia is an explicit attempt to recover this structure. 
+ linked from:  hippolytus  ·  competentes and electi  ·  sacraments moc  
+ the anaphora 
+ its eucharistic prayer is the single most influential ancient anaphora in modern liturgy, serving as the direct model for eucharistic prayer ii of the 1969 roman missal. its shape — dialogue, thanksgiving for creation and redemption, institution narrative, anamnesis, epiclesis, doxology — is the template against which later developments are measured. see  eucharist moc . ">
+<h3 class="entry-title">Apostolic Tradition</h3>
+
+<p>Traditionally attributed to Hippolytus; authorship and dating genuinely contested. Sections 15-21 preserve the fullest surviving account of the patristic catechumenate: scrutiny of occupation, three years of formation, election, exorcisms and the traditio/redditio symboli, then the Vigil rite with renunciation, triple immersion with triple interrogation, presbyteral anointing, episcopal hand-laying and forehead anointing, and first Eucharist with milk and honey. The 1972 RCIA is an explicit attempt to recover this structure.</p>
+<p>Linked from: <em>Hippolytus</em> · <em>Competentes and Electi</em> · <em>Sacraments MOC</em></p>
+<h3>The Anaphora</h3>
+<p>Its Eucharistic Prayer is the single most influential ancient anaphora in modern liturgy, serving as the direct model for Eucharistic Prayer II of the 1969 Roman Missal. Its shape — dialogue, thanksgiving for creation and redemption, institution narrative, anamnesis, epiclesis, doxology — is the template against which later developments are measured. See <em>Eucharist MOC</em>.</p>
+</article>
+<article class="entry" id="apostolicae-curae" data-search="Apostolicae Curae 
+ leo xiii&#x27;s judgement of 13 september 1896 that anglican ordinations are &quot;absolutely null and utterly void&quot; (irritas prorsus fuisse et esse, omninoque nullas), on two grounds: defect of form, in that the edwardine ordinal&#x27;s essential words failed to signify definitely the grace and power of the priesthood as an order for consecrating and offering; and defect of intention, in that its composers deliberately removed sacrificial language. the anglican archbishops replied in saepius officio (1897) that the same standard would invalidate the ancient roman rite. the argument was materially weakened by sacramentum ordinis (1947) and complicated by old catholic co-consecrations since 1931, though the judgement stands. 
+ linked from:  defect of form and intention  ·  holy orders moc  ">
+<h3 class="entry-title">Apostolicae Curae</h3>
+
+<p>Leo XIII's judgement of 13 September 1896 that Anglican ordinations are "absolutely null and utterly void" (irritas prorsus fuisse et esse, omninoque nullas), on two grounds: defect of form, in that the Edwardine Ordinal's essential words failed to signify definitely the grace and power of the priesthood as an order for consecrating and offering; and defect of intention, in that its composers deliberately removed sacrificial language. The Anglican archbishops replied in Saepius Officio (1897) that the same standard would invalidate the ancient Roman rite. The argument was materially weakened by Sacramentum Ordinis (1947) and complicated by Old Catholic co-consecrations since 1931, though the judgement stands.</p>
+<p>Linked from: <em>Defect of Form and Intention</em> · <em>Holy Orders MOC</em></p>
+</article>
+<article class="entry" id="apostolicam-actuositatem" data-search="Apostolicam Actuositatem 
+ 
+ a note of the same name exists in the  vatican ii course package :  apostolicam actuositatem — vatican ii course treatment . 
+ 
+ the first conciliar document dedicated solely to the laity. the lay apostolate flows directly from baptism, not delegation from clergy; affirms the laity&#x27;s &quot;secular character&quot; as a transforming &quot;leaven&quot; in the temporal order. 
+ linked from:  vatican ii moc  
+ baptismal foundation of the lay apostolate 
+ the decree&#x27;s central claim — that the lay apostolate flows directly from baptism rather than from clerical delegation — is the practical cash value of lg 10-11&#x27;s teaching on the common priesthood conferred in baptism and the witness obligation conferred in confirmation. see  sacraments moc . ">
+<h3 class="entry-title">Apostolicam Actuositatem</h3>
+
+<blockquote>
+<p>A note of the same name exists in the <strong>Vatican II course package</strong>: <em>Apostolicam Actuositatem — Vatican II course treatment</em>.</p>
+</blockquote>
+<p>The first conciliar document dedicated solely to the laity. The lay apostolate flows directly from baptism, not delegation from clergy; affirms the laity's "secular character" as a transforming "leaven" in the temporal order.</p>
+<p>Linked from: <em>Vatican II MOC</em></p>
+<h3>Baptismal Foundation of the Lay Apostolate</h3>
+<p>The decree's central claim — that the lay apostolate flows directly from baptism rather than from clerical delegation — is the practical cash value of LG 10-11's teaching on the common priesthood conferred in baptism and the witness obligation conferred in Confirmation. See <em>Sacraments MOC</em>.</p>
+</article>
+<article class="entry" id="arcic-windsor-statement" data-search="ARCIC Windsor Statement 
+ the anglican-roman catholic international commission&#x27;s agreed statement on eucharistic doctrine (1971), with an elucidation in 1979, claiming &quot;substantial agreement&quot; on eucharistic doctrine. its principal achievement was to resolve the sacrifice question by recovering anamnesis in its hebraic sense — the eucharist makes the one sacrifice present without repeating it. its limit is that agreement on the eucharist has not been matched by agreement on ministry and orders. 
+ linked from:  zikkaron  ·  eucharist moc  ">
+<h3 class="entry-title">ARCIC Windsor Statement</h3>
+
+<p>The Anglican-Roman Catholic International Commission's Agreed Statement on Eucharistic Doctrine (1971), with an Elucidation in 1979, claiming "substantial agreement" on Eucharistic doctrine. Its principal achievement was to resolve the sacrifice question by recovering anamnesis in its Hebraic sense — the Eucharist makes the one sacrifice present without repeating it. Its limit is that agreement on the Eucharist has not been matched by agreement on ministry and orders.</p>
+<p>Linked from: <em>Zikkaron</em> · <em>Eucharist MOC</em></p>
+</article>
+<article class="entry" id="baptism-eucharist-and-ministry-lima" data-search="Baptism, Eucharist and Ministry (Lima) 
+ the most significant ecumenical text on the sacraments, produced by the world council of churches faith and order commission at lima in 1982. its baptism section sets out five converging images: participation in christ&#x27;s death and resurrection; conversion, pardoning, and cleansing; the gift of the spirit; incorporation into the body of christ; and the sign of the kingdom. together with unitatis redintegratio 22 it underpins the mutual recognition of baptism across most of world christianity. 
+ linked from:  sacramental bond of unity  ·  sacraments moc  
+ the eucharist section 
+ presents the eucharist under five aspects: thanksgiving to the father, anamnesis or memorial of christ, invocation of the spirit, communion of the faithful, and meal of the kingdom. its central ecumenical achievement is the recovery of anamnesis in its hebraic sense, allowing convergence on the sacrifice question; it deliberately leaves the mode of christ&#x27;s presence open. see  eucharist moc . ">
+<h3 class="entry-title">Baptism, Eucharist and Ministry (Lima)</h3>
+
+<p>The most significant ecumenical text on the sacraments, produced by the World Council of Churches Faith and Order Commission at Lima in 1982. Its baptism section sets out five converging images: participation in Christ's death and resurrection; conversion, pardoning, and cleansing; the gift of the Spirit; incorporation into the body of Christ; and the sign of the Kingdom. Together with Unitatis Redintegratio 22 it underpins the mutual recognition of baptism across most of world Christianity.</p>
+<p>Linked from: <em>Sacramental Bond of Unity</em> · <em>Sacraments MOC</em></p>
+<h3>The Eucharist Section</h3>
+<p>Presents the Eucharist under five aspects: thanksgiving to the Father, anamnesis or memorial of Christ, invocation of the Spirit, communion of the faithful, and meal of the Kingdom. Its central ecumenical achievement is the recovery of anamnesis in its Hebraic sense, allowing convergence on the sacrifice question; it deliberately leaves the mode of Christ's presence open. See <em>Eucharist MOC</em>.</p>
+</article>
+<article class="entry" id="casti-connubii" data-search="Casti Connubii 
+ pius xi&#x27;s encyclical of 31 december 1930, issued in direct response to the anglican lambeth conference&#x27;s cautious permission of contraception earlier that year — the first christian body to permit it. reaffirms the three augustinian goods, declares contraception intrinsically vicious, condemns eugenic sterilisation and abortion, and upholds indissolubility. notably it also describes conjugal love as &quot;the chief reason and purpose of matrimony&quot; when marriage is considered as &quot;the blending of life as a whole&quot; — a sentence the personalists would seize upon. 
+ linked from:  inseparable connection  ·  personalist turn  ·  matrimony moc  ">
+<h3 class="entry-title">Casti Connubii</h3>
+
+<p>Pius XI's encyclical of 31 December 1930, issued in direct response to the Anglican Lambeth Conference's cautious permission of contraception earlier that year — the first Christian body to permit it. Reaffirms the three Augustinian goods, declares contraception intrinsically vicious, condemns eugenic sterilisation and abortion, and upholds indissolubility. Notably it also describes conjugal love as "the chief reason and purpose of matrimony" when marriage is considered as "the blending of life as a whole" — a sentence the personalists would seize upon.</p>
+<p>Linked from: <em>Inseparable Connection</em> · <em>Personalist Turn</em> · <em>Matrimony MOC</em></p>
+</article>
+<article class="entry" id="catechesi-tradendae" data-search="Catechesi Tradendae (CT) 
+ john paul ii on catechesis. 
+ ct 10 
+ the jerusalem community of acts 2 and 4 is read as the model of church life — teaching, communion, breaking of bread and prayer as the shape catechesis aims to produce. 
+ linked from:  four pillars of the jerusalem community (acts 2-42)  ·  ekklesia in acts  ·  s04 - first steps, first signs  ">
+<h3 class="entry-title">Catechesi Tradendae (CT)</h3>
+
+<p>John Paul II on catechesis.</p>
+<h3 class="sec">CT 10</h3>
+<p>The Jerusalem community of Acts 2 and 4 is read as the model of Church life — teaching, communion, breaking of bread and prayer as the shape catechesis aims to produce.</p>
+<p>Linked from: <em>Four Pillars of the Jerusalem Community (Acts 2-42)</em> · <em>Ekklesia in Acts</em> · <em>S04 - First Steps, First Signs</em></p>
+</article>
+<article class="entry" id="cdf-responsa-on-the-baptismal-formula" data-search="CDF Responsa on the Baptismal Formula 
+ issued 6 august 2020, declaring baptisms conferred with the formula &quot;we baptise you...&quot; to be invalid, requiring absolute rebaptism. the minister acts in persona christi and must say &quot;i baptise&quot;; the community does not baptise itself. the most vivid modern demonstration that ex opere operato is not a technicality — hundreds of catholics discovered their baptisms, and consequently their confirmations, marriages, and in some cases ordinations, were invalid. 
+ linked from:  ex opere operato  ·  conditional baptism  ·  sacraments moc  ">
+<h3 class="entry-title">CDF Responsa on the Baptismal Formula</h3>
+
+<p>Issued 6 August 2020, declaring baptisms conferred with the formula "We baptise you..." to be invalid, requiring absolute rebaptism. The minister acts in persona Christi and must say "I baptise"; the community does not baptise itself. The most vivid modern demonstration that ex opere operato is not a technicality — hundreds of Catholics discovered their baptisms, and consequently their confirmations, marriages, and in some cases ordinations, were invalid.</p>
+<p>Linked from: <em>Ex Opere Operato</em> · <em>Conditional Baptism</em> · <em>Sacraments MOC</em></p>
+</article>
+<article class="entry" id="christus-dominus" data-search="Christus Dominus 
+ 
+ a note of the same name exists in the  vatican ii course package :  christus dominus — vatican ii course treatment . 
+ 
+ develops the structures of collegiality treated in unit 11: episcopal conferences, subsidiarity, and the pastoral office of bishops in their own dioceses. 
+ linked from:  subsidiarity  ·  power of jurisdiction  
+ vatican ii historical note 
+ drafting was a major vehicle for decentralization: national episcopal conferences and the synod of bishops were its chief fruits, though paul vi made the synod purely consultative against progressive hopes for a permanent deliberative body sharing papal governance. 
+ the bishop&#x27;s office 
+ the decree depends entirely on lg 21&#x27;s teaching that episcopal consecration confers the fullness of the sacrament together with the tria munera: because the offices of teaching and governing are conferred by consecration rather than by subsequent delegation, the bishop is a sacramentally empowered collaborator rather than a papal branch manager. this is the sacramental foundation of episcopal conferences and of the synod of bishops. see  tria munera  and  holy orders moc . ">
+<h3 class="entry-title">Christus Dominus</h3>
+
+<blockquote>
+<p>A note of the same name exists in the <strong>Vatican II course package</strong>: <em>Christus Dominus — Vatican II course treatment</em>.</p>
+</blockquote>
+<p>Develops the structures of collegiality treated in Unit 11: episcopal conferences, subsidiarity, and the pastoral office of bishops in their own dioceses.</p>
+<p>Linked from: <em>Subsidiarity</em> · <em>Power of Jurisdiction</em></p>
+<h3>Vatican II Historical Note</h3>
+<p>Drafting was a major vehicle for decentralization: national episcopal conferences and the Synod of Bishops were its chief fruits, though Paul VI made the Synod purely consultative against progressive hopes for a permanent deliberative body sharing papal governance.</p>
+<h3>The Bishop's Office</h3>
+<p>The decree depends entirely on LG 21's teaching that episcopal consecration confers the fullness of the sacrament together with the tria munera: because the offices of teaching and governing are conferred by consecration rather than by subsequent delegation, the bishop is a sacramentally empowered collaborator rather than a papal branch manager. This is the sacramental foundation of episcopal conferences and of the Synod of Bishops. See <em>Tria Munera</em> and <em>Holy Orders MOC</em>.</p>
+</article>
+<article class="entry" id="collected-writings-of-george-m-soares-prabhu" data-search="Collected Writings of George M. Soares-Prabhu 
+ published by jnana-deepa vidyapeeth, pune, in the jdv theology series.  vol 1   biblical themes for a contextual theology today  (1999, ed. isaac padinjarekuttu, 15 chapters, 260+ pp) — mission; inculturation, liberation, dialogue; contextual interpretation.  vol 2   a biblical theology for india  (332 pp, 16 chapters) — biblical methods, ot, non-christian scriptures; portraits of jesus; indian readings.  vol 3   biblical spirituality of liberative action  — the abba experience, the dharma of jesus, miracles, religious life.  vol 4   theology of liberation: an indian biblical perspective  — the indian mind, the prophet as theologian, the kingdom as new society, a dalit reading of the decalogue. the title essay &quot;the dharma of jesus&quot; is vol 4 ch. 10, pp. 153-172. 
+ these are collected  articles : most first appeared in indian theological journals —  vidyajyoti ,  jeevadhara ,  jnanadeepa ,  bible bhashyam . the essay, not the monograph, was his native form. 
+ linked from:  isaac padinjarekuttu  ·  integral indian reading  ·  soares-prabhu moc  ">
+<h3 class="entry-title">Collected Writings of George M. Soares-Prabhu</h3>
+
+<p>Published by Jnana-Deepa Vidyapeeth, Pune, in the JDV Theology Series. <strong>Vol 1</strong> <em>Biblical Themes for a Contextual Theology Today</em> (1999, ed. Isaac Padinjarekuttu, 15 chapters, 260+ pp) — mission; inculturation, liberation, dialogue; contextual interpretation. <strong>Vol 2</strong> <em>A Biblical Theology for India</em> (332 pp, 16 chapters) — biblical methods, OT, non-Christian scriptures; portraits of Jesus; Indian readings. <strong>Vol 3</strong> <em>Biblical Spirituality of Liberative Action</em> — the Abba experience, the dharma of Jesus, miracles, religious life. <strong>Vol 4</strong> <em>Theology of Liberation: An Indian Biblical Perspective</em> — the Indian mind, the prophet as theologian, the Kingdom as new society, a Dalit reading of the Decalogue. The title essay "The Dharma of Jesus" is Vol 4 ch. 10, pp. 153-172.</p>
+<p>These are collected <em>articles</em>: most first appeared in Indian theological journals — <em>Vidyajyoti</em>, <em>Jeevadhara</em>, <em>Jnanadeepa</em>, <em>Bible Bhashyam</em>. The essay, not the monograph, was his native form.</p>
+<p>Linked from: <em>Isaac Padinjarekuttu</em> · <em>Integral Indian Reading</em> · <em>Soares-Prabhu MOC</em></p>
+</article>
+<article class="entry" id="council-of-trent-session-vii" data-search="Council of Trent Session VII 
+ promulgated 3 march 1547 in three sets of canons — 13 on the sacraments in general, 14 on baptism, 3 on confirmation (memorise as &quot;13-14-3&quot;). general canon 8 defines ex opere operato; canon 9 defines the indelible character conferred by baptism, confirmation, and orders. baptism canon 4 upholds the validity of baptism conferred by heretics using the trinitarian formula with the intention of doing what the church does — vindicating stephen over cyprian, and unintentionally committing the church to the modern ecumenical recognition of protestant baptism. canons 13-14 defend infant baptism against the anabaptists. the confirmation canons affirm it as a true and proper sacrament and the bishop as its ordinary minister. 
+ linked from:  ex opere operato  ·  character dominicus  ·  sacraments moc  ">
+<h3 class="entry-title">Council of Trent Session VII</h3>
+
+<p>Promulgated 3 March 1547 in three sets of canons — 13 on the sacraments in general, 14 on Baptism, 3 on Confirmation (memorise as "13-14-3"). General canon 8 defines ex opere operato; canon 9 defines the indelible character conferred by Baptism, Confirmation, and Orders. Baptism canon 4 upholds the validity of baptism conferred by heretics using the Trinitarian formula with the intention of doing what the Church does — vindicating Stephen over Cyprian, and unintentionally committing the Church to the modern ecumenical recognition of Protestant baptism. Canons 13-14 defend infant baptism against the Anabaptists. The Confirmation canons affirm it as a true and proper sacrament and the bishop as its ordinary minister.</p>
+<p>Linked from: <em>Ex Opere Operato</em> · <em>Character Dominicus</em> · <em>Sacraments MOC</em></p>
+</article>
+<article class="entry" id="council-of-trent-session-xiii" data-search="Council of Trent Session XIII 
+ promulgated 11 october 1551, the decree on the most holy eucharist defines that after the consecration christ is &quot;truly, really, and substantially&quot; (vere, realiter, substantialiter) contained under the appearances of bread and wine; affirms the conversion of the whole substance, which the church &quot;most fittingly&quot; (aptissime) calls transubstantiation; and defends concomitance, reservation, adoration (latria), and the requirement of sacramental confession before communion for those in grave sin. the careful wording dogmatises the change while stopping short of canonising aristotelian physics. 
+ linked from:  transubstantiation  ·  concomitance  ·  eucharist moc  ">
+<h3 class="entry-title">Council of Trent Session XIII</h3>
+
+<p>Promulgated 11 October 1551, the Decree on the Most Holy Eucharist defines that after the consecration Christ is "truly, really, and substantially" (vere, realiter, substantialiter) contained under the appearances of bread and wine; affirms the conversion of the whole substance, which the Church "most fittingly" (aptissime) calls transubstantiation; and defends concomitance, reservation, adoration (latria), and the requirement of sacramental confession before communion for those in grave sin. The careful wording dogmatises the change while stopping short of canonising Aristotelian physics.</p>
+<p>Linked from: <em>Transubstantiation</em> · <em>Concomitance</em> · <em>Eucharist MOC</em></p>
+</article>
+<article class="entry" id="council-of-trent-session-xiv" data-search="Council of Trent Session XIV 
+ promulgated 25 november 1551, treating penance together with extreme unction. defines penance as a true and proper sacrament instituted by christ principally in john 20:22-23, and as the secunda tabula post naufragium for those who fall after baptism. requires confession of all mortal sins of which the penitent is conscious after diligent examination, according to species and number with the circumstances that change the species. teaches that attrition is a true gift of god disposing to grace within the sacrament; that absolution is a judicial act (actus iudicialis) and not a bare announcement of forgiveness — the premise from which integral confession follows; and that satisfaction is real and salutary while deriving all its power from christ&#x27;s merit. 
+ linked from:  judicial absolution  ·  integral confession  ·  attrition  ·  penance moc  
+ extreme unction 
+ the same session that treats penance also gives the doctrine and canons on extreme unction, in three chapters and four canons. the sacrament was &quot;insinuated&quot; by christ in mark 6:13 and &quot;promulgated&quot; by james 5:14-15; its matter is oil blessed by a bishop and its form the prayer of the priest; its effects are the grace of the holy spirit, the wiping away of sins and of the remnants of sin, the alleviation and strengthening of the soul, and sometimes the restoration of bodily health &quot;when expedient for the salvation of the soul.&quot; canon 4 anathematises the reading of &quot;presbyters&quot; in james as elders by age rather than ordained priests. crucially, the decree says the sacrament is  especially  (praesertim) for those so dangerously ill as to seem near death — without defining that it is only for them, a reticence that left the legal door open for sc 73. see  praesertim  and  anointing moc . ">
+<h3 class="entry-title">Council of Trent Session XIV</h3>
+
+<p>Promulgated 25 November 1551, treating Penance together with Extreme Unction. Defines Penance as a true and proper sacrament instituted by Christ principally in John 20:22-23, and as the secunda tabula post naufragium for those who fall after baptism. Requires confession of all mortal sins of which the penitent is conscious after diligent examination, according to species and number with the circumstances that change the species. Teaches that attrition is a true gift of God disposing to grace within the sacrament; that absolution is a judicial act (actus iudicialis) and not a bare announcement of forgiveness — the premise from which integral confession follows; and that satisfaction is real and salutary while deriving all its power from Christ's merit.</p>
+<p>Linked from: <em>Judicial Absolution</em> · <em>Integral Confession</em> · <em>Attrition</em> · <em>Penance MOC</em></p>
+<h3>Extreme Unction</h3>
+<p>The same session that treats Penance also gives the doctrine and canons on Extreme Unction, in three chapters and four canons. The sacrament was "insinuated" by Christ in Mark 6:13 and "promulgated" by James 5:14-15; its matter is oil blessed by a bishop and its form the prayer of the priest; its effects are the grace of the Holy Spirit, the wiping away of sins and of the remnants of sin, the alleviation and strengthening of the soul, and sometimes the restoration of bodily health "when expedient for the salvation of the soul." Canon 4 anathematises the reading of "presbyters" in James as elders by age rather than ordained priests. Crucially, the decree says the sacrament is <strong>especially</strong> (praesertim) for those so dangerously ill as to seem near death — without defining that it is only for them, a reticence that left the legal door open for SC 73. See <em>Praesertim</em> and <em>Anointing MOC</em>.</p>
+</article>
+<article class="entry" id="council-of-trent-session-xxii" data-search="Council of Trent Session XXII 
+ promulgated 17 september 1562, the doctrine and canons on the sacrifice of the mass teaches that in the mass &quot;is contained and immolated in an unbloody manner the same christ who once offered himself in a bloody manner on the altar of the cross,&quot; and that &quot;the victim is one and the same, the same now offering by the ministry of priests who then offered himself on the cross, the manner of offering alone being different.&quot; affirms the mass as propitiatory for living and dead, and defends private masses, the latin language, and the roman canon, while its accompanying decree on abuses orders bishops to suppress avarice, irreverence, and superstition. 
+ linked from:  sacrifice of the mass  ·  propitiatory sacrifice  ·  eucharist moc  ">
+<h3 class="entry-title">Council of Trent Session XXII</h3>
+
+<p>Promulgated 17 September 1562, the Doctrine and Canons on the Sacrifice of the Mass teaches that in the Mass "is contained and immolated in an unbloody manner the same Christ who once offered himself in a bloody manner on the altar of the cross," and that "the victim is one and the same, the same now offering by the ministry of priests who then offered himself on the cross, the manner of offering alone being different." Affirms the Mass as propitiatory for living and dead, and defends private Masses, the Latin language, and the Roman Canon, while its accompanying decree on abuses orders bishops to suppress avarice, irreverence, and superstition.</p>
+<p>Linked from: <em>Sacrifice of the Mass</em> · <em>Propitiatory Sacrifice</em> · <em>Eucharist MOC</em></p>
+</article>
+<article class="entry" id="council-of-trent-session-xxiii" data-search="Council of Trent Session XXIII 
+ promulgated 15 july 1563. teaches that since the new law has a visible sacrifice it must have a visible and external priesthood; that christ instituted the priesthood at the last supper in the words &quot;do this in remembrance of me&quot;; that order is a true sacrament conferring grace by the imposition of hands and the words; that it imprints an indelible character so that one ordained cannot become a layman again; that there is a hierarchy instituted by divine ordination consisting of bishops, priests, and ministers; and that bishops are superior to priests with power to confirm and ordain. it deliberately left open whether the episcopate is a distinct sacramental order and whether episcopal jurisdiction derives directly from god or through the pope. chapter 18 required every diocese to establish a seminary — arguably the most consequential act of the entire council. 
+ linked from:  character (orders)  ·  fullness of the sacrament of orders  ·  holy orders moc  ">
+<h3 class="entry-title">Council of Trent Session XXIII</h3>
+
+<p>Promulgated 15 July 1563. Teaches that since the New Law has a visible sacrifice it must have a visible and external priesthood; that Christ instituted the priesthood at the Last Supper in the words "Do this in remembrance of me"; that Order is a true sacrament conferring grace by the imposition of hands and the words; that it imprints an indelible character so that one ordained cannot become a layman again; that there is a hierarchy instituted by divine ordination consisting of bishops, priests, and ministers; and that bishops are superior to priests with power to confirm and ordain. It deliberately left open whether the episcopate is a distinct sacramental order and whether episcopal jurisdiction derives directly from God or through the pope. Chapter 18 required every diocese to establish a seminary — arguably the most consequential act of the entire Council.</p>
+<p>Linked from: <em>Character (Orders)</em> · <em>Fullness of the Sacrament of Orders</em> · <em>Holy Orders MOC</em></p>
+</article>
+<article class="entry" id="council-of-trent-session-xxiv" data-search="Council of Trent Session XXIV 
+ promulgated 11 november 1563 in twelve canons on the sacrament of matrimony together with the reform decree tametsi. affirms that matrimony is truly and properly one of the seven sacraments instituted by christ; that polygamy is unlawful; that the church may establish impediments and grant dispensations; that the bond is not dissolved by heresy, difficulty of cohabitation, or wilful desertion; and that the state of virginity or celibacy is better and more blessed than marriage. canon 7 is worded with deliberate care — anathematising the claim that the church errs in teaching that the bond is not dissolved by adultery, rather than condemning the contrary practice outright — so as not to condemn the greek orthodox practice of oikonomia, a point pressed by venetian bishops representing greek communities. 
+ linked from:  oikonomia (marriage)  ·  tametsi  ·  matrimony moc  ">
+<h3 class="entry-title">Council of Trent Session XXIV</h3>
+
+<p>Promulgated 11 November 1563 in twelve canons on the sacrament of matrimony together with the reform decree Tametsi. Affirms that matrimony is truly and properly one of the seven sacraments instituted by Christ; that polygamy is unlawful; that the Church may establish impediments and grant dispensations; that the bond is not dissolved by heresy, difficulty of cohabitation, or wilful desertion; and that the state of virginity or celibacy is better and more blessed than marriage. Canon 7 is worded with deliberate care — anathematising the claim that the Church errs in teaching that the bond is not dissolved by adultery, rather than condemning the contrary practice outright — so as not to condemn the Greek Orthodox practice of oikonomia, a point pressed by Venetian bishops representing Greek communities.</p>
+<p>Linked from: <em>Oikonomia (Marriage)</em> · <a href="#tametsi">Tametsi</a> · <em>Matrimony MOC</em></p>
+</article>
+<article class="entry" id="de-baptismo-tertullian" data-search="De Baptismo (Tertullian) 
+ the first christian treatise devoted to a single sacrament. develops a theology of water grounded in genesis 1:2, describes the post-baptismal unction and hand-laying that would become confirmation, and — in chapter 18 — argues against baptising infants, making its author the first named opponent of paedobaptism. 
+ linked from:  tertullian  ·  sacraments moc  ">
+<h3 class="entry-title">De Baptismo (Tertullian)</h3>
+
+<p>The first Christian treatise devoted to a single sacrament. Develops a theology of water grounded in Genesis 1:2, describes the post-baptismal unction and hand-laying that would become Confirmation, and — in chapter 18 — argues against baptising infants, making its author the first named opponent of paedobaptism.</p>
+<p>Linked from: <em>Tertullian</em> · <em>Sacraments MOC</em></p>
+</article>
+<article class="entry" id="de-lapsis" data-search="De Lapsis 
+ cyprian of carthage&#x27;s treatise on the crisis of the lapsed after the decian persecution. against the confessors issuing libelli pacis on their own merits, it insists reconciliation belongs to the bishop&#x27;s ordinary ministry; against novatianist rigorism, it holds the lapsed can be forgiven after penance graded by the gravity of the lapse. the settlement it brokered underlies the church&#x27;s claim that no sin is beyond its power to forgive. 
+ linked from:  lapsi  ·  libelli pacis  ·  penance moc  ">
+<h3 class="entry-title">De Lapsis</h3>
+
+<p>Cyprian of Carthage's treatise on the crisis of the lapsed after the Decian persecution. Against the confessors issuing libelli pacis on their own merits, it insists reconciliation belongs to the bishop's ordinary ministry; against Novatianist rigorism, it holds the lapsed can be forgiven after penance graded by the gravity of the lapse. The settlement it brokered underlies the Church's claim that no sin is beyond its power to forgive.</p>
+<p>Linked from: <em>Lapsi</em> · <em>Libelli Pacis</em> · <em>Penance MOC</em></p>
+</article>
+<article class="entry" id="de-paenitentia-and-de-pudicitia" data-search="De Paenitentia and De Pudicitia 
+ tertullian&#x27;s two treatises on penance, written from opposite positions. de paenitentia (catholic period) permits the &quot;second repentance&quot; and describes exomologesis vividly, urging sinners not to delay out of shame. de pudicitia (montanist period) reverses course, denying the church any power to forgive adultery and fornication and attacking a bishop, probably callistus of rome, for a decree extending forgiveness to sins of the flesh. together they are the clearest single window onto the early church&#x27;s unresolved tension about the limits of ecclesial forgiveness. 
+ linked from:  exomologesis  ·  tertullian  ·  penance moc  ">
+<h3 class="entry-title">De Paenitentia and De Pudicitia</h3>
+
+<p>Tertullian's two treatises on penance, written from opposite positions. De Paenitentia (Catholic period) permits the "second repentance" and describes exomologesis vividly, urging sinners not to delay out of shame. De Pudicitia (Montanist period) reverses course, denying the Church any power to forgive adultery and fornication and attacking a bishop, probably Callistus of Rome, for a decree extending forgiveness to sins of the flesh. Together they are the clearest single window onto the early Church's unresolved tension about the limits of ecclesial forgiveness.</p>
+<p>Linked from: <em>Exomologesis</em> · <em>Tertullian</em> · <em>Penance MOC</em></p>
+</article>
+<article class="entry" id="decree-for-the-armenians-exsultate-deo" data-search="Decree for the Armenians (Exsultate Deo) 
+ promulgated 22 november 1439, the finest medieval systematic summary of the sacraments: for each it specifies matter, form, minister, and effect. for baptism: matter is true and natural water, form the trinitarian words, minister a priest ordinarily and anyone in necessity, effect the remission of original and actual sin and all punishment due. for confirmation: matter is chrism of olive oil (brightness of conscience) and balsam (odour of good reputation), ordinary minister the bishop, effect the spirit given for strength &quot;as he was given to the apostles on the day of pentecost.&quot; 
+ linked from:  septenary  ·  confirmatio (robur)  ·  sacraments moc  
+ extreme unction 
+ florence&#x27;s decree gives the standard late-medieval definition, and its restrictiveness should be noted precisely: the sacrament is &quot;not to be given except to a sick person of whose death there is fear&quot; (nisi infirmo, de cuius morte timetur). matter: olive oil blessed by a bishop. anointings: the organs of the five senses, together with the loins and feet, with the deprecatory form per istam sanctam unctionem. effect: healing of the mind and, so far as expedient, of the body. comparing this text with sc 73 shows exactly what the twentieth-century reform reversed. see  anointing moc . ">
+<h3 class="entry-title">Decree for the Armenians (Exsultate Deo)</h3>
+
+<p>Promulgated 22 November 1439, the finest medieval systematic summary of the sacraments: for each it specifies matter, form, minister, and effect. For Baptism: matter is true and natural water, form the Trinitarian words, minister a priest ordinarily and anyone in necessity, effect the remission of original and actual sin and all punishment due. For Confirmation: matter is chrism of olive oil (brightness of conscience) and balsam (odour of good reputation), ordinary minister the bishop, effect the Spirit given for strength "as he was given to the apostles on the day of Pentecost."</p>
+<p>Linked from: <em>Septenary</em> · <em>Confirmatio (Robur)</em> · <em>Sacraments MOC</em></p>
+<h3>Extreme Unction</h3>
+<p>Florence's decree gives the standard late-medieval definition, and its restrictiveness should be noted precisely: the sacrament is "not to be given except to a sick person of whose death there is fear" (nisi infirmo, de cuius morte timetur). Matter: olive oil blessed by a bishop. Anointings: the organs of the five senses, together with the loins and feet, with the deprecatory form Per istam sanctam unctionem. Effect: healing of the mind and, so far as expedient, of the body. Comparing this text with SC 73 shows exactly what the twentieth-century reform reversed. See <em>Anointing MOC</em>.</p>
+</article>
+<article class="entry" id="dei-filius" data-search="Dei Filius 
+ vatican i constitution cited in ch 1 on the knowability of god by reason. 
+ key teaching 
+ 
+ god &quot;can be known with certainty from the created world by the natural light of human reason.&quot; (dei filius, no. 2; echoed in dv) 
+ 
+ linked from:  god  ·  aquinas&amp;#x27;s proofs convince believers, not sceptics  ">
+<h3 class="entry-title">Dei Filius</h3>
+
+<p>Vatican I constitution cited in Ch 1 on the knowability of God by reason.</p>
+<h3 class="sec">Key teaching</h3>
+<blockquote>
+<p>God "can be known with certainty from the created world by the natural light of human reason." (Dei Filius, no. 2; echoed in DV)</p>
+</blockquote>
+<p>Linked from: <em>God</em> · <em>Aquinas&#x27;s proofs convince believers, not sceptics</em></p>
+</article>
+<article class="entry" id="dei-verbum" data-search="Dei Verbum (DV) 
+ 
+ a note of the same name exists in the  vatican ii course package :  dei verbum — vatican ii course treatment . 
+ 
+ vatican ii&#x27;s dogmatic constitution on divine revelation. central to ch 2, referenced in ch 1 on revelation and scripture. 
+ dv 10 
+ scripture, tradition, magisterium &quot;so linked and joined together that one cannot stand without the others.&quot; 
+ dv 11 
+ inerrancy scoped: scripture teaches &quot;without error that truth which god wanted to put into the sacred writings  for the sake of our salvation .&quot; 
+ dv 12 
+ scripture &quot;needs to be interpreted&quot;; final authority = &quot;the judgment of the church.&quot; 
+ linked from:  revelation  ·  theology  (fuller use in ch 2 notes). 
+ ecclesiology (bth course) 
+ dv 10 
+ &quot;this magisterium is not superior to the word of god, but is its servant.&quot; — grounds unit 12&#x27;s claim that the teaching church is also a learning church. see  lit - ecclesiology unit 12 . 
+ origins in de fontibus revelationis 
+ rebuilt from the rejected de fontibus revelationis (halted 20-21 november 1962) by periti including daniélou, rahner, and ratzinger. witherup&#x27;s analysis reads it as combining continuity (reaffirming trent and vatican i on inspiration/canon/inerrancy) with novelty (personalist language, the incarnation analogy for scripture, and official acceptance of three historical layers of gospel tradition). ">
+<h3 class="entry-title">Dei Verbum (DV)</h3>
+
+<blockquote>
+<p>A note of the same name exists in the <strong>Vatican II course package</strong>: <em>Dei Verbum — Vatican II course treatment</em>.</p>
+</blockquote>
+<p>Vatican II's Dogmatic Constitution on Divine Revelation. Central to Ch 2, referenced in Ch 1 on revelation and Scripture.</p>
+<h3 class="sec">DV 10</h3>
+<p>Scripture, Tradition, Magisterium "so linked and joined together that one cannot stand without the others."</p>
+<h3 class="sec">DV 11</h3>
+<p>Inerrancy scoped: Scripture teaches "without error that truth which God wanted to put into the sacred writings <strong>for the sake of our salvation</strong>."</p>
+<h3 class="sec">DV 12</h3>
+<p>Scripture "needs to be interpreted"; final authority = "the judgment of the Church."</p>
+<p>Linked from: <em>Revelation</em> · <em>Theology</em> (fuller use in Ch 2 notes).</p>
+<h3 class="sec">Ecclesiology (BTh course)</h3>
+<h3>DV 10</h3>
+<p>"This Magisterium is not superior to the Word of God, but is its servant." — grounds Unit 12's claim that the teaching Church is also a learning Church. See <em>Lit - Ecclesiology Unit 12</em>.</p>
+<h3>Origins in De Fontibus Revelationis</h3>
+<p>Rebuilt from the rejected De Fontibus Revelationis (halted 20-21 November 1962) by periti including Daniélou, Rahner, and Ratzinger. Witherup's analysis reads it as combining continuity (reaffirming Trent and Vatican I on inspiration/canon/inerrancy) with novelty (personalist language, the Incarnation analogy for Scripture, and official acceptance of three historical layers of Gospel tradition).</p>
+</article>
+<article class="entry" id="didache" data-search="Didache 
+ chapter 7 preserves the oldest surviving baptismal instruction: baptise in living (running, cold) water; if unavailable, other water; if not cold, warm; if neither, pour water three times on the head in the name of the father, son, and holy spirit. both baptiser and baptised are to fast beforehand. two lessons: the trinitarian formula is already fixed by c. 100, and the church was already adapting the sign to circumstance without anxiety. 
+ linked from:  baptizo  ·  sacraments moc  
+ the eucharistic prayers (didache 9-10, 14) 
+ chapters 9-10 preserve the oldest surviving christian eucharistic prayers, strikingly close to jewish table blessings, with thanksgiving over the cup before the bread and the gathering image: &quot;as this broken bread was scattered over the hills and, when gathered, became one, so let your church be gathered from the ends of the earth into your kingdom.&quot; chapter 14 requires confession of sins before breaking bread &quot;so that your sacrifice (thysia) may be pure,&quot; citing malachi 1:11 — placing sacrificial vocabulary in the earliest stratum of christian eucharistic language. see  eucharist moc . ">
+<h3 class="entry-title">Didache</h3>
+
+<p>Chapter 7 preserves the oldest surviving baptismal instruction: baptise in living (running, cold) water; if unavailable, other water; if not cold, warm; if neither, pour water three times on the head in the name of the Father, Son, and Holy Spirit. Both baptiser and baptised are to fast beforehand. Two lessons: the Trinitarian formula is already fixed by c. 100, and the Church was already adapting the sign to circumstance without anxiety.</p>
+<p>Linked from: <em>Baptizo</em> · <em>Sacraments MOC</em></p>
+<h3>The Eucharistic Prayers (Didache 9-10, 14)</h3>
+<p>Chapters 9-10 preserve the oldest surviving Christian Eucharistic prayers, strikingly close to Jewish table blessings, with thanksgiving over the cup before the bread and the gathering image: "As this broken bread was scattered over the hills and, when gathered, became one, so let your Church be gathered from the ends of the earth into your kingdom." Chapter 14 requires confession of sins before breaking bread "so that your sacrifice (thysia) may be pure," citing Malachi 1:11 — placing sacrificial vocabulary in the earliest stratum of Christian Eucharistic language. See <em>Eucharist MOC</em>.</p>
+</article>
+<article class="entry" id="dignitatis-humanae" data-search="Dignitatis Humanae 
+ 
+ a note of the same name exists in the  vatican ii course package :  dignitatis humanae — vatican ii course treatment . 
+ 
+ the most bitterly contested conciliar document. moves from &quot;error has no rights&quot; to religious freedom grounded in personal human dignity and civil immunity from coercion, chiefly through john courtney murray&#x27;s drafting. ratzinger later called it a &quot;counter-syllabus.&quot; 
+ linked from:  fides ex auditu  ·  john courtney murray  ">
+<h3 class="entry-title">Dignitatis Humanae</h3>
+
+<blockquote>
+<p>A note of the same name exists in the <strong>Vatican II course package</strong>: <em>Dignitatis Humanae — Vatican II course treatment</em>.</p>
+</blockquote>
+<p>The most bitterly contested conciliar document. Moves from "error has no rights" to religious freedom grounded in personal human dignity and civil immunity from coercion, chiefly through John Courtney Murray's drafting. Ratzinger later called it a "counter-syllabus."</p>
+<p>Linked from: <em>Fides Ex Auditu</em> · <em>John Courtney Murray</em></p>
+</article>
+<article class="entry" id="divinae-consortium-naturae" data-search="Divinae Consortium Naturae 
+ promulgated by paul vi on 15 august 1971, the definitive modern document on confirmation. locates the sacrament firmly within christian initiation rather than as a free-standing coming-of-age rite, and defines the essential rite as anointing with chrism on the forehead done by the laying on of the hand, with the words &quot;accipe signaculum doni spiritus sancti&quot; — &quot;be sealed with the gift of the holy spirit.&quot; this form was deliberately borrowed from the byzantine rite, replacing the medieval latin formula: a genuine act of ecumenical ressourcement. 
+ linked from:  accipe signaculum doni spiritus sancti  ·  sacraments moc  ">
+<h3 class="entry-title">Divinae Consortium Naturae</h3>
+
+<p>Promulgated by Paul VI on 15 August 1971, the definitive modern document on Confirmation. Locates the sacrament firmly within Christian initiation rather than as a free-standing coming-of-age rite, and defines the essential rite as anointing with chrism on the forehead done by the laying on of the hand, with the words "Accipe signaculum Doni Spiritus Sancti" — "Be sealed with the Gift of the Holy Spirit." This form was deliberately borrowed from the Byzantine rite, replacing the medieval Latin formula: a genuine act of ecumenical ressourcement.</p>
+<p>Linked from: <em>Accipe Signaculum Doni Spiritus Sancti</em> · <em>Sacraments MOC</em></p>
+</article>
+<article class="entry" id="ecclesia-de-eucharistia" data-search="Ecclesia de Eucharistia 
+ john paul ii&#x27;s encyclical opening with the claim that &quot;the church draws her life from the eucharist.&quot; develops the eucharist-church relation in continuity with de lubac, reaffirms the sacrificial and real-presence doctrine, and restates the discipline governing intercommunion. 
+ linked from:  intercommunion  ·  eucharist moc  ">
+<h3 class="entry-title">Ecclesia de Eucharistia</h3>
+
+<p>John Paul II's encyclical opening with the claim that "the Church draws her life from the Eucharist." Develops the Eucharist-Church relation in continuity with de Lubac, reaffirms the sacrificial and real-presence doctrine, and restates the discipline governing intercommunion.</p>
+<p>Linked from: <em>Intercommunion</em> · <em>Eucharist MOC</em></p>
+</article>
+<article class="entry" id="evangelii-gaudium" data-search="Evangelii Gaudium 
+ §27 
+ &quot;&quot;i dream of a &#x27;missionary option&#x27;... capable of transforming everything, so that the church&#x27;s customs, ways of doing things, times and schedules, language and structures can be suitably channeled for the evangelization of today&#x27;s world rather than for her self-preservation.&quot;&quot; 
+ §32 
+ &quot;laments that episcopal conferences&#x27; &quot;genuine doctrinal authority&quot; has not been sufficiently elaborated since the council, and calls for &quot;sound decentralization.&quot;&quot; 
+ linked from:  synodality  ·  pope francis  ">
+<h3 class="entry-title">Evangelii Gaudium</h3>
+
+<h3 class="sec">§27</h3>
+<p>""I dream of a 'missionary option'... capable of transforming everything, so that the Church's customs, ways of doing things, times and schedules, language and structures can be suitably channeled for the evangelization of today's world rather than for her self-preservation.""</p>
+<h3 class="sec">§32</h3>
+<p>"Laments that episcopal conferences' "genuine doctrinal authority" has not been sufficiently elaborated since the Council, and calls for "sound decentralization.""</p>
+<p>Linked from: <em>Synodality</em> · <em>Pope Francis</em></p>
+</article>
+<article class="entry" id="evangelii-nuntiandi" data-search="Evangelii Nuntiandi (EN) 
+ en 65 
+ encourage theological expression for different cultures, with the &quot;indispensable demand that the content of faith be neither impaired nor mutilated.&quot; 
+ linked from:  the ultimates of faith are not negotiable under popular pressure  ·  eight parameters of the catholic theological enterprise  ">
+<h3 class="entry-title">Evangelii Nuntiandi (EN)</h3>
+
+<h3 class="sec">EN 65</h3>
+<p>Encourage theological expression for different cultures, with the "indispensable demand that the content of faith be neither impaired nor mutilated."</p>
+<p>Linked from: <em>The ultimates of faith are not negotiable under popular pressure</em> · <em>Eight Parameters of the Catholic Theological Enterprise</em></p>
+</article>
+<article class="entry" id="familiaris-consortio" data-search="Familiaris Consortio 
+ john paul ii&#x27;s exhortation following the 1980 synod on the family. sets out the family&#x27;s four tasks; distinguishes at fc 34 a genuine law of gradualness, by which persons advance step by step, from an inadmissible gradualness of the law; and at fc 84 treats the divorced and civilly remarried as remaining members of the church who should participate in its life but who may not receive communion, since their state objectively contradicts the union of christ and the church, unless they can live as brother and sister. fc 21 develops lg 11&#x27;s designation of the family as the domestic church. 
+ linked from:  law of gradualness  ·  ecclesia domestica  ·  matrimony moc  ">
+<h3 class="entry-title">Familiaris Consortio</h3>
+
+<p>John Paul II's exhortation following the 1980 Synod on the family. Sets out the family's four tasks; distinguishes at FC 34 a genuine law of gradualness, by which persons advance step by step, from an inadmissible gradualness of the law; and at FC 84 treats the divorced and civilly remarried as remaining members of the Church who should participate in its life but who may not receive communion, since their state objectively contradicts the union of Christ and the Church, unless they can live as brother and sister. FC 21 develops LG 11's designation of the family as the domestic church.</p>
+<p>Linked from: <em>Law of Gradualness</em> · <em>Ecclesia Domestica</em> · <em>Matrimony MOC</em></p>
+</article>
+<article class="entry" id="gaudium-et-spes" data-search="Gaudium et Spes (GS) 
+ 
+ a note of the same name exists in the  vatican ii course package :  gaudium et spes — vatican ii course treatment . 
+ 
+ gs 58 
+ god &quot;speaks to humans according to their culture of different ages&quot; — grounds culture as a resource of theology. 
+ linked from:  additional resources of theology  ·  cosmotheandric vision  
+ drafting history (schema xiii/xvii) 
+ had no pre-conciliar model; underwent four complete rewrites (the &quot;roman text&quot; through suenens&#x27;s &quot;malines text&quot;). resolved the neo-augustinian/neo-thomist tension via a christological anthropology (gs 22). passed 2,309-75 on 7 december 1965, the council&#x27;s final working session. 
+ marriage and the family (gs 47-52) 
+ gs 48 describes marriage as &quot;the intimate partnership of married life and love&quot; (intima communitas vitae et amoris coniugalis) established by a &quot;conjugal covenant of irrevocable personal consent&quot; — substituting foedus (covenant) for contractus (contract) as the governing category. gs 49 offers the first substantial magisterial theology of conjugal love as such. most significantly, gs 50 deliberately declines to repeat the classical hierarchy of ends: while affirming that marriage is by its nature ordained toward the begetting and educating of children, it states that marriage is &quot;not instituted solely for procreation&quot; and that its character persists &quot;even when offspring are lacking&quot; — and amendments seeking to restore the primary/secondary language were rejected. the change is registered in law at 1983 cic c. 1055 §1, which names the bonum coniugum alongside procreation with no hierarchy asserted. see  hierarchy of ends  and  matrimony moc . ">
+<h3 class="entry-title">Gaudium et Spes (GS)</h3>
+
+<blockquote>
+<p>A note of the same name exists in the <strong>Vatican II course package</strong>: <em>Gaudium et Spes — Vatican II course treatment</em>.</p>
+</blockquote>
+<h3 class="sec">GS 58</h3>
+<p>God "speaks to humans according to their culture of different ages" — grounds culture as a resource of theology.</p>
+<p>Linked from: <em>Additional Resources of Theology</em> · <em>Cosmotheandric Vision</em></p>
+<h3>Drafting History (Schema XIII/XVII)</h3>
+<p>Had no pre-conciliar model; underwent four complete rewrites (the "Roman text" through Suenens's "Malines text"). Resolved the Neo-Augustinian/Neo-Thomist tension via a Christological anthropology (GS 22). Passed 2,309-75 on 7 December 1965, the Council's final working session.</p>
+<h3>Marriage and the Family (GS 47-52)</h3>
+<p>GS 48 describes marriage as "the intimate partnership of married life and love" (intima communitas vitae et amoris coniugalis) established by a "conjugal covenant of irrevocable personal consent" — substituting foedus (covenant) for contractus (contract) as the governing category. GS 49 offers the first substantial magisterial theology of conjugal love as such. Most significantly, GS 50 deliberately declines to repeat the classical hierarchy of ends: while affirming that marriage is by its nature ordained toward the begetting and educating of children, it states that marriage is "not instituted solely for procreation" and that its character persists "even when offspring are lacking" — and amendments seeking to restore the primary/secondary language were rejected. The change is registered in law at 1983 CIC c. 1055 §1, which names the bonum coniugum alongside procreation with no hierarchy asserted. See <em>Hierarchy of Ends</em> and <em>Matrimony MOC</em>.</p>
+</article>
+<article class="entry" id="gravissimum-educationis" data-search="Gravissimum Educationis 
+ 
+ a note of the same name exists in the  vatican ii course package :  gravissimum educationis — vatican ii course treatment . 
+ 
+ holistic concern for the whole person&#x27;s education; affirms the primary right of parents to choose their children&#x27;s schools. 
+ linked from:  vatican ii moc  ">
+<h3 class="entry-title">Gravissimum Educationis</h3>
+
+<blockquote>
+<p>A note of the same name exists in the <strong>Vatican II course package</strong>: <em>Gravissimum Educationis — Vatican II course treatment</em>.</p>
+</blockquote>
+<p>Holistic concern for the whole person's education; affirms the primary right of parents to choose their children's schools.</p>
+<p>Linked from: <em>Vatican II MOC</em></p>
+</article>
+<article class="entry" id="humanae-vitae" data-search="Humanae Vitae 
+ paul vi&#x27;s encyclical of 25 july 1968, issued against the majority report of his own birth control commission. its argument rests on hv 12: there is an &quot;inseparable connection, established by god, which man on his own initiative may not break, between the unitive significance and the procreative significance which are both inherent to the marriage act,&quot; from which follows the exclusion of contraception (hv 14) while permitting recourse to infertile periods (hv 16). the reception crisis that followed was the gravest of the post-conciliar period, with numerous episcopal conferences issuing statements emphasising conscience, and had consequences for the practice of confession as well as for marriage. 
+ linked from:  inseparable connection  ·  matrimony moc  ">
+<h3 class="entry-title">Humanae Vitae</h3>
+
+<p>Paul VI's encyclical of 25 July 1968, issued against the majority report of his own birth control commission. Its argument rests on HV 12: there is an "inseparable connection, established by God, which man on his own initiative may not break, between the unitive significance and the procreative significance which are both inherent to the marriage act," from which follows the exclusion of contraception (HV 14) while permitting recourse to infertile periods (HV 16). The reception crisis that followed was the gravest of the post-conciliar period, with numerous episcopal conferences issuing statements emphasising conscience, and had consequences for the practice of confession as well as for marriage.</p>
+<p>Linked from: <em>Inseparable Connection</em> · <em>Matrimony MOC</em></p>
+</article>
+<article class="entry" id="indulgentiarum-doctrina" data-search="Indulgentiarum Doctrina 
+ paul vi&#x27;s substantial reform of the system of indulgences, abolishing the misleading numerical attachments of days and years, reducing the number of plenary indulgences, and re-grounding the practice theologically in the communion of saints rather than in a quantified economy of merit. 
+ linked from:  indulgence  ·  treasury of merits  ·  penance moc  ">
+<h3 class="entry-title">Indulgentiarum Doctrina</h3>
+
+<p>Paul VI's substantial reform of the system of indulgences, abolishing the misleading numerical attachments of days and years, reducing the number of plenary indulgences, and re-grounding the practice theologically in the communion of saints rather than in a quantified economy of merit.</p>
+<p>Linked from: <em>Indulgence</em> · <em>Treasury of Merits</em> · <em>Penance MOC</em></p>
+</article>
+<article class="entry" id="inter-insigniores" data-search="Inter Insigniores 
+ the congregation for the doctrine of the faith&#x27;s declaration on the question of the admission of women to the ministerial priesthood, arguing from the constant tradition of east and west, from christ&#x27;s choice of the twelve, and from the priest&#x27;s acting in persona christi. the immediate precursor of ordinatio sacerdotalis (1994). 
+ linked from:  ordinatio sacerdotalis  ·  in persona christi capitis  ·  holy orders moc  ">
+<h3 class="entry-title">Inter Insigniores</h3>
+
+<p>The Congregation for the Doctrine of the Faith's declaration on the question of the admission of women to the ministerial priesthood, arguing from the constant tradition of East and West, from Christ's choice of the Twelve, and from the priest's acting in persona Christi. The immediate precursor of Ordinatio Sacerdotalis (1994).</p>
+<p>Linked from: <a href="#ordinatio-sacerdotalis">Ordinatio Sacerdotalis</a> · <em>In Persona Christi Capitis</em> · <em>Holy Orders MOC</em></p>
+</article>
+<article class="entry" id="inter-mirifica" data-search="Inter Mirifica 
+ 
+ a note of the same name exists in the  vatican ii course package :  inter mirifica — vatican ii course treatment . 
+ 
+ widely judged the council&#x27;s weakest document; an instrumental, &quot;neutral tool&quot; view of media, rushed through to give the council an early finished text. prompted the far stronger 1971 communio et progressio. 
+ linked from:  vatican ii moc  ">
+<h3 class="entry-title">Inter Mirifica</h3>
+
+<blockquote>
+<p>A note of the same name exists in the <strong>Vatican II course package</strong>: <em>Inter Mirifica — Vatican II course treatment</em>.</p>
+</blockquote>
+<p>Widely judged the Council's weakest document; an instrumental, "neutral tool" view of media, rushed through to give the Council an early finished text. Prompted the far stronger 1971 Communio et Progressio.</p>
+<p>Linked from: <em>Vatican II MOC</em></p>
+</article>
+<article class="entry" id="jnanadeepa-18-2-dharma-of-jesus-symposium" data-search="Jnanadeepa 18-2 - Dharma of Jesus Symposium 
+  jnanadeepa: pune journal of religious studies , vol. 18 no. 2 (july 2015), ed.  george karuvelil sj , jnana deepa publications, pune. reprints soares-prabhu&#x27;s own essay (p. 9) and adds  eight scholarly responses  — the record of how his own tradition received and extended him: joyce kaithakottil on the philosophy/theology crossroads (25) · george pattery on its use for indian theology today (37) · scaria kuthirakkattel on experience and context (57) and on prophetic theologizing (77) ·  helen dantis on a feminist perspective (97)  · denis lemos on pastoral application (119) · stephen jayard on science (137) · george karuvelil on philosophical foundations (155). 
+ linked from:  george karuvelil  ·  helen dantis  ·  soares-prabhu moc  ">
+<h3 class="entry-title">Jnanadeepa 18-2 - Dharma of Jesus Symposium</h3>
+
+<p><em>Jnanadeepa: Pune Journal of Religious Studies</em>, Vol. 18 No. 2 (July 2015), ed. <strong>George Karuvelil SJ</strong>, Jnana Deepa Publications, Pune. Reprints Soares-Prabhu's own essay (p. 9) and adds <strong>eight scholarly responses</strong> — the record of how his own tradition received and extended him: Joyce Kaithakottil on the philosophy/theology crossroads (25) · George Pattery on its use for Indian theology today (37) · Scaria Kuthirakkattel on experience and context (57) and on prophetic theologizing (77) · <strong>Helen Dantis on a feminist perspective (97)</strong> · Denis Lemos on pastoral application (119) · Stephen Jayard on science (137) · George Karuvelil on philosophical foundations (155).</p>
+<p>Linked from: <em>George Karuvelil</em> · <em>Helen Dantis</em> · <em>Soares-Prabhu MOC</em></p>
+</article>
+<article class="entry" id="laetentur-caeli" data-search="Laetentur Caeli 
+ signed 5 july 1439, declaring the holy spirit proceeds from the father and the son &quot;as from one principle and by a single spiration,&quot; and greek &quot;through the son&quot; equivalent to latin &quot;and the son.&quot; mark of ephesus alone among the greek bishops refused to sign; the union was repudiated within years and formally annulled by the council of constantinople in 1484. 
+ linked from:  filioque  ·  mark of ephesus  ·  trinity moc  ">
+<h3 class="entry-title">Laetentur Caeli</h3>
+
+<p>Signed 5 July 1439, declaring the Holy Spirit proceeds from the Father and the Son "as from one principle and by a single spiration," and Greek "through the Son" equivalent to Latin "and the Son." Mark of Ephesus alone among the Greek bishops refused to sign; the union was repudiated within years and formally annulled by the Council of Constantinople in 1484.</p>
+<p>Linked from: <em>Filioque</em> · <em>Mark of Ephesus</em> · <em>Trinity MOC</em></p>
+</article>
+<article class="entry" id="letter-to-decentius-of-gubbio" data-search="Letter to Decentius of Gubbio 
+ innocent i&#x27;s reply to a bishop&#x27;s query, and the single most important patristic text on anointing. it explains that the oil of james 5 is blessed by the bishop, and states that it may be used not only by priests but by all christians — omnibus christianis — in their own need and that of their households, with the single restriction that it is not to be given to those under canonical penance. the letter establishes that for centuries the application of the sacrament was not a clerical act, and that the reservation to priests is a later development. 
+ linked from:  pope innocent i  ·  unctio infirmorum  ·  anointing moc  ">
+<h3 class="entry-title">Letter to Decentius of Gubbio</h3>
+
+<p>Innocent I's reply to a bishop's query, and the single most important patristic text on anointing. It explains that the oil of James 5 is blessed by the bishop, and states that it may be used not only by priests but by all Christians — omnibus christianis — in their own need and that of their households, with the single restriction that it is not to be given to those under canonical penance. The letter establishes that for centuries the application of the sacrament was not a clerical act, and that the reservation to priests is a later development.</p>
+<p>Linked from: <em>Pope Innocent I</em> · <em>Unctio Infirmorum</em> · <em>Anointing MOC</em></p>
+</article>
+<article class="entry" id="lumen-gentium" data-search="Lumen Gentium (LG) 
+ 
+ a note of the same name exists in the  vatican ii course package :  lumen gentium — vatican ii course treatment . 
+ 
+ lg 12 
+ &quot;the universal body of the faithful, who have received the anointing of the holy one, cannot be mistaken in belief&quot; — the  sensus fidelium . 
+ linked from:  infallibility  ·  sensus fidelium  
+ ecclesiology (bth course) 
+ vatican ii&#x27;s &quot;magna charta&quot; for the church — see  lit - ecclesiology unit 9  and  lit - ecclesiology unit 10 . 
+ lg 1 
+ &quot;[the church is] a sign and instrument both of a very closely knit union with god and of the unity of the whole human race.&quot; — grounds  church as mystery  and the sacramental model in  dulles&amp;#x27;s five models of the church . 
+ lg 8 
+ &quot;this church, constituted and organised as a society in the present world, subsists in the catholic church.&quot; — grounds  subsistit in  and  three principles of unitatis redintegratio . 
+ lg 14–16 
+ the three concentric circles of belonging — see  three concentric circles of lumen gentium 14–16 . 
+ lg 21 
+ &quot;[bishops] possess the fullness of the sacrament of order.&quot; — grounds  three conciliar arguments for episcopal collegiality . 
+ lg 23, 26 
+ the local church as full realization of the church of christ — grounds  communio ecclesiology . 
+ linked from:  church as mystery  ·  imperfect communion  ·  communio ecclesiology  ·  power of orders  ·  ekklesia  
+ the nota praevia 
+ chapter 3 (on episcopal collegiality) carries the preliminary explanatory note paul vi ordered attached in november 1964 — see  nota praevia  — locking in the &quot;moderate liberal&quot; reading of collegiality against both conservative and extreme-progressive interpretations. 
+ baptism and confirmation (lg 10-11) 
+ lg 10-11 ground the common priesthood of the faithful in baptism, making baptismal dignity prior to office — the same structural logic as placing &quot;people of god&quot; before &quot;hierarchy.&quot; on confirmation, lg 11 teaches that the faithful are thereby &quot;more perfectly bound to the church&quot; and &quot;enriched with a special strength of the holy spirit,&quot; and so &quot;more strictly obliged to spread and defend the faith by word and deed.&quot; together these are the theological basis of the entire lay apostolate. see  sacraments moc . 
+ the eucharist and the church (lg 3, 7, 11, 26) 
+ lg 11 names the eucharist &quot;the source and summit of the christian life.&quot; lg 3 and 7 present it as the sacrament by which the unity of the church is both signified and brought about, and lg 26 affirms that in every legitimate local celebration christ is present and the church is gathered — the conciliar reception of de lubac&#x27;s thesis that the eucharist makes the church, and the basis of communion ecclesiology. see  eucharist moc . 
+ penance (lg 11) 
+ lg 11 teaches that those who approach the sacrament of penance &quot;obtain pardon from the mercy of god for the offence committed against him and are at the same time reconciled with the church, which they have wounded by their sins.&quot; this recovery of the ecclesial dimension — already present in the scholastic analysis as the res et sacramentum, but obscured by centuries of private practice — is the interpretive key to the 1973 reform. see  reconciliatio cum ecclesia  and  penance moc . 
+ anointing of the sick (lg 11) 
+ &quot;by the sacred anointing of the sick and the prayer of her priests, the whole church commends those who are ill to the suffering and glorified lord, that he may raise them up and save them. and indeed she exhorts them to contribute to the good of the people of god by freely uniting themselves to the passion and death of christ.&quot; note the two directions: the church acts for the sick, and the sick contribute to the church — making the sick person an agent rather than merely a recipient. see  union with the passion  and  anointing moc . 
+ holy orders (lg 10, 21, 28-29) 
+ lg 21 gives the council&#x27;s most important teaching on this sacrament: &quot;episcopal consecration confers the fullness of the sacrament of orders,&quot; together with the offices ">
+<h3 class="entry-title">Lumen Gentium (LG)</h3>
+
+<blockquote>
+<p>A note of the same name exists in the <strong>Vatican II course package</strong>: <em>Lumen Gentium — Vatican II course treatment</em>.</p>
+</blockquote>
+<h3 class="sec">LG 12</h3>
+<p>"the universal body of the faithful, who have received the anointing of the Holy One, cannot be mistaken in belief" — the <em>sensus fidelium</em>.</p>
+<p>Linked from: <em>Infallibility</em> · <em>Sensus Fidelium</em></p>
+<h3 class="sec">Ecclesiology (BTh course)</h3>
+<p>Vatican II's "Magna Charta" for the Church — see <em>Lit - Ecclesiology Unit 9</em> and <em>Lit - Ecclesiology Unit 10</em>.</p>
+<h3>LG 1</h3>
+<p>"[The Church is] a sign and instrument both of a very closely knit union with God and of the unity of the whole human race." — grounds <em>Church as Mystery</em> and the sacramental model in <em>Dulles&#x27;s Five Models of the Church</em>.</p>
+<h3>LG 8</h3>
+<p>"This Church, constituted and organised as a society in the present world, subsists in the Catholic Church." — grounds <em>Subsistit In</em> and <em>Three Principles of Unitatis Redintegratio</em>.</p>
+<h3>LG 14–16</h3>
+<p>The three concentric circles of belonging — see <em>Three Concentric Circles of Lumen Gentium 14–16</em>.</p>
+<h3>LG 21</h3>
+<p>"[Bishops] possess the fullness of the sacrament of Order." — grounds <em>Three Conciliar Arguments for Episcopal Collegiality</em>.</p>
+<h3>LG 23, 26</h3>
+<p>The local church as full realization of the Church of Christ — grounds <em>Communio Ecclesiology</em>.</p>
+<p>Linked from: <em>Church as Mystery</em> · <em>Imperfect Communion</em> · <em>Communio Ecclesiology</em> · <em>Power of Orders</em> · <em>Ekklesia</em></p>
+<h3>The Nota Praevia</h3>
+<p>Chapter 3 (on episcopal collegiality) carries the Preliminary Explanatory Note Paul VI ordered attached in November 1964 — see <em>Nota Praevia</em> — locking in the "moderate liberal" reading of collegiality against both conservative and extreme-progressive interpretations.</p>
+<h3>Baptism and Confirmation (LG 10-11)</h3>
+<p>LG 10-11 ground the common priesthood of the faithful in baptism, making baptismal dignity prior to office — the same structural logic as placing "People of God" before "Hierarchy." On Confirmation, LG 11 teaches that the faithful are thereby "more perfectly bound to the Church" and "enriched with a special strength of the Holy Spirit," and so "more strictly obliged to spread and defend the faith by word and deed." Together these are the theological basis of the entire lay apostolate. See <em>Sacraments MOC</em>.</p>
+<h3>The Eucharist and the Church (LG 3, 7, 11, 26)</h3>
+<p>LG 11 names the Eucharist "the source and summit of the Christian life." LG 3 and 7 present it as the sacrament by which the unity of the Church is both signified and brought about, and LG 26 affirms that in every legitimate local celebration Christ is present and the Church is gathered — the conciliar reception of de Lubac's thesis that the Eucharist makes the Church, and the basis of communion ecclesiology. See <em>Eucharist MOC</em>.</p>
+<h3>Penance (LG 11)</h3>
+<p>LG 11 teaches that those who approach the sacrament of penance "obtain pardon from the mercy of God for the offence committed against him and are at the same time reconciled with the Church, which they have wounded by their sins." This recovery of the ecclesial dimension — already present in the scholastic analysis as the res et sacramentum, but obscured by centuries of private practice — is the interpretive key to the 1973 reform. See <em>Reconciliatio cum Ecclesia</em> and <em>Penance MOC</em>.</p>
+<h3>Anointing of the Sick (LG 11)</h3>
+<p>"By the sacred anointing of the sick and the prayer of her priests, the whole Church commends those who are ill to the suffering and glorified Lord, that he may raise them up and save them. And indeed she exhorts them to contribute to the good of the People of God by freely uniting themselves to the passion and death of Christ." Note the two directions: the Church acts for the sick, and the sick contribute to the Church — making the sick person an agent rather than merely a recipient. See <em>Union with the Passion</em> and <em>Anointing MOC</em>.</p>
+<h3>Holy Orders (LG 10, 21, 28-29)</h3>
+<p>LG 21 gives the Council's most important teaching on this sacrament: "episcopal consecration confers the fullness of the sacrament of Orders," together with the offices of teaching and governing as well as sanctifying — settling the question left open by the scholastics and by Trent as to whether the episcopate is a distinct sacramental order. LG 10 teaches that the common priesthood of the faithful and the ministerial priesthood differ "in essence and not only in degree" (essentia et non gradu tantum) while being "ordered one to another." LG 28 presents presbyters as cooperators of the episcopal order forming one presbyterium with their bishop; LG 29 treats the diaconate as ordained "not unto the priesthood but unto the ministry" and restores the permanent diaconate. See <em>Fullness of the Sacrament of Orders</em> and <em>Holy Orders MOC</em>.</p>
+<h3>The Domestic Church (LG 11)</h3>
+<p>LG 11 calls the family the "domestic church" (ecclesia domestica), the parents being "by word and example the first heralds of the faith to their children" — recovering a patristic image found in Chrysostom and grounding the modern theology of the family as an ecclesial reality with its own mission rather than merely a unit the Church ministers to. Developed further at Familiaris Consortio 21. See <em>Ecclesia Domestica</em> and <em>Matrimony MOC</em>.</p>
+</article>
+<article class="entry" id="mediator-dei" data-search="Mediator Dei 
+ pius xii&#x27;s encyclical, the first devoted to the liturgy, endorsing the aims of the liturgical movement — participation, understanding, the liturgy as the worship of the whole mystical body — while restraining what it judged to be its archaeologising excesses. the immediate magisterial precursor of sacrosanctum concilium. 
+ linked from:  participatio actuosa  ·  eucharist moc  ">
+<h3 class="entry-title">Mediator Dei</h3>
+
+<p>Pius XII's encyclical, the first devoted to the liturgy, endorsing the aims of the Liturgical Movement — participation, understanding, the liturgy as the worship of the whole Mystical Body — while restraining what it judged to be its archaeologising excesses. The immediate magisterial precursor of Sacrosanctum Concilium.</p>
+<p>Linked from: <em>Participatio Actuosa</em> · <em>Eucharist MOC</em></p>
+</article>
+<article class="entry" id="ministeria-quaedam" data-search="Ministeria Quaedam 
+ paul vi&#x27;s letter of 15 august 1972 suppressing the minor orders and the subdiaconate in the latin church and replacing them with the lay instituted ministries of lector and acolyte — formally dismantling the medieval scheme of seven orders. spiritus domini (2021) later opened these ministries to women. 
+ linked from:  the seven orders  ·  holy orders moc  ">
+<h3 class="entry-title">Ministeria Quaedam</h3>
+
+<p>Paul VI's letter of 15 August 1972 suppressing the minor orders and the subdiaconate in the Latin Church and replacing them with the lay instituted ministries of lector and acolyte — formally dismantling the medieval scheme of seven orders. Spiritus Domini (2021) later opened these ministries to women.</p>
+<p>Linked from: <em>The Seven Orders</em> · <em>Holy Orders MOC</em></p>
+</article>
+<article class="entry" id="misericordia-dei" data-search="Misericordia Dei 
+ john paul ii&#x27;s letter restating that individual and integral confession and absolution is the sole ordinary means of reconciliation, tightening the conditions for general absolution (a large gathering or a great feast does not constitute grave necessity), requiring bishops to ensure adequate availability of confessors at published times, and affirming the penitent&#x27;s right to the confessional grille and anonymity. 
+ linked from:  general absolution  ·  sigillum confessionis  ·  penance moc  ">
+<h3 class="entry-title">Misericordia Dei</h3>
+
+<p>John Paul II's letter restating that individual and integral confession and absolution is the sole ordinary means of reconciliation, tightening the conditions for general absolution (a large gathering or a great feast does not constitute grave necessity), requiring bishops to ensure adequate availability of confessors at published times, and affirming the penitent's right to the confessional grille and anonymity.</p>
+<p>Linked from: <em>General Absolution</em> · <em>Sigillum Confessionis</em> · <em>Penance MOC</em></p>
+</article>
+<article class="entry" id="misericordia-et-misera" data-search="Misericordia et Misera 
+ francis&#x27;s letter concluding the jubilee of mercy, continuing the missionaries of mercy beyond the jubilee and extending to all priests permanently the faculty to absolve the sin of abortion — framing the sacrament principally in terms of divine mercy and pastoral accessibility. 
+ linked from:  missionaries of mercy  ·  penance moc  ">
+<h3 class="entry-title">Misericordia et Misera</h3>
+
+<p>Francis's letter concluding the Jubilee of Mercy, continuing the Missionaries of Mercy beyond the Jubilee and extending to all priests permanently the faculty to absolve the sin of abortion — framing the sacrament principally in terms of divine mercy and pastoral accessibility.</p>
+<p>Linked from: <em>Missionaries of Mercy</em> · <em>Penance MOC</em></p>
+</article>
+<article class="entry" id="mitis-iudex-dominus-iesus" data-search="Mitis Iudex Dominus Iesus 
+ francis&#x27;s reform of the process for declaring nullity, often overlooked but of great practical consequence. it abolished the requirement of a second concordant sentence before a declaration takes effect; introduced a brief process (processus brevior) in which the diocesan bishop himself judges cases where nullity is manifest and both parties consent; and directed that proceedings be free of charge where possible. annulment timelines fell substantially in many dioceses. 
+ linked from:  declaration of nullity  ·  matrimony moc  ">
+<h3 class="entry-title">Mitis Iudex Dominus Iesus</h3>
+
+<p>Francis's reform of the process for declaring nullity, often overlooked but of great practical consequence. It abolished the requirement of a second concordant sentence before a declaration takes effect; introduced a brief process (processus brevior) in which the diocesan bishop himself judges cases where nullity is manifest and both parties consent; and directed that proceedings be free of charge where possible. Annulment timelines fell substantially in many dioceses.</p>
+<p>Linked from: <em>Declaration of Nullity</em> · <em>Matrimony MOC</em></p>
+</article>
+<article class="entry" id="mysterium-fidei" data-search="Mysterium Fidei 
+ issued by paul vi on 3 september 1965, during the council, to check speculative drift. insists that transubstantiation names an ontological change and that transignification and transfinalization are inadequate if offered as substitutes rather than complements — because a change of meaning and purpose presupposes, and cannot replace, a change of being. also strongly affirms eucharistic worship outside mass. 
+ linked from:  transignification  ·  transfinalization  ·  eucharist moc  ">
+<h3 class="entry-title">Mysterium Fidei</h3>
+
+<p>Issued by Paul VI on 3 September 1965, during the Council, to check speculative drift. Insists that transubstantiation names an ontological change and that transignification and transfinalization are inadequate if offered as substitutes rather than complements — because a change of meaning and purpose presupposes, and cannot replace, a change of being. Also strongly affirms Eucharistic worship outside Mass.</p>
+<p>Linked from: <em>Transignification</em> · <em>Transfinalization</em> · <em>Eucharist MOC</em></p>
+</article>
+<article class="entry" id="ne-temere" data-search="Ne Temere 
+ pius x&#x27;s decree imposing canonical form universally on catholics, resolving the patchwork left by tametsi&#x27;s promulgation-dependent force. its stringency regarding mixed marriages — requiring promises from both parties concerning the catholic upbringing of children — became a significant source of friction with protestant communities, particularly in ireland and germany, and was substantially softened by matrimonia mixta (1970). 
+ linked from:  canonical form  ·  mixed marriage  ·  matrimony moc  ">
+<h3 class="entry-title">Ne Temere</h3>
+
+<p>Pius X's decree imposing canonical form universally on Catholics, resolving the patchwork left by Tametsi's promulgation-dependent force. Its stringency regarding mixed marriages — requiring promises from both parties concerning the Catholic upbringing of children — became a significant source of friction with Protestant communities, particularly in Ireland and Germany, and was substantially softened by Matrimonia Mixta (1970).</p>
+<p>Linked from: <em>Canonical Form</em> · <em>Mixed Marriage</em> · <em>Matrimony MOC</em></p>
+</article>
+<article class="entry" id="niceno-constantinopolitan-creed" data-search="Niceno-Constantinopolitan Creed 
+ the expanded 381 creed adds extensive material on the holy spirit in liturgical co-glorification language (&quot;who with the father and the son together is worshipped and glorified&quot;) rather than an explicit homoousios, following basil of caesarea&#x27;s pastoral reserve. the western filioque addition to its article on the spirit, absent from the original text, became a central catalyst of the great schism of 1054. 
+ linked from:  homoousios  ·  filioque  ·  trinity moc  ">
+<h3 class="entry-title">Niceno-Constantinopolitan Creed</h3>
+
+<p>The expanded 381 Creed adds extensive material on the Holy Spirit in liturgical co-glorification language ("who with the Father and the Son together is worshipped and glorified") rather than an explicit homoousios, following Basil of Caesarea's pastoral reserve. The Western filioque addition to its article on the Spirit, absent from the original text, became a central catalyst of the Great Schism of 1054.</p>
+<p>Linked from: <em>Homoousios</em> · <em>Filioque</em> · <em>Trinity MOC</em></p>
+</article>
+<article class="entry" id="ninety-five-theses" data-search="Ninety-Five Theses 
+ luther&#x27;s protest of 31 october 1517 against the preaching of the st peter&#x27;s indulgence. not at this stage a rejection of the sacrament or even of indulgences as such, but of their misuse. thesis 1 is the theological hinge: &quot;when our lord and master jesus christ said &#x27;repent,&#x27; he willed the entire life of believers to be one of repentance&quot; — exploiting the point that the vulgate&#x27;s poenitentiam agite narrows the greek metanoeite from lifelong conversion into a discrete ritual act. thesis 36 asserts that any truly repentant christian has full remission without indulgence letters; thesis 82 asks why the pope does not empty purgatory for love rather than for money. 
+ linked from:  metanoia  ·  indulgence  ·  penance moc  ">
+<h3 class="entry-title">Ninety-Five Theses</h3>
+
+<p>Luther's protest of 31 October 1517 against the preaching of the St Peter's indulgence. Not at this stage a rejection of the sacrament or even of indulgences as such, but of their misuse. Thesis 1 is the theological hinge: "When our Lord and Master Jesus Christ said 'Repent,' he willed the entire life of believers to be one of repentance" — exploiting the point that the Vulgate's poenitentiam agite narrows the Greek metanoeite from lifelong conversion into a discrete ritual act. Thesis 36 asserts that any truly repentant Christian has full remission without indulgence letters; Thesis 82 asks why the pope does not empty purgatory for love rather than for money.</p>
+<p>Linked from: <em>Metanoia</em> · <em>Indulgence</em> · <em>Penance MOC</em></p>
+</article>
+<article class="entry" id="nostra-aetate" data-search="Nostra Aetate (NA) 
+ 
+ a note of the same name exists in the  vatican ii course package :  nostra aetate — vatican ii course treatment . 
+ 
+ na 2 
+ other religions &quot;reflect a ray of that truth which enlightens all.&quot; 
+ linked from:  other religions are theological resources, yet christ remains the source of salvation for all  ·  additional resources of theology  
+ ecclesiology (bth course) 
+ grounds paradigm shift 6 in unit 8: from &quot;christianity as the one true religion&quot; to &quot;many religions&quot; possessing &quot;rays of that truth which enlightens all.&quot; see  nine paradigm shifts of vatican ii . 
+ origins and patrimonium spirituale 
+ began as de judaeis, a statement on antisemitism commissioned by john xxiii from cardinal bea; expanded under political pressure to address islam, hinduism, and buddhism. uses the careful term patrimonium spirituale (&quot;spiritual patrimony&quot;) to name the unique bond with judaism, distinct from its language toward other religions. ">
+<h3 class="entry-title">Nostra Aetate (NA)</h3>
+
+<blockquote>
+<p>A note of the same name exists in the <strong>Vatican II course package</strong>: <em>Nostra Aetate — Vatican II course treatment</em>.</p>
+</blockquote>
+<h3 class="sec">NA 2</h3>
+<p>Other religions "reflect a ray of that truth which enlightens all."</p>
+<p>Linked from: <em>Other religions are theological resources, yet Christ remains the source of salvation for all</em> · <em>Additional Resources of Theology</em></p>
+<h3 class="sec">Ecclesiology (BTh course)</h3>
+<p>Grounds paradigm shift 6 in Unit 8: from "Christianity as the one true religion" to "Many religions" possessing "rays of that Truth which enlightens all." See <em>Nine Paradigm Shifts of Vatican II</em>.</p>
+<h3>Origins and patrimonium spirituale</h3>
+<p>Began as De Judaeis, a statement on antisemitism commissioned by John XXIII from Cardinal Bea; expanded under political pressure to address Islam, Hinduism, and Buddhism. Uses the careful term patrimonium spirituale ("spiritual patrimony") to name the unique bond with Judaism, distinct from its language toward other religions.</p>
+</article>
+<article class="entry" id="omnium-in-mentem" data-search="Omnium in Mentem 
+ benedict xvi&#x27;s letter amending canons 1008-1009 to distinguish the diaconate from the priesthood more precisely: deacons are ordained to serve the people of god in the ministries of the liturgy, the word, and charity, and the phrase in persona christi capitis is reserved to bishops and priests. a canonical clarification with real theological weight for the ongoing debate about the diaconate&#x27;s identity. 
+ linked from:  in persona christi capitis  ·  non ad sacerdotium sed ad ministerium  ·  holy orders moc  ">
+<h3 class="entry-title">Omnium in Mentem</h3>
+
+<p>Benedict XVI's letter amending canons 1008-1009 to distinguish the diaconate from the priesthood more precisely: deacons are ordained to serve the People of God in the ministries of the liturgy, the word, and charity, and the phrase in persona Christi Capitis is reserved to bishops and priests. A canonical clarification with real theological weight for the ongoing debate about the diaconate's identity.</p>
+<p>Linked from: <em>In Persona Christi Capitis</em> · <em>Non ad Sacerdotium sed ad Ministerium</em> · <em>Holy Orders MOC</em></p>
+</article>
+<article class="entry" id="optatam-totius" data-search="Optatam Totius 
+ 
+ a note of the same name exists in the  vatican ii course package :  optatam totius — vatican ii course treatment . 
+ 
+ holistic formation integrating philosophy/theology with scripture, pastoral experience, and psychological evaluation; decentralized seminary design to national episcopal conferences. 
+ linked from:  vatican ii moc  
+ seminary formation 
+ the decree&#x27;s programme of holistic formation — integrating philosophy and theology with scripture, pastoral experience, and psychological evaluation, and decentralising seminary design to national episcopal conferences — is a direct response to the enclosed model produced by trent&#x27;s seminary decree of 1563. its trajectory continues in pastores dabo vobis (1992) and the 2016 ratio fundamentalis. see  pastores dabo vobis four dimensions  and  holy orders moc . ">
+<h3 class="entry-title">Optatam Totius</h3>
+
+<blockquote>
+<p>A note of the same name exists in the <strong>Vatican II course package</strong>: <em>Optatam Totius — Vatican II course treatment</em>.</p>
+</blockquote>
+<p>Holistic formation integrating philosophy/theology with Scripture, pastoral experience, and psychological evaluation; decentralized seminary design to national episcopal conferences.</p>
+<p>Linked from: <em>Vatican II MOC</em></p>
+<h3>Seminary Formation</h3>
+<p>The decree's programme of holistic formation — integrating philosophy and theology with Scripture, pastoral experience, and psychological evaluation, and decentralising seminary design to national episcopal conferences — is a direct response to the enclosed model produced by Trent's seminary decree of 1563. Its trajectory continues in Pastores Dabo Vobis (1992) and the 2016 Ratio Fundamentalis. See <em>Pastores Dabo Vobis Four Dimensions</em> and <em>Holy Orders MOC</em>.</p>
+</article>
+<article class="entry" id="ordinatio-sacerdotalis" data-search="Ordinatio Sacerdotalis 
+ john paul ii&#x27;s letter of 22 may 1994 declaring that &quot;the church has no authority whatsoever to confer priestly ordination on women and that this judgement is to be definitively held by all the church&#x27;s faithful.&quot; a 1995 cdf responsum stated that the teaching belongs to the deposit of faith. the letter addresses priestly ordination specifically and does not treat the diaconate, which is why the diaconal question has remained open and subject to papal study commissions in 2016 and 2020. 
+ linked from:  ordinatio sacerdotalis  ·  women deacons question  ·  holy orders moc  ">
+<h3 class="entry-title">Ordinatio Sacerdotalis</h3>
+
+<p>John Paul II's letter of 22 May 1994 declaring that "the Church has no authority whatsoever to confer priestly ordination on women and that this judgement is to be definitively held by all the Church's faithful." A 1995 CDF responsum stated that the teaching belongs to the deposit of faith. The letter addresses priestly ordination specifically and does not treat the diaconate, which is why the diaconal question has remained open and subject to papal study commissions in 2016 and 2020.</p>
+<p>Linked from: <a href="#ordinatio-sacerdotalis">Ordinatio Sacerdotalis</a> · <em>Women Deacons Question</em> · <em>Holy Orders MOC</em></p>
+</article>
+<article class="entry" id="ordo-paenitentiae" data-search="Ordo Paenitentiae 
+ promulgated 2 december 1973 in fulfilment of sc 72. provides three forms: rite i for individual penitents (the ordinary form), rite ii for communal celebration with individual confession and absolution, and rite iii for communal celebration with general absolution, strictly restricted. restores to rite i the elements of welcome, a reading from scripture, the act of contrition, and a proclamation of praise. its new trinitarian formula of absolution recovers the father&#x27;s initiative, the paschal mystery, the mission of the spirit, and the ministry of the church, retaining the medieval ego te absolvo only as its conclusion. 
+ linked from:  reconciliatio cum ecclesia  ·  general absolution  ·  penance moc  ">
+<h3 class="entry-title">Ordo Paenitentiae</h3>
+
+<p>Promulgated 2 December 1973 in fulfilment of SC 72. Provides three forms: Rite I for individual penitents (the ordinary form), Rite II for communal celebration with individual confession and absolution, and Rite III for communal celebration with general absolution, strictly restricted. Restores to Rite I the elements of welcome, a reading from Scripture, the act of contrition, and a proclamation of praise. Its new Trinitarian formula of absolution recovers the Father's initiative, the paschal mystery, the mission of the Spirit, and the ministry of the Church, retaining the medieval Ego te absolvo only as its conclusion.</p>
+<p>Linked from: <em>Reconciliatio cum Ecclesia</em> · <em>General Absolution</em> · <em>Penance MOC</em></p>
+</article>
+<article class="entry" id="orientalium-ecclesiarum" data-search="Orientalium Ecclesiarum 
+ 
+ a note of the same name exists in the  vatican ii course package :  orientalium ecclesiarum — vatican ii course treatment . 
+ 
+ eastern catholic communities are autonomous, equal, self-governing churches, not merely different rites. relaxed communicatio in sacris with eastern orthodox christians. 
+ linked from:  communicatio in sacris  ">
+<h3 class="entry-title">Orientalium Ecclesiarum</h3>
+
+<blockquote>
+<p>A note of the same name exists in the <strong>Vatican II course package</strong>: <em>Orientalium Ecclesiarum — Vatican II course treatment</em>.</p>
+</blockquote>
+<p>Eastern Catholic communities are autonomous, equal, self-governing churches, not merely different rites. Relaxed communicatio in sacris with Eastern Orthodox Christians.</p>
+<p>Linked from: <em>Communicatio in Sacris</em></p>
+</article>
+<article class="entry" id="pastor-aeternus" data-search="Pastor Aeternus 
+ ch. 3 
+ &quot;defines the pope&#x27;s &quot;full, supreme, and universal power of jurisdiction&quot; — ordinary and immediate over every particular church and every pastor and faithful.&quot; 
+ ch. 4 
+ &quot;defines papal infallibility under four conditions: speaking ex cathedra, as supreme pastor, on faith or morals, intending to bind the whole church.&quot; 
+ linked from:  threefold ministry  ·  ex cathedra  ">
+<h3 class="entry-title">Pastor Aeternus</h3>
+
+<h3 class="sec">ch. 3</h3>
+<p>"Defines the Pope's "full, supreme, and universal power of jurisdiction" — ordinary and immediate over every particular church and every pastor and faithful."</p>
+<h3 class="sec">ch. 4</h3>
+<p>"Defines papal infallibility under four conditions: speaking ex cathedra, as supreme pastor, on faith or morals, intending to bind the whole Church."</p>
+<p>Linked from: <em>Threefold Ministry</em> · <em>Ex Cathedra</em></p>
+</article>
+<article class="entry" id="pastoral-care-of-the-sick" data-search="Pastoral Care of the Sick 
+ the reformed rite, whose english title — pastoral care of the sick: rites of anointing and viaticum — itself signals the reform&#x27;s intent that the sacrament belongs within an ongoing pastoral care rather than a single emergency intervention. provides for visits to the sick, communion of the sick, anointing within or outside mass and individually or communally, viaticum, the continuous rite for the dying mandated by sc 74, and the commendation of the dying with prayers for family and community as well as for the priest. 
+ linked from:  continuous rite  ·  commendation of the dying  ·  anointing moc  ">
+<h3 class="entry-title">Pastoral Care of the Sick</h3>
+
+<p>The reformed rite, whose English title — Pastoral Care of the Sick: Rites of Anointing and Viaticum — itself signals the reform's intent that the sacrament belongs within an ongoing pastoral care rather than a single emergency intervention. Provides for visits to the sick, communion of the sick, anointing within or outside Mass and individually or communally, viaticum, the continuous rite for the dying mandated by SC 74, and the commendation of the dying with prayers for family and community as well as for the priest.</p>
+<p>Linked from: <em>Continuous Rite</em> · <em>Commendation of the Dying</em> · <em>Anointing MOC</em></p>
+</article>
+<article class="entry" id="pastores-dabo-vobis" data-search="Pastores Dabo Vobis 
+ john paul ii&#x27;s exhortation on priestly formation following the 1990 synod. its lasting contribution is the framework of four dimensions of formation — human, spiritual, intellectual, and pastoral — now standard in every seminary programme worldwide, together with its insistence that the human dimension is the necessary foundation of all the others. 
+ linked from:  pastores dabo vobis four dimensions  ·  ratio fundamentalis  ·  holy orders moc  ">
+<h3 class="entry-title">Pastores Dabo Vobis</h3>
+
+<p>John Paul II's exhortation on priestly formation following the 1990 Synod. Its lasting contribution is the framework of four dimensions of formation — human, spiritual, intellectual, and pastoral — now standard in every seminary programme worldwide, together with its insistence that the human dimension is the necessary foundation of all the others.</p>
+<p>Linked from: <em>Pastores Dabo Vobis Four Dimensions</em> · <em>Ratio Fundamentalis</em> · <em>Holy Orders MOC</em></p>
+</article>
+<article class="entry" id="perfectae-caritatis" data-search="Perfectae Caritatis 
+ 
+ a note of the same name exists in the  vatican ii course package :  perfectae caritatis — vatican ii course treatment . 
+ 
+ combines ressourcement (return to each order&#x27;s founding charism) with aggiornamento. received over 14,000 amendments; women&#x27;s religious communities implemented it far beyond what the hierarchy anticipated. 
+ linked from:  ressourcement  ·  aggiornamento  ">
+<h3 class="entry-title">Perfectae Caritatis</h3>
+
+<blockquote>
+<p>A note of the same name exists in the <strong>Vatican II course package</strong>: <em>Perfectae Caritatis — Vatican II course treatment</em>.</p>
+</blockquote>
+<p>Combines ressourcement (return to each order's founding charism) with aggiornamento. Received over 14,000 amendments; women's religious communities implemented it far beyond what the hierarchy anticipated.</p>
+<p>Linked from: <em>Ressourcement</em> · <em>Aggiornamento</em></p>
+</article>
+<article class="entry" id="pontificalis-romani" data-search="Pontificalis Romani 
+ paul vi&#x27;s constitution of 18 june 1968 promulgating the revised rites of ordination for deacons, priests, and bishops, with new consecratory prayers. the prayer for episcopal ordination is drawn substantially from the anaphora-era ordination prayer of the apostolic tradition — an instance of ressourcement reaching behind the medieval west to the third century, parallel to the confirmation and anointing reforms. 
+ linked from:  imposition of hands  ·  holy orders moc  ">
+<h3 class="entry-title">Pontificalis Romani</h3>
+
+<p>Paul VI's constitution of 18 June 1968 promulgating the revised rites of ordination for deacons, priests, and bishops, with new consecratory prayers. The prayer for episcopal ordination is drawn substantially from the anaphora-era ordination prayer of the Apostolic Tradition — an instance of ressourcement reaching behind the medieval West to the third century, parallel to the confirmation and anointing reforms.</p>
+<p>Linked from: <em>Imposition of Hands</em> · <em>Holy Orders MOC</em></p>
+</article>
+<article class="entry" id="presbyterorum-ordinis" data-search="Presbyterorum Ordinis 
+ 
+ a note of the same name exists in the  vatican ii course package :  presbyterorum ordinis — vatican ii course treatment . 
+ 
+ shifts from an isolated &quot;cultic model&quot; of priesthood to a relational &quot;servant leader&quot; model embedded in a web of relationships with bishop, fellow priests, and laity. 
+ linked from:  vatican ii moc  
+ theology of the presbyterate 
+ the decree&#x27;s shift from an isolated cultic model of priesthood to a relational servant-leader model — the priest embedded in a web of relationships with his bishop, his brother priests in the presbyterium, and the laity — is the practical working-out of lg 28. po 4 gives primacy to the ministry of the word, which stands in unresolved tension with centuries of practice giving primacy to the altar: a live question in the contemporary theology of the presbyterate. see  presbyterium  and  holy orders moc . ">
+<h3 class="entry-title">Presbyterorum Ordinis</h3>
+
+<blockquote>
+<p>A note of the same name exists in the <strong>Vatican II course package</strong>: <em>Presbyterorum Ordinis — Vatican II course treatment</em>.</p>
+</blockquote>
+<p>Shifts from an isolated "cultic model" of priesthood to a relational "servant leader" model embedded in a web of relationships with bishop, fellow priests, and laity.</p>
+<p>Linked from: <em>Vatican II MOC</em></p>
+<h3>Theology of the Presbyterate</h3>
+<p>The decree's shift from an isolated cultic model of priesthood to a relational servant-leader model — the priest embedded in a web of relationships with his bishop, his brother priests in the presbyterium, and the laity — is the practical working-out of LG 28. PO 4 gives primacy to the ministry of the word, which stands in unresolved tension with centuries of practice giving primacy to the altar: a live question in the contemporary theology of the presbyterate. See <em>Presbyterium</em> and <em>Holy Orders MOC</em>.</p>
+</article>
+<article class="entry" id="quam-singulari" data-search="Quam Singulari 
+ issued 8 august 1910 under pius x, lowering the age of first communion to the age of discretion (about seven) and ending the practice of withholding the eucharist from children until twelve or fourteen. a magnificent pastoral reform with a large unintended consequence: because confirmation remained tied to episcopal visitation schedules, the ancient order of initiation was inverted in the west from baptism-confirmation-eucharist to baptism-eucharist-confirmation. 
+ linked from:  quam singulari anomaly  ·  restored order  ·  sacraments moc  ">
+<h3 class="entry-title">Quam Singulari</h3>
+
+<p>Issued 8 August 1910 under Pius X, lowering the age of First Communion to the age of discretion (about seven) and ending the practice of withholding the Eucharist from children until twelve or fourteen. A magnificent pastoral reform with a large unintended consequence: because Confirmation remained tied to episcopal visitation schedules, the ancient order of initiation was inverted in the West from Baptism-Confirmation-Eucharist to Baptism-Eucharist-Confirmation.</p>
+<p>Linked from: <em>Quam Singulari Anomaly</em> · <em>Restored Order</em> · <em>Sacraments MOC</em></p>
+</article>
+<article class="entry" id="quo-primum" data-search="Quo Primum 
+ pius v&#x27;s bull promulgating the standardised roman missal for the whole latin church, excepting rites of over two hundred years&#x27; standing such as the ambrosian and dominican. it produced four centuries of near-total liturgical uniformity in the west — the very uniformity sacrosanctum concilium would later relativise. 
+ linked from:  roman canon  ·  eucharist moc  ">
+<h3 class="entry-title">Quo Primum</h3>
+
+<p>Pius V's bull promulgating the standardised Roman Missal for the whole Latin Church, excepting rites of over two hundred years' standing such as the Ambrosian and Dominican. It produced four centuries of near-total liturgical uniformity in the West — the very uniformity Sacrosanctum Concilium would later relativise.</p>
+<p>Linked from: <em>Roman Canon</em> · <em>Eucharist MOC</em></p>
+</article>
+<article class="entry" id="reconciliatio-et-paenitentia" data-search="Reconciliatio et Paenitentia 
+ john paul ii&#x27;s exhortation following the 1983 synod on reconciliation. notable for §16&#x27;s careful analogical treatment of social sin, which accepts the usage — sin has genuine structural and communal dimensions — while insisting that sin remains ultimately a personal act, so that talk of sinful structures must not dissolve individual responsibility. 
+ linked from:  social sin  ·  penance moc  ">
+<h3 class="entry-title">Reconciliatio et Paenitentia</h3>
+
+<p>John Paul II's exhortation following the 1983 Synod on reconciliation. Notable for §16's careful analogical treatment of social sin, which accepts the usage — sin has genuine structural and communal dimensions — while insisting that sin remains ultimately a personal act, so that talk of sinful structures must not dissolve individual responsibility.</p>
+<p>Linked from: <em>Social Sin</em> · <em>Penance MOC</em></p>
+</article>
+<article class="entry" id="redemptionis-sacramentum" data-search="Redemptionis Sacramentum 
+ instruction of the congregation for divine worship on certain matters to be observed or avoided regarding the most holy eucharist — a disciplinary text addressing liturgical abuses, the proper role of extraordinary ministers, and the rights of the faithful to a liturgy celebrated according to the approved books. 
+ linked from:  ars celebrandi  ·  eucharist moc  ">
+<h3 class="entry-title">Redemptionis Sacramentum</h3>
+
+<p>Instruction of the Congregation for Divine Worship on certain matters to be observed or avoided regarding the Most Holy Eucharist — a disciplinary text addressing liturgical abuses, the proper role of extraordinary ministers, and the rights of the faithful to a liturgy celebrated according to the approved books.</p>
+<p>Linked from: <em>Ars Celebrandi</em> · <em>Eucharist MOC</em></p>
+</article>
+<article class="entry" id="rerum-novarum" data-search="Rerum Novarum (1891) 
+ leo xiii&#x27;s encyclical on capital and labour —  at heart a pastoral intervention to protect workers . 
+ the core argument 
+  just wages → savings → wider ownership of property → the gap between classes bridged → increased productivity → civil society renovated by christianity.  property, not class struggle, is the bridge. 
+ where it came from 
+ not invented in rome: it takes up   wilhelm von ketteler  &#x27;s programme (state limits on working hours, sunday rest, factory inspection), the practice of   leon harmel   and the legislative work of albert de mun. see  social catholicism . 
+ reception and effect 
+ 
+ first episcopal response: victor-joseph doutreloux of liège. 
+ inspired harmel&#x27;s workers&#x27; study groups and the  christian worker congress (1894–1900) , renamed the  congress of  christian democracy   in 1896, and a trade union of 600,000 by 1899. 
+ deep impact on  u.s. catholic involvement in the labour movement ; stressed the ethical obligation to pay a  &quot;living wage.&quot;  
+  no pope before leo had produced such a consistent message, and every pope since has had to address the &quot;social question.&quot;  
+ 
+ connected 
+  leo xiii  ·  social catholicism  ·  christian democracy  ·  gaudium et spes  ·  praxis  ·  option for the poor  
+  see  06 - socialism, communism and the vatican response   ">
+<h3 class="entry-title">Rerum Novarum (1891)</h3>
+
+<p>Leo XIII's encyclical on capital and labour — <strong>at heart a pastoral intervention to protect workers</strong>.</p>
+<h3 class="sec">The core argument</h3>
+<p><strong>Just wages → savings → wider ownership of property → the gap between classes bridged → increased productivity → civil society renovated by Christianity.</strong> Property, not class struggle, is the bridge.</p>
+<h3 class="sec">Where it came from</h3>
+<p>Not invented in Rome: it takes up <strong><em>Wilhelm von Ketteler</em></strong>'s programme (state limits on working hours, Sunday rest, factory inspection), the practice of <strong><em>Leon Harmel</em></strong> and the legislative work of Albert de Mun. See <em>Social Catholicism</em>.</p>
+<h3 class="sec">Reception and effect</h3>
+<ul>
+<li>First episcopal response: Victor-Joseph Doutreloux of Liège.</li>
+<li>Inspired Harmel's workers' study groups and the <strong>Christian Worker Congress (1894–1900)</strong>, renamed the <strong>Congress of <em>Christian Democracy</em></strong> in 1896, and a trade union of 600,000 by 1899.</li>
+<li>Deep impact on <strong>U.S. Catholic involvement in the labour movement</strong>; stressed the ethical obligation to pay a <strong>"living wage."</strong></li>
+<li><strong>No pope before Leo had produced such a consistent message, and every pope since has had to address the "social question."</strong></li>
+</ul>
+<h3 class="sec">Connected</h3>
+<p><em>Leo XIII</em> · <em>Social Catholicism</em> · <em>Christian Democracy</em> · <a href="#gaudium-et-spes">Gaudium et Spes</a> · <em>Praxis</em> · <em>Option for the Poor</em></p>
+<p><em>See <em>06 - Socialism, Communism and the Vatican Response</em></em></p>
+</article>
+<article class="entry" id="rite-of-baptism-for-children" data-search="Rite of Baptism for Children 
+ ordo baptismi parvulorum, promulgated 15 may 1969 in fulfilment of sc 67-69 — the first rite in the church&#x27;s history composed specifically for infants rather than adapted from an adult rite, giving real liturgical roles to parents alongside godparents. 
+ linked from:  ephphetha  ·  sacraments moc  ">
+<h3 class="entry-title">Rite of Baptism for Children</h3>
+
+<p>Ordo Baptismi Parvulorum, promulgated 15 May 1969 in fulfilment of SC 67-69 — the first rite in the Church's history composed specifically for infants rather than adapted from an adult rite, giving real liturgical roles to parents alongside godparents.</p>
+<p>Linked from: <em>Ephphetha</em> · <em>Sacraments MOC</em></p>
+</article>
+<article class="entry" id="rite-of-christian-initiation-of-adults" data-search="Rite of Christian Initiation of Adults 
+ ordo initiationis christianae adultorum, promulgated 6 january 1972 in fulfilment of sc 64. restores the patristic catechumenate in four periods punctuated by three threshold rites: precatechumenate (ending in the rite of acceptance), catechumenate (ending in the rite of election on lent i), purification and enlightenment (lenten scrutinies, ending in the sacraments of initiation at the easter vigil), and mystagogy (easter to pentecost). crucially it restores the ancient unity: for adults, baptism, confirmation, and eucharist are celebrated together, in that order, by the same minister. 
+ linked from:  rite of election  ·  scrutinies  ·  mystagogia  ·  sacraments moc  ">
+<h3 class="entry-title">Rite of Christian Initiation of Adults</h3>
+
+<p>Ordo Initiationis Christianae Adultorum, promulgated 6 January 1972 in fulfilment of SC 64. Restores the patristic catechumenate in four periods punctuated by three threshold rites: Precatechumenate (ending in the Rite of Acceptance), Catechumenate (ending in the Rite of Election on Lent I), Purification and Enlightenment (Lenten scrutinies, ending in the Sacraments of Initiation at the Easter Vigil), and Mystagogy (Easter to Pentecost). Crucially it restores the ancient unity: for adults, Baptism, Confirmation, and Eucharist are celebrated together, in that order, by the same minister.</p>
+<p>Linked from: <em>Rite of Election</em> · <em>Scrutinies</em> · <em>Mystagogia</em> · <em>Sacraments MOC</em></p>
+</article>
+<article class="entry" id="rite-of-marriage" data-search="Rite of Marriage 
+ promulgated in 1969 and revised in 1991 in fulfilment of sacrosanctum concilium 77-78. restores a full liturgy of the word, recovers a fuller nuptial blessing with ancient trinitarian and epicletic language, provides for celebration within or outside mass, and permits adaptation to local custom — a provision of real significance for the indian context, where the reception of the couple, the tying of the thali, and family rituals may be integrated into the rite. 
+ linked from:  foedus  ·  matrimony moc  ">
+<h3 class="entry-title">Rite of Marriage</h3>
+
+<p>Promulgated in 1969 and revised in 1991 in fulfilment of Sacrosanctum Concilium 77-78. Restores a full Liturgy of the Word, recovers a fuller nuptial blessing with ancient Trinitarian and epicletic language, provides for celebration within or outside Mass, and permits adaptation to local custom — a provision of real significance for the Indian context, where the reception of the couple, the tying of the thali, and family rituals may be integrated into the rite.</p>
+<p>Linked from: <em>Foedus</em> · <em>Matrimony MOC</em></p>
+</article>
+<article class="entry" id="roman-missal-of-paul-vi" data-search="Roman Missal of Paul VI 
+ promulgated 1969 (latin editio typica 1970) in implementation of sacrosanctum concilium. principal changes: the vernacular; a three-year sunday lectionary greatly expanding the scripture proclaimed; four eucharistic prayers replacing the sole roman canon, with prayer ii modelled on the anaphora of the apostolic tradition and prayer iv on antiochene sources; a clearly articulated epiclesis, split into consecratory and communion invocations; restoration of the prayer of the faithful and of concelebration; and simplification of medieval accretions. 
+ linked from:  anaphora  ·  epiclesis  ·  eucharist moc  ">
+<h3 class="entry-title">Roman Missal of Paul VI</h3>
+
+<p>Promulgated 1969 (Latin editio typica 1970) in implementation of Sacrosanctum Concilium. Principal changes: the vernacular; a three-year Sunday lectionary greatly expanding the Scripture proclaimed; four Eucharistic Prayers replacing the sole Roman Canon, with Prayer II modelled on the anaphora of the Apostolic Tradition and Prayer IV on Antiochene sources; a clearly articulated epiclesis, split into consecratory and communion invocations; restoration of the Prayer of the Faithful and of concelebration; and simplification of medieval accretions.</p>
+<p>Linked from: <em>Anaphora</em> · <em>Epiclesis</em> · <em>Eucharist MOC</em></p>
+</article>
+<article class="entry" id="sacram-unctionem-infirmorum" data-search="Sacram Unctionem Infirmorum 
+ paul vi&#x27;s constitution of 30 november 1972 promulgating the reformed rite. reduces the essential rite from the medieval anointing of the five senses, loins, and feet to the anointing of the forehead and hands, with a single anointing sufficing in necessity. permits another plant oil where olive oil is unavailable. gives the new form: &quot;through this holy anointing may the lord in his love and mercy help you with the grace of the holy spirit. may the lord who frees you from sin save you and raise you up&quot; — the second sentence closely tracking james 5:15&#x27;s sōsei and egerei, so that the reform&#x27;s method was ressourcement to the scriptural text. 
+ linked from:  sacram unctionem formula  ·  anointing of forehead and hands  ·  anointing moc  ">
+<h3 class="entry-title">Sacram Unctionem Infirmorum</h3>
+
+<p>Paul VI's constitution of 30 November 1972 promulgating the reformed rite. Reduces the essential rite from the medieval anointing of the five senses, loins, and feet to the anointing of the forehead and hands, with a single anointing sufficing in necessity. Permits another plant oil where olive oil is unavailable. Gives the new form: "Through this holy anointing may the Lord in his love and mercy help you with the grace of the Holy Spirit. May the Lord who frees you from sin save you and raise you up" — the second sentence closely tracking James 5:15's sōsei and egerei, so that the reform's method was ressourcement to the scriptural text.</p>
+<p>Linked from: <em>Sacram Unctionem Formula</em> · <em>Anointing of Forehead and Hands</em> · <em>Anointing MOC</em></p>
+</article>
+<article class="entry" id="sacramentum-caritatis" data-search="Sacramentum Caritatis 
+ benedict xvi&#x27;s exhortation following the 2005 synod on the eucharist, structured around a threefold scheme — the eucharist as mysterium credendum (to be believed), celebrandum (to be celebrated), and vivendum (to be lived). develops the notion of ars celebrandi as the manner of celebration that fosters authentic participation, distinguished from both rubricism and improvisation. 
+ linked from:  ars celebrandi  ·  eucharist moc  ">
+<h3 class="entry-title">Sacramentum Caritatis</h3>
+
+<p>Benedict XVI's exhortation following the 2005 Synod on the Eucharist, structured around a threefold scheme — the Eucharist as mysterium credendum (to be believed), celebrandum (to be celebrated), and vivendum (to be lived). Develops the notion of ars celebrandi as the manner of celebration that fosters authentic participation, distinguished from both rubricism and improvisation.</p>
+<p>Linked from: <em>Ars Celebrandi</em> · <em>Eucharist MOC</em></p>
+</article>
+<article class="entry" id="sacramentum-ordinis" data-search="Sacramentum Ordinis 
+ pius xii&#x27;s constitution of 30 november 1947 definitively settling the matter and form of holy orders. declares by apostolic authority that the matter of the ordination of deacons, priests, and bishops is the imposition of hands alone, and that the form consists of the words of the consecratory preface determining the effect, specifying which words in each rite. the traditio instrumentorum, which florence (1439) had taught to be the matter, is declared not required for validity — a correction of an earlier magisterial text in light of historical evidence, running toward the more ancient and ecumenically shared practice, and one which incidentally weakened a pillar of apostolicae curae. 
+ linked from:  imposition of hands  ·  traditio instrumentorum  ·  holy orders moc  ">
+<h3 class="entry-title">Sacramentum Ordinis</h3>
+
+<p>Pius XII's constitution of 30 November 1947 definitively settling the matter and form of Holy Orders. Declares by apostolic authority that the matter of the ordination of deacons, priests, and bishops is the imposition of hands alone, and that the form consists of the words of the consecratory preface determining the effect, specifying which words in each rite. The traditio instrumentorum, which Florence (1439) had taught to be the matter, is declared not required for validity — a correction of an earlier magisterial text in light of historical evidence, running toward the more ancient and ecumenically shared practice, and one which incidentally weakened a pillar of Apostolicae Curae.</p>
+<p>Linked from: <em>Imposition of Hands</em> · <em>Traditio Instrumentorum</em> · <em>Holy Orders MOC</em></p>
+</article>
+<article class="entry" id="sacrosanctum-concilium" data-search="Sacrosanctum Concilium 
+ 
+ a note of the same name exists in the  vatican ii course package :  sacrosanctum concilium — vatican ii course treatment . 
+ 
+ the first document debated and approved. urges active, conscious, full participation of the faithful; introduces the vernacular; simplifies rites; moves from scholastic terminology toward the wider patristic tradition (ressourcement). 
+ linked from:  aggiornamento  ·  see-judge-act  
+ christian initiation (sc 64-70) 
+ sc 64 orders that &quot;the catechumenate for adults, comprising several distinct steps, is to be restored&quot; — fulfilled by the 1972 rcia. sc 65-66 revise both the adult and simple rites and permit elements of local initiation practice to be admitted, a direct opening for inculturation. sc 67-69 revise the infant rite &quot;to reflect the fact that they are infants&quot; (the 1969 rite of baptism for children). sc 71 orders the revision of the rite of confirmation so that its connection with the whole of christian initiation appears more clearly. see  sacraments moc . 
+ the eucharist (sc 7, 10, 14, 47-57) 
+ sc 7 teaches that christ is present in the liturgy in several modes — in the minister, in the eucharistic species, in the sacraments, in his word, and in the praying and singing assembly — situating the eucharistic presence within a broader theology of presence without diminishing it. sc 10 names the liturgy the summit toward which the church&#x27;s activity tends and the fount from which her power flows. sc 14 makes participatio actuosa &quot;the aim to be considered before all else.&quot; sc 47-48 treat the eucharist as paschal banquet and sacrifice in which the faithful are not to be &quot;strangers or silent spectators&quot;; sc 55 asks that they receive hosts consecrated at that mass and permits both kinds in defined cases; sc 56 declares word and eucharist &quot;one single act of worship&quot;; sc 57 restores concelebration. see  eucharist moc . 
+ penance (sc 72) 
+ sc 72 is brief and consequential: &quot;the rite and formulas for the sacrament of penance are to be revised so that they more clearly express both the nature and the effect of the sacrament.&quot; fulfilled by the ordo paenitentiae of 1973, whose three rites and new trinitarian formula of absolution recover the ecclesial dimension taught at lg 11. see  penance moc . 
+ anointing of the sick (sc 73-75) 
+ sc 73 is the decisive text: &quot;&#x27;extreme unction,&#x27; which may also and more fittingly (aptius) be called &#x27;anointing of the sick,&#x27; is not a sacrament for those only who are at the point of death. hence, as soon as any one of the faithful begins to be in danger of death from sickness or old age, the fitting time for him to receive this sacrament has certainly already arrived.&quot; three moves in two sentences: the name changes and the council judges the new name more fitting; the restriction to the dying is denied; and the threshold is set at the beginning of danger, from sickness or old age. sc 74 orders a continuous rite of penance, anointing, and viaticum; sc 75 directs that the number of anointings be adapted and the prayers revised. see  anointing moc . ">
+<h3 class="entry-title">Sacrosanctum Concilium</h3>
+
+<blockquote>
+<p>A note of the same name exists in the <strong>Vatican II course package</strong>: <em>Sacrosanctum Concilium — Vatican II course treatment</em>.</p>
+</blockquote>
+<p>The first document debated and approved. Urges active, conscious, full participation of the faithful; introduces the vernacular; simplifies rites; moves from scholastic terminology toward the wider patristic tradition (ressourcement).</p>
+<p>Linked from: <em>Aggiornamento</em> · <em>See-Judge-Act</em></p>
+<h3>Christian Initiation (SC 64-70)</h3>
+<p>SC 64 orders that "the catechumenate for adults, comprising several distinct steps, is to be restored" — fulfilled by the 1972 RCIA. SC 65-66 revise both the adult and simple rites and permit elements of local initiation practice to be admitted, a direct opening for inculturation. SC 67-69 revise the infant rite "to reflect the fact that they are infants" (the 1969 Rite of Baptism for Children). SC 71 orders the revision of the rite of Confirmation so that its connection with the whole of Christian initiation appears more clearly. See <em>Sacraments MOC</em>.</p>
+<h3>The Eucharist (SC 7, 10, 14, 47-57)</h3>
+<p>SC 7 teaches that Christ is present in the liturgy in several modes — in the minister, in the Eucharistic species, in the sacraments, in his word, and in the praying and singing assembly — situating the Eucharistic presence within a broader theology of presence without diminishing it. SC 10 names the liturgy the summit toward which the Church's activity tends and the fount from which her power flows. SC 14 makes participatio actuosa "the aim to be considered before all else." SC 47-48 treat the Eucharist as paschal banquet and sacrifice in which the faithful are not to be "strangers or silent spectators"; SC 55 asks that they receive hosts consecrated at that Mass and permits both kinds in defined cases; SC 56 declares Word and Eucharist "one single act of worship"; SC 57 restores concelebration. See <em>Eucharist MOC</em>.</p>
+<h3>Penance (SC 72)</h3>
+<p>SC 72 is brief and consequential: "The rite and formulas for the sacrament of penance are to be revised so that they more clearly express both the nature and the effect of the sacrament." Fulfilled by the Ordo Paenitentiae of 1973, whose three rites and new Trinitarian formula of absolution recover the ecclesial dimension taught at LG 11. See <em>Penance MOC</em>.</p>
+<h3>Anointing of the Sick (SC 73-75)</h3>
+<p>SC 73 is the decisive text: "'Extreme unction,' which may also and more fittingly (aptius) be called 'Anointing of the Sick,' is not a sacrament for those only who are at the point of death. Hence, as soon as any one of the faithful begins to be in danger of death from sickness or old age, the fitting time for him to receive this sacrament has certainly already arrived." Three moves in two sentences: the name changes and the Council judges the new name more fitting; the restriction to the dying is denied; and the threshold is set at the beginning of danger, from sickness or old age. SC 74 orders a continuous rite of penance, anointing, and viaticum; SC 75 directs that the number of anointings be adapted and the prayers revised. See <em>Anointing MOC</em>.</p>
+</article>
+<article class="entry" id="sacrum-diaconatus-ordinem" data-search="Sacrum Diaconatus Ordinem 
+ paul vi&#x27;s letter of 18 june 1967 restoring the permanent diaconate in the latin church in fulfilment of lg 29, establishing norms including the admission of married men of mature age and setting out the diaconate&#x27;s liturgical, catechetical, and charitable functions. 
+ linked from:  permanent diaconate  ·  non ad sacerdotium sed ad ministerium  ·  holy orders moc  ">
+<h3 class="entry-title">Sacrum Diaconatus Ordinem</h3>
+
+<p>Paul VI's letter of 18 June 1967 restoring the permanent diaconate in the Latin Church in fulfilment of LG 29, establishing norms including the admission of married men of mature age and setting out the diaconate's liturgical, catechetical, and charitable functions.</p>
+<p>Linked from: <em>Permanent Diaconate</em> · <em>Non ad Sacerdotium sed ad Ministerium</em> · <em>Holy Orders MOC</em></p>
+</article>
+<article class="entry" id="saepius-officio" data-search="Saepius Officio 
+ the reply of the archbishops of canterbury and york to apostolicae curae, arguing that if the standard applied to the edwardine ordinal were applied consistently, the ancient roman rite would also fail, since its consecratory prayer likewise lacks explicit specification of the priesthood as an order for offering sacrifice. in effect, that rome was judging anglican orders by a criterion its own tradition does not meet. 
+ linked from:  apostolicae curae  ·  holy orders moc  ">
+<h3 class="entry-title">Saepius Officio</h3>
+
+<p>The reply of the Archbishops of Canterbury and York to Apostolicae Curae, arguing that if the standard applied to the Edwardine Ordinal were applied consistently, the ancient Roman rite would also fail, since its consecratory prayer likewise lacks explicit specification of the priesthood as an order for offering sacrifice. In effect, that Rome was judging Anglican orders by a criterion its own tradition does not meet.</p>
+<p>Linked from: <a href="#apostolicae-curae">Apostolicae Curae</a> · <em>Holy Orders MOC</em></p>
+</article>
+<article class="entry" id="salvifici-doloris" data-search="Salvifici Doloris (SD) 
+ john paul ii&#x27;s letter on suffering. the doctrinal backing for the &quot;suffering as seed&quot; thread of acts. 
+ sd 27 
+ suffering, united to christ&#x27;s, shares in the treasure of the redemption — the reading behind col 1:24 and behind paul&#x27;s commission &quot;how much he must suffer for my name&quot; (acts 9:16). 
+ linked from:  redemptive suffering  ·  thread - suffering as seed  ·  s09 - the hunter becomes the herald  ·  s18 - the prisoner speaks  ">
+<h3 class="entry-title">Salvifici Doloris (SD)</h3>
+
+<p>John Paul II's letter on suffering. The doctrinal backing for the "suffering as seed" thread of Acts.</p>
+<h3 class="sec">SD 27</h3>
+<p>Suffering, united to Christ's, shares in the treasure of the Redemption — the reading behind Col 1:24 and behind Paul's commission "how much he must suffer for my name" (Acts 9:16).</p>
+<p>Linked from: <em>Redemptive Suffering</em> · <em>Thread - Suffering as seed</em> · <em>S09 - The Hunter Becomes the Herald</em> · <em>S18 - The Prisoner Speaks</em></p>
+</article>
+<article class="entry" id="syllabus-of-errors" data-search="Quanta Cura and the Syllabus of Errors (1864) 
+ encyclical of  8 december 1864  with  80 condemned propositions  attached, grouped under headings: pantheism–indifferentism; socialism, communism and secret societies; the church and her rights; errors of liberalism. 
+ the interpretation problem 
+  a product of the italian situation, read by non-italians in their own terms.  
+ 
+ 
+ 
+ reader 
+ &quot;progress, liberalism and modern civilization&quot; meant 
+ 
+ 
+ 
+ 
+ italians 
+ closed monasteries, secular education, anti-clericalism 
+ 
+ 
+ english 
+ the great exhibition, peel and gladstone, an improved society 
+ 
+ 
+ french 
+ the principles of 1789 
+ 
+ 
+ americans 
+ all that was held sacred in the american system 
+ 
+ 
+ 
+  words capable of such varying interpretation were used unwisely in a document sent to london, new york, paris and berlin.  archbishop john mccloskey of new york thought it placed american catholics in antagonism to america&#x27;s institutions; lincoln pronounced himself scandalized;  le siècle  called it &quot;the last challenge flung at the modern world by an expiring papacy.&quot; 
+ the rescue 
+  félix dupanloup of orléans (1865) : the pope spoke of the  thesis  (the eternal ideal society) and not the  antithesis  (what is possible in an actual society). some 630 bishops thanked him. 
+ the paradox 
+ read in 1864 as evidence of an expiring papacy,  it became a symbol of papal moral authority after 1870.  
+ connected 
+  pius ix  ·  felix dupanloup  ·  ultramontanism  ·  temporal power  ·  aeterni patris  ·  dei filius  
+  see  03 - nationalism, liberalism and pius ix   ">
+<h3 class="entry-title">Quanta Cura and the Syllabus of Errors (1864)</h3>
+
+<p>Encyclical of <strong>8 December 1864</strong> with <strong>80 condemned propositions</strong> attached, grouped under headings: pantheism–indifferentism; socialism, communism and secret societies; the Church and her rights; errors of liberalism.</p>
+<h3 class="sec">The interpretation problem</h3>
+<p><strong>A product of the Italian situation, read by non-Italians in their own terms.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Reader</th>
+<th>"Progress, liberalism and modern civilization" meant</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Italians</td>
+<td>Closed monasteries, secular education, anti-clericalism</td>
+</tr>
+<tr>
+<td>English</td>
+<td>The Great Exhibition, Peel and Gladstone, an improved society</td>
+</tr>
+<tr>
+<td>French</td>
+<td>The principles of 1789</td>
+</tr>
+<tr>
+<td>Americans</td>
+<td>All that was held sacred in the American system</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Words capable of such varying interpretation were used unwisely in a document sent to London, New York, Paris and Berlin.</strong> Archbishop John McCloskey of New York thought it placed American Catholics in antagonism to America's institutions; Lincoln pronounced himself scandalized; <em>Le Siècle</em> called it "the last challenge flung at the modern world by an expiring papacy."</p>
+<h3 class="sec">The rescue</h3>
+<p><strong>Félix Dupanloup of Orléans (1865)</strong>: the pope spoke of the <strong>thesis</strong> (the eternal ideal society) and not the <strong>antithesis</strong> (what is possible in an actual society). Some 630 bishops thanked him.</p>
+<h3 class="sec">The paradox</h3>
+<p>Read in 1864 as evidence of an expiring papacy, <strong>it became a symbol of papal moral authority after 1870.</strong></p>
+<h3 class="sec">Connected</h3>
+<p><em>Pius IX</em> · <em>Felix Dupanloup</em> · <em>Ultramontanism</em> · <em>Temporal Power</em> · <a href="#aeterni-patris">Aeterni Patris</a> · <a href="#dei-filius">Dei Filius</a></p>
+<p><em>See <em>03 - Nationalism, Liberalism and Pius IX</em></em></p>
+</article>
+<article class="entry" id="tametsi" data-search="Tametsi 
+ the decree of session xxiv requiring, for validity, that marriage be contracted before the parish priest or a delegate and two or three witnesses — the single most consequential practical change in the sacrament&#x27;s history, since for fifteen centuries a marriage had been valid by consent however expressed. it finally solved the chronic problem of clandestine marriages, which the church had always held illicit but valid. its flaw was that it bound only in parishes where it had been promulgated, producing legal chaos in mission territories until ne temere (1907) imposed canonical form universally. 
+ linked from:  canonical form  ·  clandestine marriage  ·  matrimony moc  ">
+<h3 class="entry-title">Tametsi</h3>
+
+<p>The decree of Session XXIV requiring, for validity, that marriage be contracted before the parish priest or a delegate and two or three witnesses — the single most consequential practical change in the sacrament's history, since for fifteen centuries a marriage had been valid by consent however expressed. It finally solved the chronic problem of clandestine marriages, which the Church had always held illicit but valid. Its flaw was that it bound only in parishes where it had been promulgated, producing legal chaos in mission territories until Ne Temere (1907) imposed canonical form universally.</p>
+<p>Linked from: <em>Canonical Form</em> · <em>Clandestine Marriage</em> · <em>Matrimony MOC</em></p>
+</article>
+<article class="entry" id="the-dharma-of-jesus-anthology" data-search="The Dharma of Jesus (Anthology) 
+ nineteen essays by george m. soares-prabhu, edited by  francis x. d&#x27;sa, sj  (maryknoll: orbis, 2003), in four parts:  i portraits of jesus and his community  (jesus and the spirit · jesus the teacher · jesus the prophet · the kingdom of god: jesus&#x27; vision of a new society · the jesus of faith · radical beginnings) ·  ii the praxis of jesus  (table fellowship for dalit christians · miracles · a dhvani reading of the stilling of the storm · the unprejudiced jesus and the prejudiced church · jesus and conflict) ·  iii the teaching of jesus  (ch. 12, the title essay, on the sermon on the mount · the synoptic love commandment · speaking to abba · as we forgive · good news to the poor) ·  iv the mission of jesus  (expanding the horizon of christian mission · the church as mission · following jesus in mission). 
+ several chapters overlap the  collected writings . d&#x27;sa&#x27;s editorial achievement was to lift the christological essays out of the volume-by-volume arrangement and organise them around a single question: who is jesus and what does following him require? 
+ linked from:  francis x. d&amp;#x27;sa  ·  the three sutras  ·  soares-prabhu moc  ">
+<h3 class="entry-title">The Dharma of Jesus (Anthology)</h3>
+
+<p>Nineteen essays by George M. Soares-Prabhu, edited by <strong>Francis X. D'Sa, SJ</strong> (Maryknoll: Orbis, 2003), in four parts: <strong>I Portraits of Jesus and His Community</strong> (Jesus and the Spirit · Jesus the Teacher · Jesus the Prophet · The Kingdom of God: Jesus' Vision of a New Society · The Jesus of Faith · Radical Beginnings) · <strong>II The Praxis of Jesus</strong> (Table Fellowship for Dalit Christians · Miracles · a Dhvani Reading of the Stilling of the Storm · The Unprejudiced Jesus and the Prejudiced Church · Jesus and Conflict) · <strong>III The Teaching of Jesus</strong> (ch. 12, the title essay, on the Sermon on the Mount · the Synoptic Love Commandment · Speaking to Abba · As We Forgive · Good News to the Poor) · <strong>IV The Mission of Jesus</strong> (Expanding the Horizon of Christian Mission · The Church as Mission · Following Jesus in Mission).</p>
+<p>Several chapters overlap the <em>Collected Writings</em>. D'Sa's editorial achievement was to lift the Christological essays out of the volume-by-volume arrangement and organise them around a single question: who is Jesus and what does following him require?</p>
+<p>Linked from: <em>Francis X. D&#x27;Sa</em> · <em>The Three Sutras</em> · <em>Soares-Prabhu MOC</em></p>
+</article>
+<article class="entry" id="the-hope-of-salvation-for-infants-who-die-wi" data-search="The Hope of Salvation for Infants Who Die Without Being Baptised 
+ concludes that there are &quot;serious theological and liturgical grounds for hope&quot; that infants dying without baptism are saved, and clarifies that limbus infantium was always a theological hypothesis and never defined doctrine. effectively closes the pastoral wound left by augustine&#x27;s anti-pelagian argument. 
+ linked from:  limbus infantium  ·  sacraments moc  ">
+<h3 class="entry-title">The Hope of Salvation for Infants Who Die Without Being Baptised</h3>
+
+<p>Concludes that there are "serious theological and liturgical grounds for hope" that infants dying without baptism are saved, and clarifies that limbus infantium was always a theological hypothesis and never defined doctrine. Effectively closes the pastoral wound left by Augustine's anti-Pelagian argument.</p>
+<p>Linked from: <em>Limbus Infantium</em> · <em>Sacraments MOC</em></p>
+</article>
+<article class="entry" id="the-irish-penitentials" data-search="The Irish Penitentials 
+ the handbooks of finnian, columbanus, cummean, and theodore of canterbury, listing sins with assigned penances and governed by the medicinal principle contraria contrariis sanantur. they embody the private, repeatable, tariffed system that displaced canonical penance — a practice condemned at toledo iii (589) before being recognised at chalon-sur-saône (813) and becoming universal in the west. 
+ linked from:  tariffed penance  ·  penitentials  ·  penance moc  ">
+<h3 class="entry-title">The Irish Penitentials</h3>
+
+<p>The handbooks of Finnian, Columbanus, Cummean, and Theodore of Canterbury, listing sins with assigned penances and governed by the medicinal principle contraria contrariis sanantur. They embody the private, repeatable, tariffed system that displaced canonical penance — a practice condemned at Toledo III (589) before being recognised at Chalon-sur-Saône (813) and becoming universal in the West.</p>
+<p>Linked from: <em>Tariffed Penance</em> · <em>Penitentials</em> · <em>Penance MOC</em></p>
+</article>
+<article class="entry" id="the-shepherd-of-hermas" data-search="The Shepherd of Hermas 
+ reports a revelation permitting one — and only one — post-baptismal repentance, framed explicitly as a reluctant concession of mercy to a church discovering its members in grave sin, and strictly non-repeatable. the origin of the whole penitential system and of the &quot;second plank after shipwreck&quot; tradition; widely read and in some places treated as near-canonical in the second century. 
+ linked from:  secunda tabula  ·  canonical penance  ·  penance moc  ">
+<h3 class="entry-title">The Shepherd of Hermas</h3>
+
+<p>Reports a revelation permitting one — and only one — post-baptismal repentance, framed explicitly as a reluctant concession of mercy to a Church discovering its members in grave sin, and strictly non-repeatable. The origin of the whole penitential system and of the "second plank after shipwreck" tradition; widely read and in some places treated as near-canonical in the second century.</p>
+<p>Linked from: <em>Secunda Tabula</em> · <em>Canonical Penance</em> · <em>Penance MOC</em></p>
+</article>
+<article class="entry" id="traditionis-custodes" data-search="Traditionis Custodes 
+ francis&#x27;s motu proprio substantially restricting the permissions granted by benedict xvi&#x27;s summorum pontificum (2007), and affirming that the liturgical books promulgated by paul vi and john paul ii are &quot;the unique expression of the lex orandi of the roman rite.&quot; the document and the controversy surrounding it are the current focus of debate over liturgical reception of vatican ii. 
+ linked from:  roman missal of paul vi  ·  eucharist moc  ">
+<h3 class="entry-title">Traditionis Custodes</h3>
+
+<p>Francis's motu proprio substantially restricting the permissions granted by Benedict XVI's Summorum Pontificum (2007), and affirming that the liturgical books promulgated by Paul VI and John Paul II are "the unique expression of the lex orandi of the Roman Rite." The document and the controversy surrounding it are the current focus of debate over liturgical reception of Vatican II.</p>
+<p>Linked from: <a href="#roman-missal-of-paul-vi">Roman Missal of Paul VI</a> · <em>Eucharist MOC</em></p>
+</article>
+<article class="entry" id="transiturus-de-hoc-mundo" data-search="Transiturus de hoc mundo 
+ urban iv&#x27;s bull extending the feast of corpus christi to the universal church, with an office traditionally ascribed to thomas aquinas — the source of pange lingua, lauda sion, verbum supernum, and sacris solemniis. 
+ linked from:  corpus christi  ·  eucharist moc  ">
+<h3 class="entry-title">Transiturus de hoc mundo</h3>
+
+<p>Urban IV's bull extending the feast of Corpus Christi to the universal Church, with an office traditionally ascribed to Thomas Aquinas — the source of Pange Lingua, Lauda Sion, Verbum Supernum, and Sacris Solemniis.</p>
+<p>Linked from: <em>Corpus Christi</em> · <em>Eucharist MOC</em></p>
+</article>
+<article class="entry" id="unigenitus-dei-filius" data-search="Unigenitus Dei Filius 
+ clement vi&#x27;s bull formalising the doctrine of the treasury of merits: the infinite merits of christ, together with those of mary and the saints, constitute a thesaurus which the church may apply to individual members through the power of the keys. the theological basis of the indulgence system. 
+ linked from:  treasury of merits  ·  indulgence  ·  penance moc  ">
+<h3 class="entry-title">Unigenitus Dei Filius</h3>
+
+<p>Clement VI's bull formalising the doctrine of the treasury of merits: the infinite merits of Christ, together with those of Mary and the saints, constitute a thesaurus which the Church may apply to individual members through the power of the keys. The theological basis of the indulgence system.</p>
+<p>Linked from: <em>Treasury of Merits</em> · <em>Indulgence</em> · <em>Penance MOC</em></p>
+</article>
+<article class="entry" id="unitatis-redintegratio" data-search="Unitatis Redintegratio 
+ 
+ a note of the same name exists in the  vatican ii course package :  unitatis redintegratio — vatican ii course treatment . 
+ 
+ states the three principles of ecumenism: subsistit in (recalling lg 8), imperfect communion, and the hierarchy of truths. 
+ linked from:  subsistit in  ·  hierarchy of truths  ·  imperfect communion  
+ black week note 
+ paul vi inserted nineteen last-minute amendments after the fathers had already voted on the final text (20 november 1964) — accepted without further floor debate, temporarily clouding the ecumenical breakthrough this decree represents. 
+ baptism as the sacramental bond of unity (ur 3, 22) 
+ ur 22 teaches that baptism &quot;constitutes a sacramental bond of unity linking all who have been reborn by it,&quot; and ur 3 that those baptised outside full communion are &quot;truly incorporated into christ&quot; and rightly called christians. read alongside trent session vii canon 4 — which upheld the validity of baptism conferred by heretics — this is the doctrinal foundation of modern catholic ecumenism. see  sacraments moc . ">
+<h3 class="entry-title">Unitatis Redintegratio</h3>
+
+<blockquote>
+<p>A note of the same name exists in the <strong>Vatican II course package</strong>: <em>Unitatis Redintegratio — Vatican II course treatment</em>.</p>
+</blockquote>
+<p>States the three principles of ecumenism: subsistit in (recalling LG 8), imperfect communion, and the hierarchy of truths.</p>
+<p>Linked from: <em>Subsistit In</em> · <em>Hierarchy of Truths</em> · <em>Imperfect Communion</em></p>
+<h3>Black Week Note</h3>
+<p>Paul VI inserted nineteen last-minute amendments after the fathers had already voted on the final text (20 November 1964) — accepted without further floor debate, temporarily clouding the ecumenical breakthrough this decree represents.</p>
+<h3>Baptism as the Sacramental Bond of Unity (UR 3, 22)</h3>
+<p>UR 22 teaches that baptism "constitutes a sacramental bond of unity linking all who have been reborn by it," and UR 3 that those baptised outside full communion are "truly incorporated into Christ" and rightly called Christians. Read alongside Trent Session VII canon 4 — which upheld the validity of baptism conferred by heretics — this is the doctrinal foundation of modern Catholic ecumenism. See <em>Sacraments MOC</em>.</p>
+</article>
+<article class="entry" id="ut-unum-sint" data-search="Ut Unum Sint 
+ §95 
+ &quot;invites other christian leaders and theologians &quot;to find a way of exercising the primacy which... is nonetheless open to a new situation&quot; — the first magisterial invitation to rethink how, not whether, the papacy is exercised.&quot; 
+ linked from:  power of jurisdiction  ·  hierarchy of truths  ">
+<h3 class="entry-title">Ut Unum Sint</h3>
+
+<h3 class="sec">§95</h3>
+<p>"Invites other Christian leaders and theologians "to find a way of exercising the primacy which... is nonetheless open to a new situation" — the first magisterial invitation to rethink how, not whether, the papacy is exercised."</p>
+<p>Linked from: <em>Power of Jurisdiction</em> · <em>Hierarchy of Truths</em></p>
+</article>
+<article class="entry" id="veritatis-splendor" data-search="Veritatis Splendor 
+ john paul ii&#x27;s encyclical on the foundations of moral theology. sections 65-70 address fundamental option theory: the encyclical accepts that freedom has a fundamental orientation, but rejects separating that orientation from concrete choices, holding that a gravely disordered act freely chosen with full knowledge can itself constitute the rejection of god — precisely the inference the theory was constructed to block. 
+ linked from:  fundamental option  ·  penance moc  ">
+<h3 class="entry-title">Veritatis Splendor</h3>
+
+<p>John Paul II's encyclical on the foundations of moral theology. Sections 65-70 address fundamental option theory: the encyclical accepts that freedom has a fundamental orientation, but rejects separating that orientation from concrete choices, holding that a gravely disordered act freely chosen with full knowledge can itself constitute the rejection of God — precisely the inference the theory was constructed to block.</p>
+<p>Linked from: <em>Fundamental Option</em> · <em>Penance MOC</em></p>
+</article>
+<p id="empty" class="empty-note" hidden>No entries match that search.</p>
+</main>
+
+<footer class="page">
+  Notes on Conciliar and Magisterial Documents from the personal theology vault.
+</footer>
+
+<script>
+  const input = document.getElementById('filter');
+  const entries = Array.from(document.querySelectorAll('.entry'));
+  const countEl = document.getElementById('count');
+  const empty = document.getElementById('empty');
+  const total = entries.length;
+  input.addEventListener('input', () => {
+    const q = input.value.trim().toLowerCase();
+    let shown = 0;
+    entries.forEach(e => {
+      const match = !q || (e.dataset.search || '').includes(q);
+      e.hidden = !match;
+      if (match) shown++;
+    });
+    countEl.textContent = q ? `${shown} of ${total}` : `${total} entries`;
+    empty.hidden = shown > 0 || !q;
+  });
+</script>
