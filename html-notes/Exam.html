@@ -1,0 +1,1210 @@
+<title>Exam Question Banks</title>
+<style>
+  :root {
+    --ink: #ede3cf; --ink-soft: #cdbfa4; --paper: #211c16; --paper-raised: #2a241c;
+    --line: rgba(237,227,207,0.16); --wine: #c17a4d; --wine-soft: #c17a4d1c;
+    --gold: #d6ad5c; --gold-soft: #d6ad5c1a; --muted: #a3947a;
+    color-scheme: dark;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --ink: #2a2318; --ink-soft: #4d4330; --paper: #f4ecdb; --paper-raised: #ffffff;
+      --line: rgba(42,35,24,0.15); --wine: #9c4f27; --wine-soft: #9c4f2714;
+      --gold: #8a6414; --gold-soft: #8a641414; --muted: #7a6c52; color-scheme: light;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #ede3cf; --ink-soft: #cdbfa4; --paper: #211c16; --paper-raised: #2a241c;
+    --line: rgba(237,227,207,0.16); --wine: #c17a4d; --wine-soft: #c17a4d1c;
+    --gold: #d6ad5c; --gold-soft: #d6ad5c1a; --muted: #a3947a;
+  }
+  :root[data-theme="light"] {
+    --ink: #2a2318; --ink-soft: #4d4330; --paper: #f4ecdb; --paper-raised: #ffffff;
+    --line: rgba(42,35,24,0.15); --wine: #9c4f27; --wine-soft: #9c4f2714;
+    --gold: #8a6414; --gold-soft: #8a641414; --muted: #7a6c52;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 19px; line-height: 1.65; -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: var(--wine-soft); }
+  h1, h2, h3, h4 {
+    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "URW Palladio", serif;
+    text-wrap: balance; font-weight: 400; color: var(--gold); margin: 0;
+  }
+  p { margin: 0 0 1em; max-width: 44em; }
+  strong { color: var(--ink); font-weight: 700; }
+  em { color: var(--wine); font-style: italic; }
+  a { color: var(--wine); }
+  header.hero { padding: 52px 24px 30px; text-align: center; border-bottom: 1px solid var(--line); }
+  header.hero .eyebrow { font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--wine); margin-bottom: 10px; }
+  header.hero h1 { font-size: clamp(26px, 4.2vw, 38px); max-width: 22ch; margin: 0 auto 8px; font-style: italic; }
+  header.hero .sub { max-width: 46em; margin: 0 auto; color: var(--ink-soft); font-size: 15.5px; }
+  .searchbar {
+    position: sticky; top: 0; z-index: 10; background: var(--paper); border-bottom: 1px solid var(--line);
+    padding: 12px 24px;
+  }
+  .searchbar-inner { max-width: 760px; margin: 0 auto; display: flex; align-items: center; gap: 12px; }
+  .searchbar input {
+    flex: 1; padding: 9px 14px; font-size: 15px; font-family: inherit;
+    background: var(--paper-raised); border: 1px solid var(--line); border-radius: 20px;
+    color: var(--ink); outline: none;
+  }
+  .searchbar input:focus { border-color: var(--wine); }
+  .searchbar .count { font-size: 12.5px; color: var(--muted); white-space: nowrap; }
+  main { max-width: 760px; margin: 0 auto; padding: 20px 24px 50px; }
+  .entry {
+    padding: 22px 0; border-bottom: 1px solid var(--line);
+  }
+  .entry-title { font-size: 19px; margin-bottom: 8px; }
+  h3.sec { font-size: 15.5px; color: var(--gold); margin: 14px 0 6px; }
+  ul, ol { padding-left: 1.2em; margin: 0 0 0.9em; max-width: 44em; }
+  li { margin-bottom: 5px; }
+  .callout {
+    background: var(--paper-raised); border: 1px solid var(--line); border-left: 3px solid var(--gold);
+    border-radius: 3px; padding: 12px 16px; margin: 12px 0;
+  }
+  .callout p { margin: 0 0 5px; font-size: 14.5px; color: var(--ink-soft); }
+  .callout-label { font-size: 11px !important; letter-spacing: 0.05em; text-transform: uppercase; color: var(--gold) !important; margin-bottom: 5px !important; }
+  [hidden] { display: none !important; }
+  .empty-note { color: var(--muted); font-size: 14px; padding: 30px 0; text-align: center; }
+  footer.page { max-width: 760px; margin: 0 auto; padding: 30px 24px 60px; font-size: 13px; color: var(--muted); }
+</style>
+
+<header class="hero">
+  <p class="eyebrow">Theology Vault &middot; Reference</p>
+  <h1>Exam Question Banks</h1>
+  <p class="sub">Revision questions and exam preparation notes across theology topics</p>
+</header>
+
+<div class="searchbar">
+  <div class="searchbar-inner">
+    <input id="filter" type="text" placeholder="Search 22 entries&hellip;" autocomplete="off" />
+    <span class="count" id="count">22 entries</span>
+  </div>
+</div>
+
+<main id="main">
+<article class="entry" id="chapter-1-question-bank" data-search="Chapter 1 — Question Bank 
+ define / explain 
+ 
+ etymology of &quot;theology.&quot; →  theology  
+ anselm&#x27;s  fides quaerens intellectum . →  anselm  
+ analogical knowledge (univocal / equivocal / analogical). →  analogical knowledge  
+  lex orandi, lex credendi . →  historical series of definitions of theology  
+ the book&#x27;s full working definition of theology. →  theology  
+ the seven creative polarities (one line each). →  seven creative polarities of theologizing  
+ 
+ short notes 
+ 
+ aquinas&#x27;s five proofs + newman&#x27;s &quot;convergence of probabilities&quot; →  aquinas&amp;#x27;s proofs convince believers, not sceptics  
+ rahner: &quot;god and humanity are correlative terms&quot; →  rahner  
+ gutierrez: orthodoxy vs orthopraxis →  gutierrez  
+ 
+ essay 
+ 
+ &quot;no theology is perennial.&quot; discuss. →  all theologies are contextual; no theology is perennial  
+ how does theology hold mystery and intelligibility together? →  theology must hold mystery and intelligibility together  
+ 
+ reflect 
+ 
+ which creative polarity is hardest to keep in balance, and why? 
+ what is my own &quot;god-question&quot;? 
+ 
+ flashcard review 
+ run the spaced repetition plugin over #note/schema and #note/claim in this vault. ">
+<h3 class="entry-title">Chapter 1 — Question Bank</h3>
+
+<h3 class="sec">Define / explain</h3>
+<ol>
+<li>Etymology of "theology." → <em>Theology</em></li>
+<li>Anselm's <em>fides quaerens intellectum</em>. → <em>Anselm</em></li>
+<li>Analogical knowledge (univocal / equivocal / analogical). → <em>Analogical Knowledge</em></li>
+<li><em>Lex orandi, lex credendi</em>. → <em>Historical Series of Definitions of Theology</em></li>
+<li>The book's full working definition of theology. → <em>Theology</em></li>
+<li>The seven creative polarities (one line each). → <em>Seven Creative Polarities of Theologizing</em></li>
+</ol>
+<h3 class="sec">Short notes</h3>
+<ul>
+<li>Aquinas's Five Proofs + Newman's "convergence of probabilities" → <em>Aquinas&#x27;s proofs convince believers, not sceptics</em></li>
+<li>Rahner: "God and humanity are correlative terms" → <em>Rahner</em></li>
+<li>Gutierrez: orthodoxy vs orthopraxis → <em>Gutierrez</em></li>
+</ul>
+<h3 class="sec">Essay</h3>
+<ul>
+<li>"No theology is perennial." Discuss. → <em>All theologies are contextual; no theology is perennial</em></li>
+<li>How does theology hold mystery and intelligibility together? → <em>Theology must hold mystery and intelligibility together</em></li>
+</ul>
+<h3 class="sec">Reflect</h3>
+<ul>
+<li>Which creative polarity is hardest to keep in balance, and why?</li>
+<li>What is my own "God-Question"?</li>
+</ul>
+<h3 class="sec">Flashcard review</h3>
+<p>Run the Spaced Repetition plugin over #note/schema and #note/claim in this vault.</p>
+</article>
+<article class="entry" id="chapter-2-question-bank" data-search="Chapter 2 — Question Bank 
+ define / explain 
+ 
+ revelation &amp;amp; faith as two sides of one event →  revelation and faith are two sides of one event  
+ the four models of revelation →  four models of revelation  
+ inspiration &amp;amp; inerrancy (dv 11) — the &quot;for salvation&quot; limit →  scripture is inerrant only for the sake of salvation  
+ the canon — recognize vs create →  the church recognized the canon; it did not create it  
+ tradition vs traditions; development of doctrine →  development of doctrine  
+ magisterium: collegiality, ex cathedra, sensus fidelium →  magisterium  ·  sensus fidelium  
+ dv 10 — mutual relationship of the three sources →  three primary sources of theology  
+ 
+ short notes 
+ 
+ cosmotheandric vision →  cosmotheandric vision  
+ other religions as resources (na 2) with the &quot;christ, source of salvation for all&quot; balance →  other religions are theological resources, yet christ remains the source of salvation for all  
+ epistemological privilege of the poor →  the cry of the poor is a genuine source of theology  
+ 
+ reflect 
+ 
+ how can the cry of the poor be a genuine source for theology in india? 
+ why must the three primary sources stay together? 
+ 
+ flashcard review 
+ run spaced repetition over #note/schema + #note/claim. ">
+<h3 class="entry-title">Chapter 2 — Question Bank</h3>
+
+<h3 class="sec">Define / explain</h3>
+<ol>
+<li>Revelation &amp; faith as two sides of one event → <em>Revelation and faith are two sides of one event</em></li>
+<li>The four models of revelation → <em>Four Models of Revelation</em></li>
+<li>Inspiration &amp; inerrancy (DV 11) — the "for salvation" limit → <em>Scripture is inerrant only for the sake of salvation</em></li>
+<li>The Canon — recognize vs create → <em>The Church recognized the canon; it did not create it</em></li>
+<li>Tradition vs traditions; development of doctrine → <em>Development of Doctrine</em></li>
+<li>Magisterium: collegiality, ex cathedra, sensus fidelium → <em>Magisterium</em> · <em>Sensus Fidelium</em></li>
+<li>DV 10 — mutual relationship of the three sources → <em>Three Primary Sources of Theology</em></li>
+</ol>
+<h3 class="sec">Short notes</h3>
+<ul>
+<li>Cosmotheandric vision → <em>Cosmotheandric Vision</em></li>
+<li>Other religions as resources (NA 2) with the "Christ, source of salvation for all" balance → <em>Other religions are theological resources, yet Christ remains the source of salvation for all</em></li>
+<li>Epistemological privilege of the poor → <em>The cry of the poor is a genuine source of theology</em></li>
+</ul>
+<h3 class="sec">Reflect</h3>
+<ul>
+<li>How can the cry of the poor be a genuine source for theology in India?</li>
+<li>Why must the three primary sources stay together?</li>
+</ul>
+<h3 class="sec">Flashcard review</h3>
+<p>Run Spaced Repetition over #note/schema + #note/claim.</p>
+</article>
+<article class="entry" id="chapter-3-question-bank" data-search="Chapter 3 — Question Bank 
+ define / explain 
+ 
+ the bible as &quot;a library... of theologies&quot;; ot streams →  old testament theologies  
+ nt plurality + paul&#x27;s three christologies →  new testament theologies and paul&amp;#x27;s three christologies  
+ patristic dates (john damascene 749; gregory 604; isidore 639) →  patristic period  
+ alexandrian vs antiochene (divinity vs humanity) →  alexandrian and antiochene schools  
+ the aristotelian turn: &quot;from the plane of action to the plane of being&quot; →  the aristotelian turn moved theology from the plane of action to the plane of being  
+ scholastic figures with dates + ockham&#x27;s razor/nominalism →  scholasticism  ·  ockham  
+ reformation ( sola scriptura ), trent, neo-scholasticism ( aeterni patris  1879) →  aeterni patris  
+ vatican ii &amp;amp; contextual theologies →  contextual theologies (modern)  
+ 
+ essay 
+ 
+ &quot;legitimate pluralism runs from the bible to today.&quot; trace it. →  legitimate pluralism runs from the bible to today&amp;#x27;s contextual theologies  
+ 
+ reflect 
+ 
+ which contextual theology speaks most to india, and why? 
+ 
+ flashcard review 
+ run spaced repetition over #note/schema + #note/claim. ">
+<h3 class="entry-title">Chapter 3 — Question Bank</h3>
+
+<h3 class="sec">Define / explain</h3>
+<ol>
+<li>The Bible as "a library... of theologies"; OT streams → <em>Old Testament Theologies</em></li>
+<li>NT plurality + Paul's three Christologies → <em>New Testament Theologies and Paul&#x27;s Three Christologies</em></li>
+<li>Patristic dates (John Damascene 749; Gregory 604; Isidore 639) → <em>Patristic Period</em></li>
+<li>Alexandrian vs Antiochene (divinity vs humanity) → <em>Alexandrian and Antiochene Schools</em></li>
+<li>The Aristotelian turn: "from the plane of action to the plane of being" → <em>The Aristotelian turn moved theology from the plane of action to the plane of being</em></li>
+<li>Scholastic figures with dates + Ockham's Razor/nominalism → <em>Scholasticism</em> · <em>Ockham</em></li>
+<li>Reformation (<em>Sola Scriptura</em>), Trent, Neo-Scholasticism (<em>Aeterni Patris</em> 1879) → <em>Aeterni Patris</em></li>
+<li>Vatican II &amp; contextual theologies → <em>Contextual Theologies (Modern)</em></li>
+</ol>
+<h3 class="sec">Essay</h3>
+<ul>
+<li>"Legitimate pluralism runs from the Bible to today." Trace it. → <em>Legitimate pluralism runs from the Bible to today&#x27;s contextual theologies</em></li>
+</ul>
+<h3 class="sec">Reflect</h3>
+<ul>
+<li>Which contextual theology speaks most to India, and why?</li>
+</ul>
+<h3 class="sec">Flashcard review</h3>
+<p>Run Spaced Repetition over #note/schema + #note/claim.</p>
+</article>
+<article class="entry" id="chapter-4-question-bank" data-search="Chapter 4 — Question Bank 
+ define / explain (each: theologian, dates, key phrase, example) 
+ 
+ ephraem — theology as poetry →  for ephraem, to define god is to restrict the limitless one  
+ aquinas — sacred science; via inventionis vs via doctrinae →  aquinas  
+ rahner — supernatural existential; &quot;absolute saviour&quot; →  supernatural existential  
+ schmemann — lex orandi lex credendi; 1054 schism →  liturgical theology  
+ liberation — praxis; exodus paradigm; holistic salvation →  theology begins in praxis, read from the standpoint of the poor  
+ 
+ essay 
+ 
+ &quot;no single method exhausts theology.&quot; discuss with all five models. →  no single method exhausts theology  
+ 
+ reflect 
+ 
+ which model best suits the indian context, and why? 
+ 
+ flashcards →  five models of theology  ">
+<h3 class="entry-title">Chapter 4 — Question Bank</h3>
+
+<h3 class="sec">Define / explain (each: theologian, dates, key phrase, example)</h3>
+<ol>
+<li>Ephraem — theology as poetry → <em>For Ephraem, to define God is to restrict the Limitless One</em></li>
+<li>Aquinas — sacred science; via inventionis vs via doctrinae → <em>Aquinas</em></li>
+<li>Rahner — supernatural existential; "absolute saviour" → <em>Supernatural Existential</em></li>
+<li>Schmemann — Lex orandi lex credendi; 1054 schism → <em>Liturgical Theology</em></li>
+<li>Liberation — praxis; Exodus paradigm; holistic salvation → <em>Theology begins in praxis, read from the standpoint of the poor</em></li>
+</ol>
+<h3 class="sec">Essay</h3>
+<ul>
+<li>"No single method exhausts theology." Discuss with all five models. → <em>No single method exhausts theology</em></li>
+</ul>
+<h3 class="sec">Reflect</h3>
+<ul>
+<li>Which model best suits the Indian context, and why?</li>
+</ul>
+<h3 class="sec">Flashcards → <em>Five Models of Theology</em></h3>
+</article>
+<article class="entry" id="chapter-5-question-bank" data-search="Chapter 5 — Question Bank 
+ define / explain 
+ 
+ why criteria are needed; en 65 →  the ultimates of faith are not negotiable under popular pressure  
+ orthodox sobornost; protestant sola scriptura; catholic scripture+tradition →  three christian emphases on criteria  
+ infallibility: whole faithful (lg 12), bishops, pope ex cathedra →  infallibility  
+ the four gradations of teaching and the assent each requires →  four gradations of magisterial teaching and assent  
+ the eight parameters of catholic theology →  eight parameters of the catholic theological enterprise  
+ 
+ essay 
+ 
+ how would you judge whether an indian contextual theology is still authentically catholic? →  eight parameters of the catholic theological enterprise  
+ 
+ flashcards → the three ch 5 schemas ">
+<h3 class="entry-title">Chapter 5 — Question Bank</h3>
+
+<h3 class="sec">Define / explain</h3>
+<ol>
+<li>Why criteria are needed; EN 65 → <em>The ultimates of faith are not negotiable under popular pressure</em></li>
+<li>Orthodox Sobornost; Protestant Sola Scriptura; Catholic Scripture+Tradition → <em>Three Christian Emphases on Criteria</em></li>
+<li>Infallibility: whole faithful (LG 12), bishops, Pope ex cathedra → <em>Infallibility</em></li>
+<li>The four gradations of teaching and the assent each requires → <em>Four Gradations of Magisterial Teaching and Assent</em></li>
+<li>The eight parameters of Catholic theology → <em>Eight Parameters of the Catholic Theological Enterprise</em></li>
+</ol>
+<h3 class="sec">Essay</h3>
+<ul>
+<li>How would you judge whether an Indian contextual theology is still authentically Catholic? → <em>Eight Parameters of the Catholic Theological Enterprise</em></li>
+</ul>
+<h3 class="sec">Flashcards → the three Ch 5 schemas</h3>
+</article>
+<article class="entry" id="chapter-6-question-bank" data-search="Chapter 6 — Question Bank 
+ define / explain 
+ 
+ three catholic churches + st thomas heritage →  three ecclesial traditions in india  
+ cosmotheandric vision; the four purusharthas; six schools →  six schools of indian philosophy  ·  purusharthas  
+ sankara&#x27;s advaita &amp;amp; saccidananda; ramanuja&#x27;s bhakti →  advaita  ·  bhakti  ·  saccidananda  
+ socio-political realities: poverty, caste, hindutva, women, dalits/adivasis →  socio-political realities of india  
+ dalit theology (crucified &amp;amp; risen jesus) →  dalit theology rejects upper-caste categories and centres the crucified and risen jesus  
+ inculturation; dialogue of life; ashram →  methods of theologizing in india  
+ 
+ name &amp;amp; match theologians →  indian pioneer theologians  
+ comparative essays 
+ 
+ saccidananda and the trinity →  saccidananda ↔ trinity  
+ avatara and the incarnation →  avatara ↔ incarnation  
+ exodus and dalit liberation →  exodus ↔ dalit liberation  
+ 
+ reflect 
+ 
+ how must indian liberation theology differ from latin american? →  indian liberation theology must add caste and pluralism to class analysis  
+ how is the st thomas christian model itself inculturation? →  the st thomas christian model is itself an ancient inculturation  
+ ">
+<h3 class="entry-title">Chapter 6 — Question Bank</h3>
+
+<h3 class="sec">Define / explain</h3>
+<ol>
+<li>Three Catholic Churches + St Thomas heritage → <em>Three Ecclesial Traditions in India</em></li>
+<li>Cosmotheandric vision; the four purusharthas; six schools → <em>Six Schools of Indian Philosophy</em> · <em>Purusharthas</em></li>
+<li>Sankara's Advaita &amp; Saccidananda; Ramanuja's Bhakti → <em>Advaita</em> · <em>Bhakti</em> · <em>Saccidananda</em></li>
+<li>Socio-political realities: poverty, caste, Hindutva, women, Dalits/Adivasis → <em>Socio-Political Realities of India</em></li>
+<li>Dalit theology (Crucified &amp; Risen Jesus) → <em>Dalit theology rejects upper-caste categories and centres the Crucified and Risen Jesus</em></li>
+<li>Inculturation; dialogue of life; ashram → <em>Methods of Theologizing in India</em></li>
+</ol>
+<h3 class="sec">Name &amp; match theologians → <em>Indian Pioneer Theologians</em></h3>
+<h3 class="sec">Comparative essays</h3>
+<ul>
+<li>Saccidananda and the Trinity → <em>Saccidananda ↔ Trinity</em></li>
+<li>Avatara and the Incarnation → <em>Avatara ↔ Incarnation</em></li>
+<li>Exodus and Dalit liberation → <em>Exodus ↔ Dalit Liberation</em></li>
+</ul>
+<h3 class="sec">Reflect</h3>
+<ul>
+<li>How must Indian liberation theology differ from Latin American? → <em>Indian liberation theology must add caste and pluralism to class analysis</em></li>
+<li>How is the St Thomas Christian model itself inculturation? → <em>The St Thomas Christian model is itself an ancient inculturation</em></li>
+</ul>
+</article>
+<article class="entry" id="ecclesiology-unit-1-question-bank" data-search="Unit 1 — Question Bank 
+ define / explain 
+ 
+ how would you respond to a marxist critique that the church is merely an ideological tool of oppression? 
+ trace the etymology of ekklesia from qahal yahweh to its nt usage, and state its four connotations. 
+ what four values marked the jesus movement, and how do they still challenge the church today? 
+ 
+ essay 
+ 
+ discuss: the church is not a voluntary club but a community called into being by god&#x27;s initiative. →  the church is not a voluntary club but a community called into being by god&amp;#x27;s initiative  
+ 
+ flashcards → foundations: why the church? ">
+<h3 class="entry-title">Unit 1 — Question Bank</h3>
+
+<h3 class="sec">Define / explain</h3>
+<ol>
+<li>How would you respond to a Marxist critique that the Church is merely an ideological tool of oppression?</li>
+<li>Trace the etymology of ekklesia from qahal Yahweh to its NT usage, and state its four connotations.</li>
+<li>What four values marked the Jesus Movement, and how do they still challenge the Church today?</li>
+</ol>
+<h3 class="sec">Essay</h3>
+<ul>
+<li>Discuss: The Church is not a voluntary club but a community called into being by God's initiative. → <em>The Church is not a voluntary club but a community called into being by God&#x27;s initiative</em></li>
+</ul>
+<h3 class="sec">Flashcards → Foundations: Why the Church?</h3>
+</article>
+<article class="entry" id="ecclesiology-unit-10-question-bank" data-search="Unit 10 — Question Bank 
+ define / explain 
+ 
+ how does lg 7-8 modify pius xii&#x27;s mystici corporis? 
+ what does it mean to call the church &quot;temple of the holy spirit,&quot; and what practical consequence follows for lay charisms? 
+ explain the shift from a &quot;universalist&quot; to a &quot;communio&quot; ecclesiology, and name the 1985 event that confirmed it. 
+ 
+ essay 
+ 
+ discuss: lg&#x27;s communion shift re-reads the universal church as constituted in and from local churches, not the reverse. →  lg&amp;#x27;s communion shift re-reads the universal church as constituted in and from local churches, not the reverse  
+ 
+ flashcards → lumen gentium ii: body of christ, temple of the spirit, communion ">
+<h3 class="entry-title">Unit 10 — Question Bank</h3>
+
+<h3 class="sec">Define / explain</h3>
+<ol>
+<li>How does LG 7-8 modify Pius XII's Mystici Corporis?</li>
+<li>What does it mean to call the Church "Temple of the Holy Spirit," and what practical consequence follows for lay charisms?</li>
+<li>Explain the shift from a "universalist" to a "communio" ecclesiology, and name the 1985 event that confirmed it.</li>
+</ol>
+<h3 class="sec">Essay</h3>
+<ul>
+<li>Discuss: LG's communion shift re-reads the universal Church as constituted in and from local churches, not the reverse. → <em>LG&#x27;s communion shift re-reads the universal Church as constituted in and from local churches, not the reverse</em></li>
+</ul>
+<h3 class="sec">Flashcards → Lumen Gentium II: Body of Christ, Temple of the Spirit, Communion</h3>
+</article>
+<article class="entry" id="ecclesiology-unit-11-question-bank" data-search="Unit 11 — Question Bank 
+ define / explain 
+ 
+ distinguish the power of orders from the power of jurisdiction. 
+ state the three conciliar arguments for episcopal collegiality. 
+ what did ut unum sint (1995) newly invite, and why is this significant? 
+ 
+ essay 
+ 
+ discuss: collegiality is grounded sacramentally, not merely granted administratively by the pope. →  collegiality is grounded sacramentally, not merely granted administratively by the pope  
+ 
+ flashcards → structural renewal: hierarchy, collegiality, papal primacy ">
+<h3 class="entry-title">Unit 11 — Question Bank</h3>
+
+<h3 class="sec">Define / explain</h3>
+<ol>
+<li>Distinguish the power of orders from the power of jurisdiction.</li>
+<li>State the three conciliar arguments for episcopal collegiality.</li>
+<li>What did Ut Unum Sint (1995) newly invite, and why is this significant?</li>
+</ol>
+<h3 class="sec">Essay</h3>
+<ul>
+<li>Discuss: Collegiality is grounded sacramentally, not merely granted administratively by the Pope. → <em>Collegiality is grounded sacramentally, not merely granted administratively by the Pope</em></li>
+</ul>
+<h3 class="sec">Flashcards → Structural Renewal: Hierarchy, Collegiality, Papal Primacy</h3>
+</article>
+<article class="entry" id="ecclesiology-unit-12-question-bank" data-search="Unit 12 — Question Bank 
+ define / explain 
+ 
+ distinguish extraordinary from ordinary magisterium, with an example of each. 
+ state, in your own words, the four pastor aeternus conditions for papal infallibility. 
+ explain the difference between infallibility and indefectibility. 
+ 
+ essay 
+ 
+ discuss: infallibility is not identical with revelation, inspiration, or indefectibility. →  infallibility is not identical with revelation, inspiration, or indefectibility  
+ 
+ flashcards → magisterium and infallibility ">
+<h3 class="entry-title">Unit 12 — Question Bank</h3>
+
+<h3 class="sec">Define / explain</h3>
+<ol>
+<li>Distinguish extraordinary from ordinary magisterium, with an example of each.</li>
+<li>State, in your own words, the four Pastor Aeternus conditions for papal infallibility.</li>
+<li>Explain the difference between infallibility and indefectibility.</li>
+</ol>
+<h3 class="sec">Essay</h3>
+<ul>
+<li>Discuss: Infallibility is not identical with revelation, inspiration, or indefectibility. → <em>Infallibility is not identical with revelation, inspiration, or indefectibility</em></li>
+</ul>
+<h3 class="sec">Flashcards → Magisterium and Infallibility</h3>
+</article>
+<article class="entry" id="ecclesiology-unit-13-question-bank" data-search="Unit 13 — Question Bank 
+ define / explain 
+ 
+ state and explain the three principles of unitatis redintegratio. 
+ what historical event marks the decisive catholic turn toward the modern ecumenical movement? 
+ give three reasons why ecumenical solidarity matters especially in the indian context. 
+ 
+ essay 
+ 
+ discuss: ecumenism is not diplomatic courtesy but flows theologically from the church&#x27;s own nature as communion and sacrament of unity. →  ecumenism is not diplomatic courtesy but flows theologically from the church&amp;#x27;s own nature as communion and sacrament of unity  
+ 
+ flashcards → ecumenism: principles, history, and the indian church ">
+<h3 class="entry-title">Unit 13 — Question Bank</h3>
+
+<h3 class="sec">Define / explain</h3>
+<ol>
+<li>State and explain the three principles of Unitatis Redintegratio.</li>
+<li>What historical event marks the decisive Catholic turn toward the modern ecumenical movement?</li>
+<li>Give three reasons why ecumenical solidarity matters especially in the Indian context.</li>
+</ol>
+<h3 class="sec">Essay</h3>
+<ul>
+<li>Discuss: Ecumenism is not diplomatic courtesy but flows theologically from the Church's own nature as communion and sacrament of unity. → <em>Ecumenism is not diplomatic courtesy but flows theologically from the Church&#x27;s own nature as communion and sacrament of unity</em></li>
+</ul>
+<h3 class="sec">Flashcards → Ecumenism: Principles, History, and the Indian Church</h3>
+</article>
+<article class="entry" id="ecclesiology-unit-14-question-bank" data-search="Unit 14 — Question Bank 
+ define / explain 
+ 
+ what does francis mean by a &quot;missionary option&quot; in evangelii gaudium? 
+ list three structural reforms of francis&#x27;s pontificate. 
+ in an essay, connect at least three of vatican ii&#x27;s nine paradigm shifts (unit 8) to specific initiatives of francis&#x27;s pontificate. 
+ 
+ essay 
+ 
+ discuss: francis&#x27;s synodal reforms aim to complete, in institutional practice, paradigm shifts vatican ii had already proclaimed in text. →  francis&amp;#x27;s synodal reforms aim to complete, in institutional practice, paradigm shifts vatican ii had already proclaimed in text  
+ 
+ flashcards → pope francis&#x27;s ecclesiological vision and synodality ">
+<h3 class="entry-title">Unit 14 — Question Bank</h3>
+
+<h3 class="sec">Define / explain</h3>
+<ol>
+<li>What does Francis mean by a "missionary option" in Evangelii Gaudium?</li>
+<li>List three structural reforms of Francis's pontificate.</li>
+<li>In an essay, connect at least three of Vatican II's nine paradigm shifts (Unit 8) to specific initiatives of Francis's pontificate.</li>
+</ol>
+<h3 class="sec">Essay</h3>
+<ul>
+<li>Discuss: Francis's synodal reforms aim to complete, in institutional practice, paradigm shifts Vatican II had already proclaimed in text. → <em>Francis&#x27;s synodal reforms aim to complete, in institutional practice, paradigm shifts Vatican II had already proclaimed in text</em></li>
+</ul>
+<h3 class="sec">Flashcards → Pope Francis's Ecclesiological Vision and Synodality</h3>
+</article>
+<article class="entry" id="ecclesiology-unit-2-question-bank" data-search="Unit 2 — Question Bank 
+ define / explain 
+ 
+ state and evaluate loisy&#x27;s dictum. 
+ what is &quot;blueprint ecclesiology,&quot; and why do most contemporary scholars reject it? 
+ in what sense is the church founded both christologically and pneumatologically? 
+ 
+ essay 
+ 
+ discuss: the church is christ&#x27;s kingdom preaching translated into a spirit-led community after easter. →  the church is christ&amp;#x27;s kingdom preaching translated into a spirit-led community after easter  
+ 
+ flashcards → did christ found the church? nt origins ">
+<h3 class="entry-title">Unit 2 — Question Bank</h3>
+
+<h3 class="sec">Define / explain</h3>
+<ol>
+<li>State and evaluate Loisy's dictum.</li>
+<li>What is "blueprint ecclesiology," and why do most contemporary scholars reject it?</li>
+<li>In what sense is the Church founded both Christologically and pneumatologically?</li>
+</ol>
+<h3 class="sec">Essay</h3>
+<ul>
+<li>Discuss: The Church is Christ's kingdom preaching translated into a Spirit-led community after Easter. → <em>The Church is Christ&#x27;s kingdom preaching translated into a Spirit-led community after Easter</em></li>
+</ul>
+<h3 class="sec">Flashcards → Did Christ Found the Church? NT Origins</h3>
+</article>
+<article class="entry" id="ecclesiology-unit-3-question-bank" data-search="Unit 3 — Question Bank 
+ define / explain 
+ 
+ compare mark&#x27;s and matthew&#x27;s pictures of the disciple-community. 
+ why does luke-acts emphasize both structure (acts 6, 15) and charism (acts 10) at once? 
+ what does matthew&#x27;s exclusive use of the word ekklesia (16:18; 18:17) suggest about his community&#x27;s self-understanding? 
+ 
+ essay 
+ 
+ discuss: in luke-acts the holy spirit, not the apostles, is the true protagonist of the church&#x27;s expansion. →  in luke-acts the holy spirit, not the apostles, is the true protagonist of the church&amp;#x27;s expansion  
+ 
+ flashcards → ecclesiologies of the synoptics and acts ">
+<h3 class="entry-title">Unit 3 — Question Bank</h3>
+
+<h3 class="sec">Define / explain</h3>
+<ol>
+<li>Compare Mark's and Matthew's pictures of the disciple-community.</li>
+<li>Why does Luke-Acts emphasize both structure (Acts 6, 15) and charism (Acts 10) at once?</li>
+<li>What does Matthew's exclusive use of the word ekklesia (16:18; 18:17) suggest about his community's self-understanding?</li>
+</ol>
+<h3 class="sec">Essay</h3>
+<ul>
+<li>Discuss: In Luke-Acts the Holy Spirit, not the apostles, is the true protagonist of the Church's expansion. → <em>In Luke-Acts the Holy Spirit, not the apostles, is the true protagonist of the Church&#x27;s expansion</em></li>
+</ul>
+<h3 class="sec">Flashcards → Ecclesiologies of the Synoptics and Acts</h3>
+</article>
+<article class="entry" id="ecclesiology-unit-4-question-bank" data-search="Unit 4 — Question Bank 
+ define / explain 
+ 
+ list and briefly explain the eight themes of the ideal community in john. 
+ how does the vine image (jn 15) differ in emphasis from paul&#x27;s body image (1 cor 12)? 
+ explain paul&#x27;s two insights linking baptism and eucharist to ecclesial communion. 
+ 
+ essay 
+ 
+ discuss: for john, unity is not an optional virtue but the very sign by which the world recognizes christ&#x27;s disciples. →  for john, unity is not an optional virtue but the very sign by which the world recognizes christ&amp;#x27;s disciples  
+ 
+ flashcards → johannine and pauline ecclesiology ">
+<h3 class="entry-title">Unit 4 — Question Bank</h3>
+
+<h3 class="sec">Define / explain</h3>
+<ol>
+<li>List and briefly explain the eight themes of the ideal community in John.</li>
+<li>How does the vine image (Jn 15) differ in emphasis from Paul's body image (1 Cor 12)?</li>
+<li>Explain Paul's two insights linking baptism and Eucharist to ecclesial communion.</li>
+</ol>
+<h3 class="sec">Essay</h3>
+<ul>
+<li>Discuss: For John, unity is not an optional virtue but the very sign by which the world recognizes Christ's disciples. → <em>For John, unity is not an optional virtue but the very sign by which the world recognizes Christ&#x27;s disciples</em></li>
+</ul>
+<h3 class="sec">Flashcards → Johannine and Pauline Ecclesiology</h3>
+</article>
+<article class="entry" id="ecclesiology-unit-5-question-bank" data-search="Unit 5 — Question Bank 
+ define / explain 
+ 
+ what historical pressures drove the gregorian reform, and what did dictatus papae claim? 
+ state the four marks of pre-conciliar ecclesiology, and one gain and one loss of this model as a whole. 
+ why is vatican i&#x27;s ecclesiology often called &quot;incomplete&quot;? 
+ 
+ essay 
+ 
+ discuss: the threefold ministry crystallized only gradually, as the church settled into history after the apostolic generation passed. →  the threefold ministry crystallized only gradually, as the church settled into history after the apostolic generation passed  
+ 
+ flashcards → from apostolic church to vatican i ">
+<h3 class="entry-title">Unit 5 — Question Bank</h3>
+
+<h3 class="sec">Define / explain</h3>
+<ol>
+<li>What historical pressures drove the Gregorian Reform, and what did Dictatus Papae claim?</li>
+<li>State the four marks of pre-conciliar ecclesiology, and one gain and one loss of this model as a whole.</li>
+<li>Why is Vatican I's ecclesiology often called "incomplete"?</li>
+</ol>
+<h3 class="sec">Essay</h3>
+<ul>
+<li>Discuss: The threefold ministry crystallized only gradually, as the Church settled into history after the apostolic generation passed. → <em>The threefold ministry crystallized only gradually, as the Church settled into history after the apostolic generation passed</em></li>
+</ul>
+<h3 class="sec">Flashcards → From Apostolic Church to Vatican I</h3>
+</article>
+<article class="entry" id="ecclesiology-unit-6-question-bank" data-search="Unit 6 — Question Bank 
+ define / explain 
+ 
+ state dulles&#x27;s three criteria for evaluating an ecclesiological model. 
+ choose two models and explain one strength and one weakness of each. 
+ why does dulles propose &quot;community of disciples&quot; as an integrating model rather than a sixth independent one? 
+ 
+ essay 
+ 
+ discuss: no single model exhausts the mystery of the church; a mature ecclesiology holds several models simultaneously. →  no single model exhausts the mystery of the church; a mature ecclesiology holds several models simultaneously  
+ 
+ flashcards → models of the church: avery dulles ">
+<h3 class="entry-title">Unit 6 — Question Bank</h3>
+
+<h3 class="sec">Define / explain</h3>
+<ol>
+<li>State Dulles's three criteria for evaluating an ecclesiological model.</li>
+<li>Choose two models and explain one strength and one weakness of each.</li>
+<li>Why does Dulles propose "community of disciples" as an integrating model rather than a sixth independent one?</li>
+</ol>
+<h3 class="sec">Essay</h3>
+<ul>
+<li>Discuss: No single model exhausts the mystery of the Church; a mature ecclesiology holds several models simultaneously. → <em>No single model exhausts the mystery of the Church; a mature ecclesiology holds several models simultaneously</em></li>
+</ul>
+<h3 class="sec">Flashcards → Models of the Church: Avery Dulles</h3>
+</article>
+<article class="entry" id="ecclesiology-unit-7-question-bank" data-search="Unit 7 — Question Bank 
+ define / explain 
+ 
+ what is conciliarism, and why did it arise? 
+ why was vatican i unable to complete its picture of the church (link to unit 5)? 
+ in what specific ways was vatican ii a &quot;world church&quot; council? 
+ 
+ essay 
+ 
+ discuss: conciliarism located supreme authority in the council; vatican i decisively rejected this in favour of ordinary papal jurisdiction. →  conciliarism located supreme authority in the council; vatican i decisively rejected this in favour of ordinary papal jurisdiction  
+ 
+ flashcards → ecumenical councils, conciliarism, and the convocation of vatican ii ">
+<h3 class="entry-title">Unit 7 — Question Bank</h3>
+
+<h3 class="sec">Define / explain</h3>
+<ol>
+<li>What is conciliarism, and why did it arise?</li>
+<li>Why was Vatican I unable to complete its picture of the Church (link to Unit 5)?</li>
+<li>In what specific ways was Vatican II a "world Church" council?</li>
+</ol>
+<h3 class="sec">Essay</h3>
+<ul>
+<li>Discuss: Conciliarism located supreme authority in the council; Vatican I decisively rejected this in favour of ordinary papal jurisdiction. → <em>Conciliarism located supreme authority in the council; Vatican I decisively rejected this in favour of ordinary papal jurisdiction</em></li>
+</ul>
+<h3 class="sec">Flashcards → Ecumenical Councils, Conciliarism, and the Convocation of Vatican II</h3>
+</article>
+<article class="entry" id="ecclesiology-unit-8-question-bank" data-search="Unit 8 — Question Bank 
+ define / explain 
+ 
+ choose three of the nine paradigm shifts and explain both the pre- and post-conciliar category. 
+ what is sedevacantism, and how does it differ from the &quot;restorationist&quot; critique offered by figures like küng? 
+ name the three questions vatican ii left officially unresolved, according to the sources. 
+ 
+ essay 
+ 
+ discuss: vatican ii did not change doctrine but re-categorized the church&#x27;s self-understanding across nine fundamental axes. →  vatican ii did not change doctrine but re-categorized the church&amp;#x27;s self-understanding across nine fundamental axes  
+ 
+ flashcards → reception of vatican ii: paradigm shifts and critiques ">
+<h3 class="entry-title">Unit 8 — Question Bank</h3>
+
+<h3 class="sec">Define / explain</h3>
+<ol>
+<li>Choose three of the nine paradigm shifts and explain both the pre- and post-conciliar category.</li>
+<li>What is sedevacantism, and how does it differ from the "restorationist" critique offered by figures like Küng?</li>
+<li>Name the three questions Vatican II left officially unresolved, according to the sources.</li>
+</ol>
+<h3 class="sec">Essay</h3>
+<ul>
+<li>Discuss: Vatican II did not change doctrine but re-categorized the Church's self-understanding across nine fundamental axes. → <em>Vatican II did not change doctrine but re-categorized the Church&#x27;s self-understanding across nine fundamental axes</em></li>
+</ul>
+<h3 class="sec">Flashcards → Reception of Vatican II: Paradigm Shifts and Critiques</h3>
+</article>
+<article class="entry" id="ecclesiology-unit-9-question-bank" data-search="Unit 9 — Question Bank 
+ define / explain 
+ 
+ why is lg called vatican ii&#x27;s &quot;magna charta&quot;? 
+ explain the theocentric, christocentric, and pneumatological dimensions of lg 2-4. 
+ describe the three concentric circles of lg 14-16 and give an example of who belongs to each. 
+ 
+ essay 
+ 
+ discuss: lg places people of god before hierarchy to assert baptismal equality as prior to office. →  lg places people of god before hierarchy to assert baptismal equality as prior to office  
+ 
+ flashcards → lumen gentium i: mystery, sacrament, people of god ">
+<h3 class="entry-title">Unit 9 — Question Bank</h3>
+
+<h3 class="sec">Define / explain</h3>
+<ol>
+<li>Why is LG called Vatican II's "Magna Charta"?</li>
+<li>Explain the theocentric, Christocentric, and pneumatological dimensions of LG 2-4.</li>
+<li>Describe the three concentric circles of LG 14-16 and give an example of who belongs to each.</li>
+</ol>
+<h3 class="sec">Essay</h3>
+<ul>
+<li>Discuss: LG places People of God before Hierarchy to assert baptismal equality as prior to office. → <em>LG places People of God before Hierarchy to assert baptismal equality as prior to office</em></li>
+</ul>
+<h3 class="sec">Flashcards → Lumen Gentium I: Mystery, Sacrament, People of God</h3>
+</article>
+<article class="entry" id="modern-theologians-question-bank" data-search="Modern Theologians — Question Bank 
+ consolidated from the flashcard blocks of the fifteen-note unit. companion to  theological method question bank  (pre-1918 and method). answers live in the linked notes; this file is the  prompt  side only. 
+  how to drill   a  cold, from memory, in one line each.  b  in three to five sentences.  c  as a twenty-minute plan: thesis, three moves, one objection, one indian application.  d  aloud, as viva. anything you miss twice, open the person note and rewrite the definition in your own words there.  
+
+ 
+ a. identification — define in one line 
+ the frame 
+ 
+ ford&#x27;s minimal definition of &quot;modern&quot; theology 
+ why 1918 as the watershed 
+ ford&#x27;s two criteria for including a theologian — and one cost of them 
+ type 1 / type 2 / type 3 / type 4 / type 5, with one figure each 
+ theology&#x27;s three publics 
+ the permanent tension of modern theology 
+ 
+ part i — the classics 
+ 
+ infinite qualitative distinction 
+ actualism (barth) 
+ threefold word of god 
+ barmen declaration 
+  stellvertretung  
+  analogia relationis  
+ cheap grace 
+  etsi deus non daretur  
+ ultimate concern 
+ ground of being 
+ the demonic (tillich) 
+ new being 
+  surnaturel  ·  natura pura  ·  ressourcement  
+  vorgriff auf esse  
+ supernatural existential 
+ anonymous christian 
+ theological aesthetics 
+  gestalt christi  
+ theo-drama 
+  maior dissimilitudo  
+ 
+ part ii — responses to modernity 
+ 
+ revelation as history 
+ proleptic actualization 
+ christology &quot;from below&quot; 
+ excentric openness 
+ dialectic of cross and resurrection 
+ divine passibility 
+ social trinitarianism 
+  homoousion  as torrance uses it 
+ &quot;epistemology follows ontology&quot; 
+ wisdom theology 
+ sociality (hardy) 
+ radical monotheism 
+ the responsible self 
+ christian realism 
+ anxiety as the precondition of sin 
+ ogden&#x27;s dual criteria 
+ imaginative construction (kaufman) 
+ the religious &quot;classic&quot; (tracy) 
+ dipolar god 
+ imaginative generalization 
+ 
+ part ii d–e — retrieval, texts, postmodernity 
+ 
+ cultural-linguistic theory 
+ rule theory of doctrine 
+ intratextuality — and &quot;the text absorbs the world&quot; 
+ the eclipse of biblical narrative 
+ identity before presence 
+ &quot;god&#x27;s being is in becoming&quot; 
+ the church as &quot;the risen christ&#x27;s ego&quot; 
+ gunton&#x27;s objection to barth&#x27;s trinity 
+ theology as &quot;the uneasy conscience of faith&quot; 
+ demythologization 
+ ricoeur&#x27;s double hermeneutic 
+ canonical criticism 
+ the three programmes of philosophical theology 
+ deconstruction · metanarrative · foundationalism 
+ a/theology 
+ onto-theology; icon versus idol 
+ radical orthodoxy&#x27;s core claim 
+ 
+ parts iii–iv — sciences, prayer, practice 
+ 
+ why the theology of nature was downgraded, and what reopened it 
+ double agency 
+ top-down causation 
+ the panentheistic analogy 
+ law of complexity–consciousness 
+ omega point / christogenesis 
+ peacocke on humanity&#x27;s role 
+ troeltsch&#x27;s church–sect typology 
+ milbank&#x27;s critique of social theory 
+ the two stages of the divorce of theology and spirituality 
+ stolz&#x27;s diagnosis 
+ weil on creation and on attention 
+ the shepherding perspective 
+ browning&#x27;s four movements 
+ paleo-orthodoxy 
+ 
+ part v — particularizing 
+ 
+ kyriarchy 
+  han  ·  minjung  ·  ochlos  
+ gaia and god (ruether) 
+ the &quot;other of the same&quot;; the sensible transcendental 
+ blackness in black theology 
+ the four sources of black theology 
+ delores williams on hagar; the surrogacy critique 
+ charles long&#x27;s objection 
+ preferential option for the poor — a statement about what? 
+ gutiérrez&#x27;s two phases 
+ segundo&#x27;s hermeneutic circle 
+ the crucified people 
+ structural sin 
+ tamez on justification 
+ translatability (bediako, sanneh) 
+ theology of reconstruction — and maluleke&#x27;s objection to it 
+ spatiality (wilfred) 
+ pieris&#x27;s two poles; core-to-core dialogue 
+ cosmotheandric vision 
+ &quot;jesus is the christ; christ is not jesus only&quot; 
+ waterbuffalo theology; the crucified mind 
+ cross-textual hermeneutics 
+ contrapuntal reading; hermeneutics of diaspora 
+ orientalism · hybridity · subaltern 
+ 
+ p">
+<h3 class="entry-title">Modern Theologians — Question Bank</h3>
+
+<p>Consolidated from the flashcard blocks of the fifteen-note unit. Companion to <a href="#theological-method-question-bank">Theological Method Question Bank</a> (pre-1918 and method). Answers live in the linked notes; this file is the <em>prompt</em> side only.</p>
+<div class="callout callout-tip"><p class="callout-label">How to drill</p><p><strong>A</strong> cold, from memory, in one line each. <strong>B</strong> in three to five sentences. <strong>C</strong> as a twenty-minute plan: thesis, three moves, one objection, one Indian application. <strong>D</strong> aloud, as viva. Anything you miss twice, open the person note and rewrite the definition in your own words there.</p></div>
+
+<hr />
+<h3 class="sec">A. Identification — define in one line</h3>
+<h3>The frame</h3>
+<ol>
+<li>Ford's minimal definition of "modern" theology</li>
+<li>Why 1918 as the watershed</li>
+<li>Ford's two criteria for including a theologian — and one cost of them</li>
+<li>Type 1 / Type 2 / Type 3 / Type 4 / Type 5, with one figure each</li>
+<li>Theology's three publics</li>
+<li>The permanent tension of modern theology</li>
+</ol>
+<h3>Part I — the classics</h3>
+<ol>
+<li>Infinite qualitative distinction</li>
+<li>Actualism (Barth)</li>
+<li>Threefold Word of God</li>
+<li>Barmen Declaration</li>
+<li><em>Stellvertretung</em></li>
+<li><em>Analogia relationis</em></li>
+<li>Cheap grace</li>
+<li><em>Etsi deus non daretur</em></li>
+<li>Ultimate concern</li>
+<li>Ground of being</li>
+<li>The demonic (Tillich)</li>
+<li>New Being</li>
+<li><em>Surnaturel</em> · <em>natura pura</em> · <em>ressourcement</em></li>
+<li><em>Vorgriff auf esse</em></li>
+<li>Supernatural existential</li>
+<li>Anonymous Christian</li>
+<li>Theological aesthetics</li>
+<li><em>Gestalt Christi</em></li>
+<li>Theo-drama</li>
+<li><em>Maior dissimilitudo</em></li>
+</ol>
+<h3>Part II — responses to modernity</h3>
+<ol>
+<li>Revelation as history</li>
+<li>Proleptic actualization</li>
+<li>Christology "from below"</li>
+<li>Excentric openness</li>
+<li>Dialectic of cross and resurrection</li>
+<li>Divine passibility</li>
+<li>Social trinitarianism</li>
+<li><em>Homoousion</em> as Torrance uses it</li>
+<li>"Epistemology follows ontology"</li>
+<li>Wisdom theology</li>
+<li>Sociality (Hardy)</li>
+<li>Radical monotheism</li>
+<li>The responsible self</li>
+<li>Christian realism</li>
+<li>Anxiety as the precondition of sin</li>
+<li>Ogden's dual criteria</li>
+<li>Imaginative construction (Kaufman)</li>
+<li>The religious "classic" (Tracy)</li>
+<li>Dipolar God</li>
+<li>Imaginative generalization</li>
+</ol>
+<h3>Part II D–E — retrieval, texts, postmodernity</h3>
+<ol>
+<li>Cultural-linguistic theory</li>
+<li>Rule theory of doctrine</li>
+<li>Intratextuality — and "the text absorbs the world"</li>
+<li>The eclipse of biblical narrative</li>
+<li>Identity before presence</li>
+<li>"God's being is in becoming"</li>
+<li>The church as "the risen Christ's Ego"</li>
+<li>Gunton's objection to Barth's Trinity</li>
+<li>Theology as "the uneasy conscience of faith"</li>
+<li>Demythologization</li>
+<li>Ricoeur's double hermeneutic</li>
+<li>Canonical criticism</li>
+<li>The three programmes of philosophical theology</li>
+<li>Deconstruction · metanarrative · foundationalism</li>
+<li>A/theology</li>
+<li>Onto-theology; icon versus idol</li>
+<li>Radical Orthodoxy's core claim</li>
+</ol>
+<h3>Parts III–IV — sciences, prayer, practice</h3>
+<ol>
+<li>Why the theology of nature was downgraded, and what reopened it</li>
+<li>Double agency</li>
+<li>Top-down causation</li>
+<li>The panentheistic analogy</li>
+<li>Law of complexity–consciousness</li>
+<li>Omega Point / Christogenesis</li>
+<li>Peacocke on humanity's role</li>
+<li>Troeltsch's church–sect typology</li>
+<li>Milbank's critique of social theory</li>
+<li>The two stages of the divorce of theology and spirituality</li>
+<li>Stolz's diagnosis</li>
+<li>Weil on creation and on attention</li>
+<li>The shepherding perspective</li>
+<li>Browning's four movements</li>
+<li>Paleo-orthodoxy</li>
+</ol>
+<h3>Part V — particularizing</h3>
+<ol>
+<li>Kyriarchy</li>
+<li><em>Han</em> · <em>minjung</em> · <em>ochlos</em></li>
+<li>Gaia and God (Ruether)</li>
+<li>The "other of the same"; the sensible transcendental</li>
+<li>Blackness in black theology</li>
+<li>The four sources of black theology</li>
+<li>Delores Williams on Hagar; the surrogacy critique</li>
+<li>Charles Long's objection</li>
+<li>Preferential option for the poor — a statement about what?</li>
+<li>Gutiérrez's two phases</li>
+<li>Segundo's hermeneutic circle</li>
+<li>The crucified people</li>
+<li>Structural sin</li>
+<li>Tamez on justification</li>
+<li>Translatability (Bediako, Sanneh)</li>
+<li>Theology of reconstruction — and Maluleke's objection to it</li>
+<li>Spatiality (Wilfred)</li>
+<li>Pieris's two poles; core-to-core dialogue</li>
+<li>Cosmotheandric vision</li>
+<li>"Jesus is the Christ; Christ is not Jesus only"</li>
+<li>Waterbuffalo theology; the crucified mind</li>
+<li>Cross-textual hermeneutics</li>
+<li>Contrapuntal reading; hermeneutics of diaspora</li>
+<li>Orientalism · hybridity · subaltern</li>
+</ol>
+<h3>Parts VI–VIII — global, interfaith, media</h3>
+<ol>
+<li>The two streams that formed the WCC; Montreal 1963</li>
+<li>BEM, and <em>anamnesis</em> as it functions there</li>
+<li><em>Koinonia</em> in ecumenical method</li>
+<li>Organic union versus reconciled diversity</li>
+<li>Sophiology</li>
+<li>Apophaticism; the essence/energies distinction</li>
+<li>Christian Hellenism; <em>podvig</em></li>
+<li>Being as communion</li>
+<li>The three phases of Pentecostalism; the "full gospel"</li>
+<li>The doctrine of consequence</li>
+<li>Propositional revelation (Henry)</li>
+<li>Evangelical inclusivism (Pinnock)</li>
+<li>Exclusivism / inclusivism / pluralism — and D'Costa's objection</li>
+<li>Hick's Kantian move</li>
+<li>Supersessionism; Soulen's "semi-gnostic" charge</li>
+<li>Scriptural Reasoning</li>
+<li>Creative transformation (Cobb); Knitter's objection</li>
+<li>Begbie on polyphony and on musical resolution</li>
+<li>Embodiment (theology of the arts)</li>
+</ol>
+<hr />
+<h3 class="sec">B. Short answer — three to five sentences</h3>
+<ol>
+<li>Why does Ford count a fiercely anti-modern theology as <em>modern</em> theology?</li>
+<li>State the five types and place Barth, Tillich, Bultmann. Why are Types 1 and 5 limit cases?</li>
+<li>What made Barth break with liberal theology, and what did he put in its place?</li>
+<li>Explain "religionless Christianity" and the world come of age. Why is Bonhoeffer easy to misuse?</li>
+<li>Run Tillich's correlation on finitude and on estrangement.</li>
+<li>Why did de Lubac think <em>natura pura</em> produced secularism?</li>
+<li>Define the supernatural existential and give one criticism of the anonymous Christian from each side.</li>
+<li>Contrast Rahner and Balthasar on the starting point of theology and name two consequences.</li>
+<li>What does Pannenberg gain, and risk, by making theology answerable to universal history?</li>
+<li>How does Moltmann's eschatology differ from a doctrine of the last things?</li>
+<li>Explain the <em>homoousion</em> as the hinge of Torrance's theological science.</li>
+<li>What did Sykes accuse Ramsey of, and was he right?</li>
+<li>Distinguish the two Niebuhrs in one paragraph.</li>
+<li>State Lindbeck's three models and the advantage of the third.</li>
+<li>Explain Frei's "eclipse of biblical narrative" and its consequence for preaching.</li>
+<li>What is postliberalism accused of, and what is its answer?</li>
+<li>Name three post-conciliar Catholic positions and how they differ.</li>
+<li>Distinguish liberal from conservative postmodern theology; place Marion and Cupitt.</li>
+<li>Name four positions on divine action and say which concede least to science.</li>
+<li>Why does evolutionary suffering press toward divine passibility, and what does that cost?</li>
+<li>State Milbank's charge against sociology and one objection to it.</li>
+<li>How did theology and spirituality come apart, and on what terms can they be reunited?</li>
+<li>Distinguish the three styles of practical theology with one figure each.</li>
+<li>What is kyriarchy, and why did womanist theologians need it?</li>
+<li>Give the four sources of black theology and one internal critique of the movement.</li>
+<li>Trace liberation theology from the irruption of the poor to its present crisis.</li>
+<li>State the Dalit critique of inculturation in your own words.</li>
+<li>Explain cross-textual hermeneutics and give an Indian worked example.</li>
+<li>Give postcolonialism's three charges against liberation hermeneutics.</li>
+<li>What did BEM achieve, and what remains unresolved in ecumenical method?</li>
+<li>Why is the essence/energies distinction necessary for Orthodox theology?</li>
+<li>Why is Pentecostalism growing where liberation theology receded?</li>
+<li>State D'Costa's objection to the threefold typology and his alternative.</li>
+<li>What is Scriptural Reasoning, and what does it refuse to settle in advance?</li>
+<li>Recite six of Ford's twelve theses and say what each answers in the book.</li>
+</ol>
+<hr />
+<h3 class="sec">C. Essay questions — twenty minutes each</h3>
+<ol>
+<li>"Modern theology is defined not by its conclusions but by its relation to modernity." Discuss with reference to Ford's five types and at least three theologians.</li>
+<li>Compare Rahner and Balthasar on the starting point of theology, and assess the consequences for the theology of religions.</li>
+<li>"Barth restored theology to strength but at the cost of history." Evaluate.</li>
+<li>Assess Lindbeck's cultural-linguistic theory. Is it a resource or a threat for Indian contextual theology?</li>
+<li>Account for the movement of the Latin American poor from base communities to Pentecostalism, and say what liberation theology should learn from it.</li>
+<li>"Every liberating theology is criticized by the next one it excluded." Illustrate from womanist, Third World feminist and postcolonial critiques.</li>
+<li>What does the theology–science dialogue require of the doctrine of divine action? Assess panentheism as a solution.</li>
+<li>Examine the divorce and attempted reunion of theology and spirituality, and state the implications for seminary formation.</li>
+<li>"African theology is danced, sung and lived rather than written." What does Maluleke's claim imply for how theology is assessed in the academy — and for Ford's inclusion criteria?</li>
+<li>Take any three of Ford's twelve theses and argue a theological programme for the Indian Church in the next decade.</li>
+<li>Is de Lubac right that a self-sufficient "pure nature" is the root of secularism?</li>
+<li>"Postcolonial criticism makes the Bible unusable for the oppressed." Evaluate, with reference to Exodus and to the adivasi question.</li>
+<li>Compare Kitamori, Sobrino and Ahn Byung Mu as theologies of suffering. Which is most usable in a Bengal parish, and why?</li>
+<li>Assess Moltmann's social trinitarianism against the charge of tritheism.</li>
+<li>"Theology is a broker of the arts, humanities, sciences and common sense." Test Ford's ninth thesis against any one chapter of Parts III, IV or VIII.</li>
+</ol>
+<hr />
+<h3 class="sec">D. Viva — the twelve fault lines</h3>
+<p>Take each row of <em>11a - Fault Lines Since 1918</em>: name the two sides with a text apiece, state what is at stake, then take a position and defend it against the strongest objection.</p>
+<ol>
+<li>Where theology starts — Rahner or Balthasar</li>
+<li>Nature and grace — <em>natura pura</em> or the natural desire for the supernatural</li>
+<li>Retrieval or correlation — Lindbeck or Tracy</li>
+<li>Theology and secular reason — Milbank or Troeltsch/Farley</li>
+<li>God and suffering — impassibility or passibility</li>
+<li>Faith and history — Pannenberg or Barth</li>
+<li>Christ and the religions — inclusivism, pluralism, or trinitarian engagement</li>
+<li>Culture or justice — inculturation or liberation</li>
+<li>Liberation and its critics — single axis or intersecting axes</li>
+<li>Church and world — Hauerwas/Yoder or Reinhold Niebuhr</li>
+<li>After foundationalism — recovery or retreat</li>
+<li>Theology and prayer — discipline or participation</li>
+</ol>
+<hr />
+<h3 class="sec">E. Identification of texts — name the author and the claim</h3>
+<p><em>Rahner</em> · <em>Church Dogmatics</em> · <em>The Nature of Doctrine</em> · <em>The Crucified God</em> · <em>Systematic Theology</em> (Tillich) · <em>Surnaturel</em> · <em>The Glory of the Lord</em> · <em>Letters and Papers from Prison</em> · <em>The Eclipse of Biblical Narrative</em> · <em>A Theology of Liberation</em> · <em>Black Theology and Black Power</em> · <em>Sexism and God-Talk</em> · <em>An Asian Theology of Liberation</em> · <em>Waterbuffalo Theology</em> · <em>Theology of the Pain of God</em> · <em>The Mystical Theology of the Eastern Church</em> · <em>Theology and Social Theory</em> · <em>God Without Being</em> · <em>The Call of the Minaret</em> · <em>The God of Israel and Christian Theology</em> · <em>Postcolonial Criticism and Biblical Interpretation</em> · <em>Christ and Culture</em> · <em>The Nature and Destiny of Man</em> · <em>Insight</em> · <em>Method in Theology</em>.</p>
+<hr />
+<h3 class="sec">Related</h3>
+<p><em>Modern Theologians Since 1918 - Course Home</em> · <em>13 - Master Roster of Modern Theologians</em> · <em>14 - Glossary, Revision and Exam Questions</em> · <em>11a - Fault Lines Since 1918</em> · <em>Theologians Index (Dataview)</em> · <a href="#theological-method-question-bank">Theological Method Question Bank</a></p>
+</article>
+<article class="entry" id="theological-method-question-bank" data-search="Theological Method — Question Bank 
+ source unit:  theological methods - moc  (12 course notes, 4 notebooks). concepts and claims live in this vault; the long treatment lives in the course folder. 
+ define / explain (each: term, whose, one-line definition, one example) 
+ 
+ theological method — lonergan — normative pattern of recurrent and related operations yielding cumulative and progressive results →  theological method  
+ functional specialty — lonergan — division of theological work by task, not by field →  eight functional specialties  
+ conversion — lonergan/doran — religious, moral, intellectual, psychic shift of horizon →  conversion  
+ horizon — the boundary within which meaning and choice occur →  horizon  
+ method of correlation — tillich — existential question ↔ symbolic answer →  method of correlation  
+  epoché  + eidetic vision — bleeker/kristensen — suspend judgement, then seek the essence →  epoche  
+  anubhava  — indian theology — direct spiritual experience as starting point →  anubhava  
+ crucified mind — koyama — kenotic posture against the crusading mind →  crucified mind  
+ theology of the cross — luther — god known in weakness, not in glory →  theology of the cross  
+  ressourcement  — return to biblical, patristic, liturgical sources →  ressourcement  
+ historical consciousness — sources become data, not premises →  historical consciousness  
+ supernatural existential — rahner — nature always already graced →  supernatural existential  
+ 
+ short answer (5 marks) 
+ 
+ distinguish method, technique and system. →  method is a pattern of operations, not a set of rules  
+ name the four transcendental precepts and the operation each governs. →  eight functional specialties  
+ why is discord between methods worse than opposition between doctrines? →  discord between methods is graver than opposition between doctrines  
+ what are the three distortions produced by imbalance among the sources? →  over-emphasis on experience, history or reason distorts theology in three predictable ways  
+ state the two possible starting points and one consequence of each. →  the choice of starting point decides the theology  
+ what is the &quot;short-circuit&quot; fallacy in exegesis? →  the short-circuit from what a text meant to what it means is the commonest exegetical error  
+ give the four criteria for choosing a method. →  four criteria for choosing a theological method  
+ what two criteria guard inculturation from relativism? →  contextual method is not anti-western but anti-absolutised-western  
+ 
+ essay (15–20 marks) 
+ 
+ &quot;every major theological reversal is first a reversal of method.&quot; test on luther→aquinas and barth→schleiermacher. →  every major theological reversal is first a reversal of method  
+ &quot;objectivity is the fruit of authentic subjectivity.&quot; expound and assess as a foundation for method. →  objectivity is the fruit of authentic subjectivity  
+ how did historical consciousness change theological method, from the enlightenment to vatican ii? →  historical consciousness turned the sources of theology into data  
+ compare aquinas&#x27;s  gratia perficit naturam  with rahner&#x27;s supernatural existential. →  rahner dissolves the two-tier separation of nature and grace  
+ is the historical-critical method adequate for an indian reading of scripture? →  the historical-critical method is necessary but not sufficient for an indian reading  
+ &quot;contextual method is anti-western.&quot; discuss with koyama and kitamori. →  contextual method is not anti-western but anti-absolutised-western  
+ on what criteria should a theologian choose a method? illustrate with two concrete tasks. →  four criteria for choosing a theological method  
+ can methods legitimately be combined? distinguish sequencing from eclecticism. →  methods may be combined when sequenced by task, not blended to dodge difficulty  
+ 
+ reflect 
+ 
+ which method do  my  homilies actually use — and is it the one the situation calls for? 
+ where in my own writing do i short-circuit from">
+<h3 class="entry-title">Theological Method — Question Bank</h3>
+
+<p>Source unit: <em>Theological Methods - MOC</em> (12 course notes, 4 notebooks). Concepts and claims live in this vault; the long treatment lives in the course folder.</p>
+<h3 class="sec">Define / explain (each: term, whose, one-line definition, one example)</h3>
+<ol>
+<li>Theological method — Lonergan — normative pattern of recurrent and related operations yielding cumulative and progressive results → <em>Theological Method</em></li>
+<li>Functional specialty — Lonergan — division of theological work by task, not by field → <em>Eight Functional Specialties</em></li>
+<li>Conversion — Lonergan/Doran — religious, moral, intellectual, psychic shift of horizon → <em>Conversion</em></li>
+<li>Horizon — the boundary within which meaning and choice occur → <em>Horizon</em></li>
+<li>Method of correlation — Tillich — existential question ↔ symbolic answer → <em>Method of Correlation</em></li>
+<li><em>Epoché</em> + eidetic vision — Bleeker/Kristensen — suspend judgement, then seek the essence → <em>Epoche</em></li>
+<li><em>Anubhava</em> — Indian theology — direct spiritual experience as starting point → <em>Anubhava</em></li>
+<li>Crucified mind — Koyama — kenotic posture against the crusading mind → <em>Crucified Mind</em></li>
+<li>Theology of the cross — Luther — God known in weakness, not in glory → <em>Theology of the Cross</em></li>
+<li><em>Ressourcement</em> — return to biblical, patristic, liturgical sources → <em>Ressourcement</em></li>
+<li>Historical consciousness — sources become data, not premises → <em>Historical Consciousness</em></li>
+<li>Supernatural existential — Rahner — nature always already graced → <em>Supernatural Existential</em></li>
+</ol>
+<h3 class="sec">Short answer (5 marks)</h3>
+<ol>
+<li>Distinguish method, technique and system. → <em>Method is a pattern of operations, not a set of rules</em></li>
+<li>Name the four transcendental precepts and the operation each governs. → <em>Eight Functional Specialties</em></li>
+<li>Why is discord between methods worse than opposition between doctrines? → <em>Discord between methods is graver than opposition between doctrines</em></li>
+<li>What are the three distortions produced by imbalance among the sources? → <em>Over-emphasis on experience, history or reason distorts theology in three predictable ways</em></li>
+<li>State the two possible starting points and one consequence of each. → <em>The choice of starting point decides the theology</em></li>
+<li>What is the "short-circuit" fallacy in exegesis? → <em>The short-circuit from what a text meant to what it means is the commonest exegetical error</em></li>
+<li>Give the four criteria for choosing a method. → <em>Four Criteria for Choosing a Theological Method</em></li>
+<li>What two criteria guard inculturation from relativism? → <em>Contextual method is not anti-Western but anti-absolutised-Western</em></li>
+</ol>
+<h3 class="sec">Essay (15–20 marks)</h3>
+<ol>
+<li>"Every major theological reversal is first a reversal of method." Test on Luther→Aquinas and Barth→Schleiermacher. → <em>Every major theological reversal is first a reversal of method</em></li>
+<li>"Objectivity is the fruit of authentic subjectivity." Expound and assess as a foundation for method. → <em>Objectivity is the fruit of authentic subjectivity</em></li>
+<li>How did historical consciousness change theological method, from the Enlightenment to Vatican II? → <em>Historical consciousness turned the sources of theology into data</em></li>
+<li>Compare Aquinas's <em>gratia perficit naturam</em> with Rahner's supernatural existential. → <em>Rahner dissolves the two-tier separation of nature and grace</em></li>
+<li>Is the historical-critical method adequate for an Indian reading of Scripture? → <em>The historical-critical method is necessary but not sufficient for an Indian reading</em></li>
+<li>"Contextual method is anti-Western." Discuss with Koyama and Kitamori. → <em>Contextual method is not anti-Western but anti-absolutised-Western</em></li>
+<li>On what criteria should a theologian choose a method? Illustrate with two concrete tasks. → <em>Four Criteria for Choosing a Theological Method</em></li>
+<li>Can methods legitimately be combined? Distinguish sequencing from eclecticism. → <em>Methods may be combined when sequenced by task, not blended to dodge difficulty</em></li>
+</ol>
+<h3 class="sec">Reflect</h3>
+<ul>
+<li>Which method do <em>my</em> homilies actually use — and is it the one the situation calls for?</li>
+<li>Where in my own writing do I short-circuit from "meant" to "means"?</li>
+<li>What is my horizon, and what does it make unaskable?</li>
+</ul>
+<h3 class="sec">Flashcards</h3>
+<p>Theological method examines :: the bases, the proper ordering and the norms of theology
+Lonergan's definition of method :: a normative pattern of recurrent and related operations yielding cumulative and progressive results
+The four transcendental precepts :: be attentive, be intelligent, be reasonable, be responsible
+The eight functional specialties :: research, interpretation, history, dialectics // foundations, doctrines, systematics, communications
+The pivot between the two phases :: conversion — religious, moral, intellectual, psychic
+Three distortions of imbalance :: experience→mysticism, history→false naturalism, reason→rationalism
+Tillich's three correlations :: finitude→God, despair→the Christ, meaning of history→Kingdom of God
+Segundo's four-step circle :: new experience of reality, ideological suspicion, exegetical suspicion, new interpretation
+Soares-Prabhu's two eyes :: the Indian situation (poverty, caste) and the Indian mind (inclusive, cosmocentric, context-sensitive)
+The Dalit critique of inculturation :: classical Indian philosophical categories are upper-caste language; start instead from the little traditions and lived oppression
+Koyama's posture :: the crucified mind, not the crusading mind
+Two guard-rails of inculturation :: the biblical canon and the global ecclesial community
+Barth on liberal theology :: subjectivism trying to be Christianity
+Rahner's axiom :: anthropology in its most radical sense is theology
+What makes a theologian major :: a paradigm later generations must adopt or define themselves against</p>
+</article>
+<p id="empty" class="empty-note" hidden>No entries match that search.</p>
+</main>
+
+<footer class="page">
+  Exam question banks from the personal theology vault.
+</footer>
+
+<script>
+  const input = document.getElementById('filter');
+  const entries = Array.from(document.querySelectorAll('.entry'));
+  const countEl = document.getElementById('count');
+  const empty = document.getElementById('empty');
+  const total = entries.length;
+  input.addEventListener('input', () => {
+    const q = input.value.trim().toLowerCase();
+    let shown = 0;
+    entries.forEach(e => {
+      const match = !q || (e.dataset.search || '').includes(q);
+      e.hidden = !match;
+      if (match) shown++;
+    });
+    countEl.textContent = q ? `${shown} of ${total}` : `${total} entries`;
+    empty.hidden = shown > 0 || !q;
+  });
+</script>
