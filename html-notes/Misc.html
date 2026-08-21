@@ -1,0 +1,536 @@
+<title>Miscellaneous Reference Notes</title>
+<style>
+  :root {
+    --ink: #ede3cf; --ink-soft: #cdbfa4; --paper: #211c16; --paper-raised: #2a241c;
+    --line: rgba(237,227,207,0.16); --wine: #c17a4d; --wine-soft: #c17a4d1c;
+    --gold: #d6ad5c; --gold-soft: #d6ad5c1a; --muted: #a3947a;
+    color-scheme: dark;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --ink: #2a2318; --ink-soft: #4d4330; --paper: #f4ecdb; --paper-raised: #ffffff;
+      --line: rgba(42,35,24,0.15); --wine: #9c4f27; --wine-soft: #9c4f2714;
+      --gold: #8a6414; --gold-soft: #8a641414; --muted: #7a6c52; color-scheme: light;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #ede3cf; --ink-soft: #cdbfa4; --paper: #211c16; --paper-raised: #2a241c;
+    --line: rgba(237,227,207,0.16); --wine: #c17a4d; --wine-soft: #c17a4d1c;
+    --gold: #d6ad5c; --gold-soft: #d6ad5c1a; --muted: #a3947a;
+  }
+  :root[data-theme="light"] {
+    --ink: #2a2318; --ink-soft: #4d4330; --paper: #f4ecdb; --paper-raised: #ffffff;
+    --line: rgba(42,35,24,0.15); --wine: #9c4f27; --wine-soft: #9c4f2714;
+    --gold: #8a6414; --gold-soft: #8a641414; --muted: #7a6c52;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 19px; line-height: 1.65; -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: var(--wine-soft); }
+  h1, h2, h3, h4 {
+    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "URW Palladio", serif;
+    text-wrap: balance; font-weight: 400; color: var(--gold); margin: 0;
+  }
+  p { margin: 0 0 1em; max-width: 44em; }
+  strong { color: var(--ink); font-weight: 700; }
+  em { color: var(--wine); font-style: italic; }
+  a { color: var(--wine); }
+  header.hero { padding: 52px 24px 30px; text-align: center; border-bottom: 1px solid var(--line); }
+  header.hero .eyebrow { font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--wine); margin-bottom: 10px; }
+  header.hero h1 { font-size: clamp(26px, 4.2vw, 38px); max-width: 22ch; margin: 0 auto 8px; font-style: italic; }
+  header.hero .sub { max-width: 46em; margin: 0 auto; color: var(--ink-soft); font-size: 15.5px; }
+  .searchbar {
+    position: sticky; top: 0; z-index: 10; background: var(--paper); border-bottom: 1px solid var(--line);
+    padding: 12px 24px;
+  }
+  .searchbar-inner { max-width: 760px; margin: 0 auto; display: flex; align-items: center; gap: 12px; }
+  .searchbar input {
+    flex: 1; padding: 9px 14px; font-size: 15px; font-family: inherit;
+    background: var(--paper-raised); border: 1px solid var(--line); border-radius: 20px;
+    color: var(--ink); outline: none;
+  }
+  .searchbar input:focus { border-color: var(--wine); }
+  .searchbar .count { font-size: 12.5px; color: var(--muted); white-space: nowrap; }
+  main { max-width: 760px; margin: 0 auto; padding: 20px 24px 50px; }
+  .entry {
+    padding: 22px 0; border-bottom: 1px solid var(--line);
+  }
+  .entry-title { font-size: 19px; margin-bottom: 8px; }
+  h3.sec { font-size: 15.5px; color: var(--gold); margin: 14px 0 6px; }
+  ul, ol { padding-left: 1.2em; margin: 0 0 0.9em; max-width: 44em; }
+  li { margin-bottom: 5px; }
+  .callout {
+    background: var(--paper-raised); border: 1px solid var(--line); border-left: 3px solid var(--gold);
+    border-radius: 3px; padding: 12px 16px; margin: 12px 0;
+  }
+  .callout p { margin: 0 0 5px; font-size: 14.5px; color: var(--ink-soft); }
+  .callout-label { font-size: 11px !important; letter-spacing: 0.05em; text-transform: uppercase; color: var(--gold) !important; margin-bottom: 5px !important; }
+  [hidden] { display: none !important; }
+  .empty-note { color: var(--muted); font-size: 14px; padding: 30px 0; text-align: center; }
+  footer.page { max-width: 760px; margin: 0 auto; padding: 30px 24px 60px; font-size: 13px; color: var(--muted); }
+</style>
+
+<header class="hero">
+  <p class="eyebrow">Theology Vault &middot; Reference</p>
+  <h1>Miscellaneous Reference Notes</h1>
+  <p class="sub">Inbox, Bible, Comparative Theology, and Wisdom — atomic notes from the personal theology vault</p>
+</header>
+
+<div class="searchbar">
+  <div class="searchbar-inner">
+    <input id="filter" type="text" placeholder="Search 18 entries&hellip;" autocomplete="off" />
+    <span class="count" id="count">18 entries</span>
+  </div>
+</div>
+
+<main id="main">
+<h2 class="cat-label">Inbox</h2>
+<article class="entry" id="homily-the-treasure-in-our-field-17th-sunday" data-search="The Treasure in Our Field   sample homily in the voice of &amp;lt;em&amp;gt;george soares-prabhu&amp;lt;/em&amp;gt;, generated via the soares-prabhu-4vol skill. grounding: &amp;lt;em&amp;gt;lit - soares-prabhu collected writings vols 1-4&amp;lt;/em&amp;gt;. see method note at foot.  
+
+ a homily for the seventeenth sunday in ordinary time (year a) — 26 july 2026 
+  1 kings 3:5, 7–12 · romans 8:28–30 · matthew 13:44–52  
+  in the method and voice of george m. soares-prabhu, sj — grounded in the collected writings, vols 1–4.  
+ 
+ my dear sisters and brothers, 
+ a daily-wage labourer is digging in a field that is not his own. his back is bent — bent the way the backs of the landless poor of our country are bent, over soil they till but will never possess. and suddenly his spade strikes something hard. treasure! hidden, unhoped for, unearned. and &quot;in his joy,&quot; the gospel tells us, &quot;he goes and sells all that he has and buys that field&quot; (mt 13:44). 
+ notice whom jesus chooses for his story. not a king, not a priest, not a landowner — a man digging in another man&#x27;s field. if jesus were telling this parable among us today, he would tell it, i suspect, of a migrant worker on a construction site, of a dalit farmhand in a field mortgaged to a moneylender. for the parables of jesus are not pious decorations. they are subversive stories, told to shatter the world we have comfortably settled into, to turn our expectations upside down until our defences fall and the kingdom can break in. like the  dhvani  of our indian poetics — the resonance by which a word evokes in the hearer depths of meaning it does not state — the parable does not define the kingdom. it detonates it in the heart. 
+ what did jesus mean? 
+ sober exegesis will not let us sentimentalize this text. the kingdom of god that jesus announced (mk 1:14–15) is not heaven-after-death, and it is certainly not the church. it is god&#x27;s decisive saving action, liberating creation — a new society realized whenever human beings become free, internally and externally; whenever there is fellowship of concern among them; whenever they strive together for a just world. freedom, fellowship, justice: these are the parameters by which the arrival — or the delay! — of god&#x27;s reign is to be gauged. the twin parables of the treasure and the pearl tell us two things about this kingdom: that it is found with joy, and that it costs everything. the merchant and the labourer do not give up their possessions grimly, as ascetics performing tapasya. they give them up laughing, because what they have found makes everything else look small. 
+ here is the heart of the matter. the kingdom is not first a demand; it is first a discovery. beneath the demand to &quot;sell all&quot; lies the experience jesus himself had of god — the experience of god as  abba , a loving parent whose love is unconditional and therefore absolutely universal. the dharma of jesus is not a burden added to our burdens. it proclaims freedom from the burden of the law, because it is grounded on the experience of a god who loves us, his children, before we have earned anything at all. the treasure is hidden in the field of our ordinary, sweat-soaked lives; grace comes to us where we dig. 
+ and solomon? 
+ the first reading shows us the young king, invited to ask for anything — long life, riches, the death of his enemies — and asking instead for &quot;an understanding heart to govern your people, to distinguish right from wrong&quot; (1 kgs 3:9). mark it well: the wisdom solomon asks for is not speculative wisdom, not the wisdom of the philosophers or of the pandits. it is the wisdom to govern justly — a wisdom whose test, in the very next scene of the book, is a judgment that protects a powerless woman, a prostitute, the least of the land. biblical wisdom is discernment ordered to justice. it is what our own tradition would call  viveka  — but a viveka that has come down from the mountain caves into the marketplace and the courtroom, where the poor wait for judgment. 
+ this is not an elitist g">
+<h3 class="entry-title">The Treasure in Our Field</h3>
+<div class="callout callout-info"><p class="callout-label">Sample homily in the voice of &lt;em&gt;George Soares-Prabhu&lt;/em&gt;, generated via the soares-prabhu-4vol skill. Grounding: &lt;em&gt;Lit - Soares-Prabhu Collected Writings Vols 1-4&lt;/em&gt;. See method note at foot.</p></div>
+
+<h3>A Homily for the Seventeenth Sunday in Ordinary Time (Year A) — 26 July 2026</h3>
+<p><em>1 Kings 3:5, 7–12 · Romans 8:28–30 · Matthew 13:44–52</em></p>
+<p><em>In the method and voice of George M. Soares-Prabhu, SJ — grounded in the Collected Writings, Vols 1–4.</em></p>
+<hr />
+<p>My dear sisters and brothers,</p>
+<p>A daily-wage labourer is digging in a field that is not his own. His back is bent — bent the way the backs of the landless poor of our country are bent, over soil they till but will never possess. And suddenly his spade strikes something hard. Treasure! Hidden, unhoped for, unearned. And "in his joy," the Gospel tells us, "he goes and sells all that he has and buys that field" (Mt 13:44).</p>
+<p>Notice whom Jesus chooses for his story. Not a king, not a priest, not a landowner — a man digging in another man's field. If Jesus were telling this parable among us today, he would tell it, I suspect, of a migrant worker on a construction site, of a dalit farmhand in a field mortgaged to a moneylender. For the parables of Jesus are not pious decorations. They are subversive stories, told to shatter the world we have comfortably settled into, to turn our expectations upside down until our defences fall and the Kingdom can break in. Like the <em>dhvani</em> of our Indian poetics — the resonance by which a word evokes in the hearer depths of meaning it does not state — the parable does not define the Kingdom. It detonates it in the heart.</p>
+<h3 class="sec">What did Jesus mean?</h3>
+<p>Sober exegesis will not let us sentimentalize this text. The Kingdom of God that Jesus announced (Mk 1:14–15) is not heaven-after-death, and it is certainly not the Church. It is God's decisive saving action, liberating creation — a new society realized whenever human beings become free, internally and externally; whenever there is fellowship of concern among them; whenever they strive together for a just world. Freedom, fellowship, justice: these are the parameters by which the arrival — or the delay! — of God's reign is to be gauged. The twin parables of the treasure and the pearl tell us two things about this Kingdom: that it is found with joy, and that it costs everything. The merchant and the labourer do not give up their possessions grimly, as ascetics performing tapasya. They give them up laughing, because what they have found makes everything else look small.</p>
+<p>Here is the heart of the matter. The Kingdom is not first a demand; it is first a discovery. Beneath the demand to "sell all" lies the experience Jesus himself had of God — the experience of God as <em>Abba</em>, a loving parent whose love is unconditional and therefore absolutely universal. The dharma of Jesus is not a burden added to our burdens. It proclaims freedom from the burden of the law, because it is grounded on the experience of a God who loves us, his children, before we have earned anything at all. The treasure is hidden in the field of our ordinary, sweat-soaked lives; grace comes to us where we dig.</p>
+<h3 class="sec">And Solomon?</h3>
+<p>The first reading shows us the young king, invited to ask for anything — long life, riches, the death of his enemies — and asking instead for "an understanding heart to govern your people, to distinguish right from wrong" (1 Kgs 3:9). Mark it well: the wisdom Solomon asks for is not speculative wisdom, not the wisdom of the philosophers or of the pandits. It is the wisdom to govern justly — a wisdom whose test, in the very next scene of the book, is a judgment that protects a powerless woman, a prostitute, the least of the land. Biblical wisdom is discernment ordered to justice. It is what our own tradition would call <em>viveka</em> — but a viveka that has come down from the mountain caves into the marketplace and the courtroom, where the poor wait for judgment.</p>
+<p>This is not an elitist gift. Grasping the Kingdom, Jesus insists, does not require intellectual sophistication or spiritual status; it requires an open heart, receiving God's love with the trust and simplicity of a child. The illiterate grandmother who shares her rice with a hungrier neighbour has found the treasure. Many of us, with our degrees and our devotions, are still walking past the field.</p>
+<h3 class="sec">Reading with Indian eyes — and being read</h3>
+<p>We live in a land where the treasure-seeking of the Gospel has been replaced by another kind: the frenzied acquisitiveness of a consumer culture whose tinsel facade hides a culture of silence — crores of our people below, on, or just above the poverty line. The parable asks the rich among us a piercing question: what have you ever wanted enough to sell everything for? If the honest answer is "a flat, a car, a foreign posting," then the Kingdom has not yet been found, however regular our Mass attendance. Our tribal communities have long known the values the parable presupposes — antigreed, the freedom not to accumulate; antipride, greatness as fearless service. They are closer to the merchant of the pearl than our consumer cities are.</p>
+<p>And the parable asks the Church a harder question still. A community that has found the treasure sells all and buys the field. Have we? A Church that clings to its institutions, its properties, its securities and its subtle castes — that still, God forgive us, seats its dalit members apart at the Eucharist — is a merchant who admired the pearl and went home to count his old stock. Where caste divides the one table of the Lord, our Eucharist is turned into a parody of itself. The dragnet parable (Mt 13:47–50) stands as a warning that the Kingdom's judgment falls first on those who presumed they were safely inside the boat.</p>
+<h3 class="sec">What then must we do?</h3>
+<p>The parable ends in joy, and so must we — but Kingdom-joy is not a feeling; it is a transaction. Something is found; everything is sold; the field is bought. This week, let each of us name one thing — one comfort, one prejudice, one hour, one rupee-amount — and sell it for the field: for the migrant family down the road, for the dalit colleague passed over again, for the neighbour of another faith whom we have politely avoided. For the liberation the Kingdom brings is total: liberation of the poor from the structures that crush them, and liberation of us, the possessing, from the greed that crushes us — the freedom our sages called <em>moksha</em>, arriving not at the end of the world but in the middle of a field, at the end of a spade.</p>
+<p>The scribe "trained for the Kingdom," Jesus says, brings out of his storeroom "things new and old" (Mt 13:52). Out of the old storeroom of India — her thirst for God, her viveka, her tribal wisdom — and out of the newness of the Gospel, let us bring forth a community of freedom, fellowship and justice. The treasure is already in our field. Faith endures; but no complacency is perennial!</p>
+<p><strong>Amen.</strong></p>
+<hr />
+<h3 class="sec">Method note</h3>
+<p>The NotebookLM primary sources contain no direct Soares-Prabhu commentary on Mt 13:44–52. This homily is constructed from his verified positions: parables as subversive/dhvani speech; the Kingdom's three dimensions (freedom, fellowship, justice); Abba experience grounding the dharma of Jesus; the anawim; tribal antigreed/antipride; the caste–Eucharist polemic; and the moksha–praxis convergence. Pipeline followed: commitment/context (landless labourer) → historical-critical exegesis (Kingdom ≠ Church/heaven) → social analysis (consumer culture, caste) → dual Indian reading (religious: viveka, moksha; social: dalit, migrant realities) → praxis (concrete "transaction").</p>
+</article>
+<h2 class="cat-label">Bible</h2>
+<article class="entry" id="acts-1-8-the-map-verse" data-search="Acts 1-8 - The Map Verse 
+ &quot;you shall receive power when the holy spirit has come upon you; and you shall be my witnesses in jerusalem and in all judea and samaria and to the end of the earth.&quot; 
+ jesus&#x27; answer to the wrong-shaped question. the disciples ask about restoring the kingdom to israel — thrones, armies, territory — and receive a mission instead of a map:  dunamis  instead of dominion,  martus  instead of magistrate. the verse then functions as the book&#x27;s structure, and its third clause is left grammatically open at 28:31. 
+  teaching move.  each student writes their own acts 1:8 — naming their jerusalem (those closest), their judea and samaria (those outside the circle), their ends of the earth. 
+ connected 
+  dunamis  ·  martus  ·  three legs of acts (the acts 1-8 itinerary)  ·  s02 - prelude to power  ">
+<h3 class="entry-title">Acts 1-8 - The Map Verse</h3>
+
+<p>"You shall receive power when the Holy Spirit has come upon you; and you shall be my witnesses in Jerusalem and in all Judea and Samaria and to the end of the earth."</p>
+<p>Jesus' answer to the wrong-shaped question. The disciples ask about restoring the kingdom to Israel — thrones, armies, territory — and receive a mission instead of a map: <em>dunamis</em> instead of dominion, <em>martus</em> instead of magistrate. The verse then functions as the book's structure, and its third clause is left grammatically open at 28:31.</p>
+<p><strong>Teaching move.</strong> Each student writes their own Acts 1:8 — naming their Jerusalem (those closest), their Judea and Samaria (those outside the circle), their ends of the earth.</p>
+<h3 class="sec">Connected</h3>
+<p><em>Dunamis</em> · <em>Martus</em> · <em>Three Legs of Acts (the Acts 1-8 Itinerary)</em> · <em>S02 - Prelude to Power</em></p>
+</article>
+<article class="entry" id="acts-10-cornelius-and-the-sheet" data-search="Acts 10 - Cornelius and the Sheet 
+ a millennium of separation ends on a rooftop in joppa — the port jonah used to flee his own mission to gentiles. 
+ cornelius, a centurion and god-fearer, prays at the ninth hour and is told his prayers have risen like incense. peter, at noon, sees a sheet let down by its four corners (= the whole earth) and hears &quot;kill and eat&quot; three times. gentile messengers arrive before he has finished puzzling. in cornelius&#x27; house the spirit falls on the uncircumcised while peter is still speaking — the third pentecost, and the end of the wall of the table. 
+ connected 
+  kashrut and table fellowship  ·  god-fearer  ·  cornelius  ·  lifting the dietary laws lifted the jew-gentile wall  ·  s10 - the door swings open to the nations  ">
+<h3 class="entry-title">Acts 10 - Cornelius and the Sheet</h3>
+
+<p>A millennium of separation ends on a rooftop in Joppa — the port Jonah used to flee his own mission to Gentiles.</p>
+<p>Cornelius, a centurion and God-fearer, prays at the ninth hour and is told his prayers have risen like incense. Peter, at noon, sees a sheet let down by its four corners (= the whole earth) and hears "kill and eat" three times. Gentile messengers arrive before he has finished puzzling. In Cornelius' house the Spirit falls on the uncircumcised while Peter is still speaking — the third Pentecost, and the end of the wall of the table.</p>
+<h3 class="sec">Connected</h3>
+<p><em>Kashrut and Table Fellowship</em> · <em>God-fearer</em> · <em>Cornelius</em> · <em>Lifting the dietary laws lifted the Jew-Gentile wall</em> · <em>S10 - The Door Swings Open to the Nations</em></p>
+</article>
+<article class="entry" id="acts-15-the-jerusalem-council" data-search="Acts 15 - The Jerusalem Council 
+ the church&#x27;s first doctrinal crisis and the prototype of every later council. 
+  question:  must gentiles be circumcised — that is, submit to the whole law (gen 17; lev 12:3) — to be saved?
+ process:  debate; peter&#x27;s speech (&quot;we believe that we shall be saved through the grace of the lord jesus, just as they will,&quot; 15:11); james&#x27; pastoral application with ot warrant (am 9:11-12; jer 12:15; is 45:21).
+ decree:  no circumcision; abstain from idol-food, unchastity, and blood (lev 17–18) — temporary provisions for table unity, not new law.
+ formula:  &quot;it has seemed good to the holy spirit and to us&quot; (15:28). 
+ connected 
+  the jerusalem council is the prototype of every ecumenical council  ·  magisterium  ·  kashrut and table fellowship  ·  s13 - council and second voyage  ">
+<h3 class="entry-title">Acts 15 - The Jerusalem Council</h3>
+
+<p>The Church's first doctrinal crisis and the prototype of every later council.</p>
+<p><strong>Question:</strong> must Gentiles be circumcised — that is, submit to the whole Law (Gen 17; Lev 12:3) — to be saved?
+<strong>Process:</strong> debate; Peter's speech ("we believe that we shall be saved through the grace of the Lord Jesus, just as they will," 15:11); James' pastoral application with OT warrant (Am 9:11-12; Jer 12:15; Is 45:21).
+<strong>Decree:</strong> no circumcision; abstain from idol-food, unchastity, and blood (Lev 17–18) — temporary provisions for table unity, not new law.
+<strong>Formula:</strong> "It has seemed good to the Holy Spirit and to us" (15:28).</p>
+<h3 class="sec">Connected</h3>
+<p><em>The Jerusalem Council is the prototype of every ecumenical council</em> · <em>Magisterium</em> · <em>Kashrut and Table Fellowship</em> · <em>S13 - Council and Second Voyage</em></p>
+</article>
+<article class="entry" id="acts-2-pentecost" data-search="Acts 2 - Pentecost 
+ wind, fire, and galileans understood by pilgrims from fifteen nations; peter preaches, three thousand are baptized. 
+ 
+  sinai staging  (ex 19): fire, theophany, covenant, new law of the spirit (rom 8:2). wind and fire in the ot: ex 3:1-3; 13:21-22; 19:16-21; ps 104:3-4. 
+  babel reversed  (gen 11:1-9) —  ad gentes  4. 
+  peter&#x27;s sermon : joel 2:28-32 fulfilled; &quot;the last days&quot; = the end of the old covenant; the messianic proofs of 2:22-36. 
+  response : repent and be baptized — the new circumcision of the heart (1 pet 3:21). 
+  result : the four pillars of 2:42. 
+ 
+ connected 
+  pentecost  ·  metanoia  ·  four pillars of the jerusalem community (acts 2-42)  ·  the four pentecosts  ·  s03 - the fire falls  ">
+<h3 class="entry-title">Acts 2 - Pentecost</h3>
+
+<p>Wind, fire, and Galileans understood by pilgrims from fifteen nations; Peter preaches, three thousand are baptized.</p>
+<ul>
+<li><strong>Sinai staging</strong> (Ex 19): fire, theophany, covenant, new law of the Spirit (Rom 8:2). Wind and fire in the OT: Ex 3:1-3; 13:21-22; 19:16-21; Ps 104:3-4.</li>
+<li><strong>Babel reversed</strong> (Gen 11:1-9) — <em>Ad Gentes</em> 4.</li>
+<li><strong>Peter's sermon</strong>: Joel 2:28-32 fulfilled; "the last days" = the end of the Old Covenant; the messianic proofs of 2:22-36.</li>
+<li><strong>Response</strong>: repent and be baptized — the new circumcision of the heart (1 Pet 3:21).</li>
+<li><strong>Result</strong>: the four pillars of 2:42.</li>
+</ul>
+<h3 class="sec">Connected</h3>
+<p><em>Pentecost</em> · <em>Metanoia</em> · <em>Four Pillars of the Jerusalem Community (Acts 2-42)</em> · <em>The Four Pentecosts</em> · <em>S03 - The Fire Falls</em></p>
+</article>
+<article class="entry" id="acts-28-31-the-unhindered-gospel" data-search="Acts 28-31 - The Unhindered Gospel 
+ &quot;...preaching the kingdom of god and teaching about the lord jesus christ quite openly and unhindered.&quot; 
+  akolytos  — &quot;unhindered&quot; — is the last word of acts, and it is an adverb describing a prisoner. luke knows how paul dies and does not tell us; the third clause of acts 1:8 is left open on purpose. the ending is a commissioning: the reader supplies the next chapter. 
+ connected 
+  acts ends unfinished because the reader must finish it  ·  martus  ·  mission as witness  ·  s20 - journey&amp;#x27;s end, mission unending  ">
+<h3 class="entry-title">Acts 28-31 - The Unhindered Gospel</h3>
+
+<p>"...preaching the kingdom of God and teaching about the Lord Jesus Christ quite openly and unhindered."</p>
+<p><em>Akolytos</em> — "unhindered" — is the last word of Acts, and it is an adverb describing a prisoner. Luke knows how Paul dies and does not tell us; the third clause of Acts 1:8 is left open on purpose. The ending is a commissioning: the reader supplies the next chapter.</p>
+<h3 class="sec">Connected</h3>
+<p><em>Acts ends unfinished because the reader must finish it</em> · <em>Martus</em> · <em>Mission as Witness</em> · <em>S20 - Journey&#x27;s End, Mission Unending</em></p>
+</article>
+<article class="entry" id="acts-3-the-beautiful-gate" data-search="Acts 3 - The Beautiful Gate 
+ the first recorded miracle, at 3 pm — the hour of the evening sacrifice (ex 29:38-42; nm 28:1-8; dn 9:21), the foundation of the liturgy of the hours. 
+ a man lame from birth begs at the gate; peter has no silver or gold, only the name, and the man leaps into the temple — the messianic sign of is 35:6 and mal 4:2. luke&#x27;s double-witness pattern follows: the sign (3:1-11), then the apostolic testimony (3:12–4:23). peter&#x27;s sermon in solomon&#x27;s portico presents jesus as the servant of is 42 and 52–53. 
+ connected 
+  theology of the name  ·  divine name formulas  ·  miracles as signs of the kingdom  ·  s04 - first steps, first signs  ">
+<h3 class="entry-title">Acts 3 - The Beautiful Gate</h3>
+
+<p>The first recorded miracle, at 3 PM — the hour of the evening sacrifice (Ex 29:38-42; Nm 28:1-8; Dn 9:21), the foundation of the Liturgy of the Hours.</p>
+<p>A man lame from birth begs at the gate; Peter has no silver or gold, only the Name, and the man leaps into the Temple — the messianic sign of Is 35:6 and Mal 4:2. Luke's double-witness pattern follows: the sign (3:1-11), then the apostolic testimony (3:12–4:23). Peter's sermon in Solomon's Portico presents Jesus as the Servant of Is 42 and 52–53.</p>
+<h3 class="sec">Connected</h3>
+<p><em>Theology of the Name</em> · <em>Divine Name Formulas</em> · <em>Miracles as Signs of the Kingdom</em> · <em>S04 - First Steps, First Signs</em></p>
+</article>
+<article class="entry" id="acts-7-stephen-s-speech" data-search="Acts 7 - Stephen&#x27;s Speech 
+ the longest speech in acts, and the one that gets its speaker killed. 
+ stephen retells salvation history from abraham with two themes running: israel&#x27;s recurring rejection of the deliverers god sends, and god&#x27;s habit of appearing  outside  the land — to abraham in mesopotamia, to moses in midian and at a bush in sinai. the cumulative argument dismantles the fixation on land and temple: god&#x27;s two concessions were a king (1 sam 8) and a house, and &quot;heaven is my throne&quot; (is 66:1-2). then the vision of the son of man standing (dn 7:13-14), the stoning, and the dying prayer for his killers — with saul holding the cloaks. 
+ connected 
+  jesus is the new king and the new temple  ·  temple as domestication of god  ·  stephen  ·  s07 - the first martyr&amp;#x27;s torch  ">
+<h3 class="entry-title">Acts 7 - Stephen&#x27;s Speech</h3>
+
+<p>The longest speech in Acts, and the one that gets its speaker killed.</p>
+<p>Stephen retells salvation history from Abraham with two themes running: Israel's recurring rejection of the deliverers God sends, and God's habit of appearing <em>outside</em> the land — to Abraham in Mesopotamia, to Moses in Midian and at a bush in Sinai. The cumulative argument dismantles the fixation on land and Temple: God's two concessions were a king (1 Sam 8) and a house, and "heaven is my throne" (Is 66:1-2). Then the vision of the Son of Man standing (Dn 7:13-14), the stoning, and the dying prayer for his killers — with Saul holding the cloaks.</p>
+<h3 class="sec">Connected</h3>
+<p><em>Jesus is the new King and the new Temple</em> · <em>Temple as Domestication of God</em> · <em>Stephen</em> · <em>S07 - The First Martyr&#x27;s Torch</em></p>
+</article>
+<article class="entry" id="acts-of-the-apostles" data-search="Acts of the Apostles 
+ luke&#x27;s second volume, addressed like the first to theophilus, narrating what jesus &quot;began to do and teach&quot; (1:1) as continuing through the spirit-filled church over roughly thirty years. 
+  author.  luke, physician and sometime companion of paul; the &quot;we&quot;-passages mark where he travels with him.
+ date.  likely before or in the early ad 60s — the book mentions neither nero&#x27;s persecution (ad 65), nor paul&#x27;s martyrdom, nor the fall of the temple (ad 70).
+ audience.  gentile christians and enquirers; hebrew-aramaic presuppositions are explained or omitted.
+ structure.  acts 1:8 — jerusalem (1:1–8:3), judea and samaria (8:4–12:25), the ends of the earth (13:1–28:31); peter dominates 1–12, paul 13–28.
+ alternate title.  &quot;the acts of the holy spirit&quot; — the spirit, not the apostles, is the continuous agent. 
+ connected 
+  three legs of acts (the acts 1-8 itinerary)  ·  luke-acts parallels (jesus, peter, paul)  ·  luke the evangelist  ·  acts moc  ·  lit - acts great adventure teacher&amp;#x27;s guide  ">
+<h3 class="entry-title">Acts of the Apostles</h3>
+
+<p>Luke's second volume, addressed like the first to Theophilus, narrating what Jesus "began to do and teach" (1:1) as continuing through the Spirit-filled Church over roughly thirty years.</p>
+<p><strong>Author.</strong> Luke, physician and sometime companion of Paul; the "we"-passages mark where he travels with him.
+<strong>Date.</strong> Likely before or in the early AD 60s — the book mentions neither Nero's persecution (AD 65), nor Paul's martyrdom, nor the fall of the Temple (AD 70).
+<strong>Audience.</strong> Gentile Christians and enquirers; Hebrew-Aramaic presuppositions are explained or omitted.
+<strong>Structure.</strong> Acts 1:8 — Jerusalem (1:1–8:3), Judea and Samaria (8:4–12:25), the ends of the earth (13:1–28:31); Peter dominates 1–12, Paul 13–28.
+<strong>Alternate title.</strong> "The Acts of the Holy Spirit" — the Spirit, not the apostles, is the continuous agent.</p>
+<h3 class="sec">Connected</h3>
+<p><em>Three Legs of Acts (the Acts 1-8 Itinerary)</em> · <em>Luke-Acts Parallels (Jesus, Peter, Paul)</em> · <em>Luke the Evangelist</em> · <em>Acts MOC</em> · <em>Lit - Acts Great Adventure Teacher&#x27;s Guide</em></p>
+</article>
+<h2 class="cat-label">Comparative Theology</h2>
+<article class="entry" id="avatara-incarnation" data-search="Avatara ↔ Incarnation 
+ the mapping ( vengal chakkarai ) 
+ christ experienced as  avatara  — god taking visible bodily form. 
+ where it illuminates 
+ indian hearts already grasp god-made-visible through the avatara tradition; a natural doorway to the incarnation. 
+ where it strains 
+  avatara  = one of  many  repeated descents; the incarnation =  once-for-all , full and permanent union of god and a real human history. avatara can seem docetic (god only  appearing  human). 
+ verdict 
+ a useful bridge if the uniqueness and full humanity of christ are safeguarded. 
+ concepts 
+  christology  ·  jesus christ  ·  vengal chakkarai  ">
+<h3 class="entry-title">Avatara ↔ Incarnation</h3>
+
+<h3 class="sec">The mapping (<em>Vengal Chakkarai</em>)</h3>
+<p>Christ experienced as <em>avatara</em> — God taking visible bodily form.</p>
+<h3 class="sec">Where it illuminates</h3>
+<p>Indian hearts already grasp God-made-visible through the avatara tradition; a natural doorway to the Incarnation.</p>
+<h3 class="sec">Where it strains</h3>
+<p><em>Avatara</em> = one of <strong>many</strong> repeated descents; the Incarnation = <strong>once-for-all</strong>, full and permanent union of God and a real human history. Avatara can seem docetic (God only <em>appearing</em> human).</p>
+<h3 class="sec">Verdict</h3>
+<p>A useful bridge if the uniqueness and full humanity of Christ are safeguarded.</p>
+<h3 class="sec">Concepts</h3>
+<p><em>Christology</em> · <em>Jesus Christ</em> · <em>Vengal Chakkarai</em></p>
+</article>
+<article class="entry" id="cave-of-the-heart-contemplative-prayer" data-search="Cave of the Heart ↔ Contemplative Prayer 
+ the mapping ( swami abhishiktananda ) 
+ the inward journey to &quot;the cave of the heart&quot; ↔ the christian contemplative descent to the innermost self where one meets god. 
+ where it illuminates 
+ corrects a purely external, object-like search for god; recovers the mystical, apophatic depth of christian prayer via  advaita . 
+ where it strains 
+ non-dual absorption risks dissolving the i–thou relationship that christian prayer preserves. abhishiktananda held the tension as &quot;christian advaita.&quot; 
+ verdict 
+ rich for a contemplative indian christianity if the personal encounter with god is kept. 
+ concepts 
+  advaita  ·  ashram movement  ·  religious experience  ">
+<h3 class="entry-title">Cave of the Heart ↔ Contemplative Prayer</h3>
+
+<h3 class="sec">The mapping (<em>Swami Abhishiktananda</em>)</h3>
+<p>The inward journey to "the cave of the heart" ↔ the Christian contemplative descent to the innermost self where one meets God.</p>
+<h3 class="sec">Where it illuminates</h3>
+<p>Corrects a purely external, object-like search for God; recovers the mystical, apophatic depth of Christian prayer via <em>Advaita</em>.</p>
+<h3 class="sec">Where it strains</h3>
+<p>Non-dual absorption risks dissolving the I–Thou relationship that Christian prayer preserves. Abhishiktananda held the tension as "Christian Advaita."</p>
+<h3 class="sec">Verdict</h3>
+<p>Rich for a contemplative Indian Christianity if the personal encounter with God is kept.</p>
+<h3 class="sec">Concepts</h3>
+<p><em>Advaita</em> · <em>Ashram Movement</em> · <em>Religious Experience</em></p>
+</article>
+<article class="entry" id="exodus-dalit-liberation" data-search="Exodus ↔ Dalit Liberation 
+ the mapping 
+ the exodus (&quot;key paradigmatic text&quot; of  liberation theology ) ↔  dalit theology &#x27;s hope of liberation from caste bondage. 
+ where it illuminates 
+ a god who &quot;actively liberates people from unjust... systems&quot;; the crucified-and-risen jesus as power to revolt and ground of hope. 
+ where it strains 
+ class-based exodus reading must be widened to caste and religious pluralism →  indian liberation theology must add caste and pluralism to class analysis . 
+ verdict 
+ the central paradigm for indian liberation, needing the caste dimension the latin american model lacks. 
+ concepts 
+  dalit theology  ·  liberation theology  ·  socio-political realities of india  ">
+<h3 class="entry-title">Exodus ↔ Dalit Liberation</h3>
+
+<h3 class="sec">The mapping</h3>
+<p>The Exodus ("key paradigmatic text" of <em>Liberation Theology</em>) ↔ <em>Dalit Theology</em>'s hope of liberation from caste bondage.</p>
+<h3 class="sec">Where it illuminates</h3>
+<p>A God who "actively liberates people from unjust... systems"; the Crucified-and-Risen Jesus as power to revolt and ground of hope.</p>
+<h3 class="sec">Where it strains</h3>
+<p>Class-based Exodus reading must be widened to caste and religious pluralism → <em>Indian liberation theology must add caste and pluralism to class analysis</em>.</p>
+<h3 class="sec">Verdict</h3>
+<p>The central paradigm for Indian liberation, needing the caste dimension the Latin American model lacks.</p>
+<h3 class="sec">Concepts</h3>
+<p><em>Dalit Theology</em> · <em>Liberation Theology</em> · <em>Socio-Political Realities of India</em></p>
+</article>
+<article class="entry" id="moksha-salvation" data-search="Moksha ↔ Salvation 
+ the mapping 
+  moksha  (liberation from samsara, karma, ignorance) ↔ christian salvation (freedom from sin and death). 
+ where it illuminates 
+ both are  liberation and fulfilment , not mere reward; both reject bondage. neither is &quot;escape from the world&quot; at its best — kingdom of god is justice/peace here, moksha is freedom-while-in-the-world. 
+ where it strains 
+ advaitic moksha = merging into impersonal  brahman ; christian salvation =  communion of persons  with a personal god, and  resurrection of the body , not soul escaping matter. 
+ verdict 
+ strong analogy of  liberation ; diverges sharply on  personhood  and  embodiment . 
+ concepts 
+  moksha  ·  bhakti  ·  jesus christ  ">
+<h3 class="entry-title">Moksha ↔ Salvation</h3>
+
+<h3 class="sec">The mapping</h3>
+<p><em>Moksha</em> (liberation from samsara, karma, ignorance) ↔ Christian salvation (freedom from sin and death).</p>
+<h3 class="sec">Where it illuminates</h3>
+<p>Both are <strong>liberation and fulfilment</strong>, not mere reward; both reject bondage. Neither is "escape from the world" at its best — Kingdom of God is justice/peace here, moksha is freedom-while-in-the-world.</p>
+<h3 class="sec">Where it strains</h3>
+<p>Advaitic moksha = merging into impersonal <em>Brahman</em>; Christian salvation = <strong>communion of persons</strong> with a personal God, and <strong>resurrection of the body</strong>, not soul escaping matter.</p>
+<h3 class="sec">Verdict</h3>
+<p>Strong analogy of <em>liberation</em>; diverges sharply on <em>personhood</em> and <em>embodiment</em>.</p>
+<h3 class="sec">Concepts</h3>
+<p><em>Moksha</em> · <em>Bhakti</em> · <em>Jesus Christ</em></p>
+</article>
+<article class="entry" id="nishkama-karma-selfless-christian-service" data-search="Nishkama Karma ↔ Selfless Christian Service 
+ the mapping 
+  nishkama karma  (action without attachment to fruits) ↔ christian service &quot;for god&#x27;s glory,&quot; free of craving for reward or recognition. 
+ where it illuminates 
+ purifies motive; a spirituality of work and duty; integrates action into the path to god (used in the  ashram movement ). 
+ where it strains 
+ indian framing aims at  moksha /detachment; christian service is animated by  love of neighbour and the coming kingdom , not only inner purification. 
+ verdict 
+ excellent ascetical bridge; complete it with the christian motive of love. 
+ concepts 
+  nishkama karma  ·  praxis  ·  ashram movement  ">
+<h3 class="entry-title">Nishkama Karma ↔ Selfless Christian Service</h3>
+
+<h3 class="sec">The mapping</h3>
+<p><em>Nishkama Karma</em> (action without attachment to fruits) ↔ Christian service "for God's glory," free of craving for reward or recognition.</p>
+<h3 class="sec">Where it illuminates</h3>
+<p>Purifies motive; a spirituality of work and duty; integrates action into the path to God (used in the <em>Ashram Movement</em>).</p>
+<h3 class="sec">Where it strains</h3>
+<p>Indian framing aims at <em>moksha</em>/detachment; Christian service is animated by <strong>love of neighbour and the coming Kingdom</strong>, not only inner purification.</p>
+<h3 class="sec">Verdict</h3>
+<p>Excellent ascetical bridge; complete it with the Christian motive of love.</p>
+<h3 class="sec">Concepts</h3>
+<p><em>Nishkama Karma</em> · <em>Praxis</em> · <em>Ashram Movement</em></p>
+</article>
+<article class="entry" id="saccidananda-trinity" data-search="Saccidananda ↔ Trinity 
+ the mapping ( a. j. appasamy ) 
+  sat  (being) → father ·  chit  (consciousness) → son/logos ·  ananda  (bliss) → holy spirit 
+ where it illuminates 
+ trinity as  experienced  reality (being–consciousness–bliss), not abstract formula; speaks natively to the indian religious imagination. 
+ where it strains 
+  advaita &#x27;s impersonal  brahman  vs the trinity&#x27;s  personal communion . appasamy&#x27;s fix: keep &quot;our separate personalities in our experience of union with god&quot; —  bhakti , not absorption. 
+ verdict (mine, revisable) 
+ legitimate inculturation  provided personhood is kept . test against  eight parameters of the catholic theological enterprise  and  evangelii nuntiandi  65. 
+ concepts 
+  saccidananda  ·  trinity  ·  appasamy maps saccidananda onto the trinity  ">
+<h3 class="entry-title">Saccidananda ↔ Trinity</h3>
+
+<h3 class="sec">The mapping (<em>A. J. Appasamy</em>)</h3>
+<p><em>Sat</em> (Being) → Father · <em>Chit</em> (Consciousness) → Son/Logos · <em>Ananda</em> (Bliss) → Holy Spirit</p>
+<h3 class="sec">Where it illuminates</h3>
+<p>Trinity as <strong>experienced</strong> reality (Being–Consciousness–Bliss), not abstract formula; speaks natively to the Indian religious imagination.</p>
+<h3 class="sec">Where it strains</h3>
+<p><em>Advaita</em>'s impersonal <em>Brahman</em> vs the Trinity's <strong>personal communion</strong>. Appasamy's fix: keep "our separate personalities in our experience of union with God" — <em>Bhakti</em>, not absorption.</p>
+<h3 class="sec">Verdict (mine, revisable)</h3>
+<p>Legitimate inculturation <strong>provided personhood is kept</strong>. Test against <em>Eight Parameters of the Catholic Theological Enterprise</em> and <em>Evangelii Nuntiandi</em> 65.</p>
+<h3 class="sec">Concepts</h3>
+<p><em>Saccidananda</em> · <em>Trinity</em> · <em>Appasamy maps Saccidananda onto the Trinity</em></p>
+</article>
+<h2 class="cat-label">Wisdom</h2>
+<article class="entry" id="homily-log" data-search="Homily Log 
+ 
+ three lines per homily. monthly, scan for a repeated lesson → graduate it to a wisdom note. 
+ 
+ 
+ 
+ 
+ date 
+ passage 
+ what i preached 
+ what the encounter taught me 
+ 
+ 
+ 
+ 
+ (e.g. 2026-07-19) 
+ mt 16:13-20 
+ peter&#x27;s confession 
+ teaching &quot;who christ is&quot; lands only after people have  met  him 
+ 
+ 
+ 
+ seeds to harvest (#wisdom-seed) 
+ 
+ (drop one-liners here after funerals, confessions, hospital visits) 
+ ">
+<h3 class="entry-title">Homily Log</h3>
+
+<blockquote>
+<p>Three lines per homily. Monthly, scan for a repeated lesson → graduate it to a Wisdom note.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Passage</th>
+<th>What I preached</th>
+<th>What the encounter taught me</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(e.g. 2026-07-19)</td>
+<td>Mt 16:13-20</td>
+<td>Peter's confession</td>
+<td>teaching "who Christ is" lands only after people have <em>met</em> him</td>
+</tr>
+</tbody>
+</table>
+<h3 class="sec">Seeds to harvest (#wisdom-seed)</h3>
+<ul>
+<li>(drop one-liners here after funerals, confessions, hospital visits)</li>
+</ul>
+</article>
+<article class="entry" id="wisdom-an-illustration-is-the-argument-not-d" data-search="An Illustration Is the Argument, Not Decoration on It 
+ from building a retreat series in the idiom of sr inigo ssa&#x27;s  the ever-evolving consecrated life 
+(16 august 2026): the governing rule extracted from her corpus was  never name a category when you
+can name a person, a place, a price, or an object.  not &quot;the poor&quot; but the murshidabad bonded
+labourer; not &quot;we live comfortably&quot; but &quot;a beautiful convent with marble floors and a generator that
+never fails.&quot; 
+ the reason this works homiletically, not just rhetorically: an illustration is the place where a claim
+about god becomes a thing a person can see — and therefore a thing a person can refuse or obey. a
+homily that stays in categories can be agreed with and changed nothing. a homily anchored in one named
+object cannot be nodded past. 
+ twenty reusable illustration types (diagnostic, narrative, conceptual, evidential), each with a
+generative recipe and a named failure mode, are catalogued in the  illustration-craft  skill — built
+the same day from this corpus, alongside two full retreat series (21 talks on consecrated life; 18
+talks on synodality for carmelite sisters, grounded in soares-prabhu). documents held outside this
+vault, in  talks and notes  (retreat folder). 
+ connected 
+  soares-prabhu moc  ·  table fellowship  ·  cry for life  ">
+<h3 class="entry-title">An Illustration Is the Argument, Not Decoration on It</h3>
+
+<p>From building a retreat series in the idiom of Sr Inigo SSA's <em>The Ever-Evolving Consecrated Life</em>
+(16 August 2026): the governing rule extracted from her corpus was <strong>never name a category when you
+can name a person, a place, a price, or an object.</strong> Not "the poor" but the Murshidabad bonded
+labourer; not "we live comfortably" but "a beautiful convent with marble floors and a generator that
+never fails."</p>
+<p>The reason this works homiletically, not just rhetorically: an illustration is the place where a claim
+about God becomes a thing a person can see — and therefore a thing a person can refuse or obey. A
+homily that stays in categories can be agreed with and changed nothing. A homily anchored in one named
+object cannot be nodded past.</p>
+<p>Twenty reusable illustration types (diagnostic, narrative, conceptual, evidential), each with a
+generative recipe and a named failure mode, are catalogued in the <code>illustration-craft</code> skill — built
+the same day from this corpus, alongside two full retreat series (21 talks on consecrated life; 18
+talks on synodality for Carmelite sisters, grounded in Soares-Prabhu). Documents held outside this
+vault, in <em>Talks and Notes</em> (Retreat folder).</p>
+<h3 class="sec">Connected</h3>
+<p><em>Soares-Prabhu MOC</em> · <em>Table Fellowship</em> · <em>Cry for Life</em></p>
+</article>
+<article class="entry" id="wisdom-theology-is-completed-in-ministry-not" data-search="Theology is completed in ministry, not the classroom 
+  example wisdom note — fr. willy&amp;#x27;s own synthesis. replace/extend with lived experience.  
+
+ the classroom gave me  theology is faith seeking understanding, not proof seeking certainty . ministry is teaching me what  kind  of understanding faith seeks: at a deathbed, the understanding sought is not information about god but the presence of god.  rahner &#x27;s &quot;absolute saviour&quot; is an abstraction in a lecture and a lifeline in a hospital corridor. 
+ feeds on 
+  homily log  · #wisdom-seed entries 
+ connects academic → pastoral 
+  theology  ·  supernatural existential  ·  the cry of the poor is a genuine source of theology  ">
+<h3 class="entry-title">Theology is completed in ministry, not the classroom</h3>
+
+<div class="callout callout-note"><p class="callout-label">Example Wisdom note — Fr. Willy&#x27;s own synthesis. Replace/extend with lived experience.</p></div>
+
+<p>The classroom gave me <em>Theology is faith seeking understanding, not proof seeking certainty</em>. Ministry is teaching me what <em>kind</em> of understanding faith seeks: at a deathbed, the understanding sought is not information about God but the presence of God. <em>Rahner</em>'s "absolute saviour" is an abstraction in a lecture and a lifeline in a hospital corridor.</p>
+<h3 class="sec">Feeds on</h3>
+<p><a href="#homily-log">Homily Log</a> · #wisdom-seed entries</p>
+<h3 class="sec">Connects academic → pastoral</h3>
+<p><em>Theology</em> · <em>Supernatural Existential</em> · <em>The cry of the poor is a genuine source of theology</em></p>
+</article>
+<p id="empty" class="empty-note" hidden>No entries match that search.</p>
+</main>
+
+<footer class="page">
+  Miscellaneous atomic notes: Inbox, Bible, Comparative Theology, Wisdom.
+</footer>
+
+<script>
+  const input = document.getElementById('filter');
+  const entries = Array.from(document.querySelectorAll('.entry'));
+  const countEl = document.getElementById('count');
+  const empty = document.getElementById('empty');
+  const total = entries.length;
+  input.addEventListener('input', () => {
+    const q = input.value.trim().toLowerCase();
+    let shown = 0;
+    entries.forEach(e => {
+      const match = !q || (e.dataset.search || '').includes(q);
+      e.hidden = !match;
+      if (match) shown++;
+    });
+    countEl.textContent = q ? `${shown} of ${total}` : `${total} entries`;
+    empty.hidden = shown > 0 || !q;
+  });
+</script>
